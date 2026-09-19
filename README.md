@@ -1,68 +1,85 @@
-# Julius' future
+<div align="center">
+  <!-- 项目标识位置：加入已授权的本地图片后，在此添加图标。 -->
+  <h1>Julius' future</h1>
+  <p>把学习中的问题，推进为有来源、有验证、有记录的研究与写作成果。</p>
+  <p><strong>学习 · 研究 · 写作 · 成果管理</strong></p>
+  <p>当前重点：量子核自设计与风险增强组合优化<br>当前阶段：研究设计与预立项</p>
+  <p>
+    <a href="#first-contribution">完成第一次贡献</a> ·
+    <a href="research/quantum-research.md">阅读研究方案</a> ·
+    <a href="CONTRIBUTING.md">查看贡献指南</a>
+  </p>
+  <!-- 状态图标位置：可添加与仓库实际进度一致的徽章。 -->
+</div>
 
-把学习转化为可复现的研究，把研究转化为可协作、可持续维护的开放成果。
+## 这个项目解决什么问题
 
-[项目介绍](docs/project-introduction.md) · [研究方案](research/quantum-research.md) · [路线图](docs/roadmap.md) · [参与贡献](CONTRIBUTING.md)
+读过一些资料后，如何找到值得追问的问题？提出一个研究想法后，如何判断依据是否充分、比较是否公平？写下笔记后，如何让其他人接着阅读、复核和推进？
 
-## 项目定位
+Julius' future 围绕这些问题，把学习、研究、写作和成果管理放进同一条协作流程。当前以量子研究为切入点：在有限评估预算与硬件约束下选择量子特征映射，再研究它对风险预测和组合决策的作用。完整定位见[项目介绍](docs/project-introduction.md)。
 
-Julius' future 是一个围绕学习、科研、写作和成果管理建立的开放协作项目。我们用明确的问题、可追溯的资料和可复现的实验连接这些工作，让后来者能够读懂、参与并继续维护。
+现在可以从仓库获得三件具体的帮助：
 
-当前重点是**面向风险增强组合优化的量子核自设计研究**：研究如何在有限线路评估预算和硬件约束下选择量子特征映射，并将得到的表示接入风险预测与组合决策。教育内容围绕研究中的实际问题展开，逐步形成从概念、复现到贡献的学习路径。
+- **看清一个研究问题如何展开**：沿着[研究方案](research/quantum-research.md)，查看问题、基线、预算与评价条件如何对应。
+- **把阅读变成可讨论的证据**：借助[参考资料](research/references.md)和[复核记录模板](docs/roadmap.md#review-record)，定位原文，记录它支持什么、还缺什么。
+- **完成一次有明确交付的小贡献**：选择下方任务，提交来源复核、比较建议或概念说明，经过审阅后进入成果记录。
 
-**当前阶段：研究设计与预立项。** 本仓库已提供问题定义、评估方案和协作规范；实验实现、测量结果和教程将按路线图逐步提交。
+## 模块、材料与下一步
 
-## 可以从哪里开始
+| 模块 | 现在可阅读的材料 | 下一项交付 | 当前状态 |
+| --- | --- | --- | --- |
+| 项目与协作 | [项目介绍](docs/project-introduction.md)、[贡献指南](CONTRIBUTING.md) | 用首批任务完成一次提交、审阅、登记 | 流程已定义，待实践 |
+| 量子研究 | [问题与实验设计](research/quantum-research.md) | 复核研究依据与经典基线，明确首个实验的配置和预算 | 研究设计与预立项 |
+| 资料与证据 | [研究参考资料](research/references.md) | 为具体陈述补充原文位置、支持程度与修改建议 | 索引可阅读，逐项复核待开展 |
+| 学习与写作 | [学习与写作指南](docs/learning-and-writing.md) | 完成一篇连接研究问题的前置概念说明 | 路径已列出，材料待编写 |
+| 成果与维护 | [路线图与成果登记](docs/roadmap.md)、[维护与交接](docs/maintenance.md) | 登记首项经审阅的贡献及其版本、证据和后续事项 | 登记规则已定义 |
 
-| 你的目标 | 建议入口 | 可以贡献什么 |
-| --- | --- | --- |
-| 理解项目 | [项目介绍](docs/project-introduction.md) | 明确问题、受众与交付方式 |
-| 参与量子研究 | [研究方案](research/quantum-research.md) | 文献复核、基线、实验设计与复现 |
-| 建立学习路线 | [学习与写作指南](docs/learning-and-writing.md) | 概念讲解、练习、实验记录 |
-| 认领具体任务 | [路线图](docs/roadmap.md)与 [Issues](https://github.com/Soros2040/julius-future/issues) | 将里程碑拆成可验收任务 |
-| 提交改进 | [贡献指南](CONTRIBUTING.md) | 文档、研究笔记和后续代码 PR |
+实验实现、对照结果和配套教程将随各里程碑交付。研究方案中的评价数值是拟定目标；实际结论以可追溯的实验与复核记录为依据。
 
-## 研究问题
+<a id="first-contribution"></a>
+
+## 完成第一次贡献
+
+从核对一条陈述开始。只需能阅读 Markdown、访问原始资料，并把疑问说明白。
+
+1. 在[研究方案](research/quantum-research.md)中选出一句涉及方法、研究依据或比较条件的陈述，记下章节和原句。
+2. 从[参考资料](research/references.md)找到对应原始来源，核对具体版本、章节、页码或公式。阅读原文后再判断支持程度；暂时无法访问时记录访问情况。
+3. 复制[复核记录模板](docs/roadmap.md#review-record)，写清原文位置、支持程度及理由、建议修改或下一步。一次只处理一个清楚的问题。
+4. 查看已有 [Issues](https://github.com/Soros2040/julius-future/issues)，在相关任务下提交记录，或用[任务模板](https://github.com/Soros2040/julius-future/issues/new?template=task.md)发起讨论。能形成具体修改时提交 PR，并附上记录；审阅通过后更新[成果登记](docs/roadmap.md#result-register)。
+
+## 当前研究的三个问题
 
 1. 在相同评估预算下，量子核自设计能否比固定映射和随机搜索选出更稳定、有效的线路？
 2. 在统一的数据时点、资产顺序和风险定义下，量子表示能否改善时间外风险预测，并传递到组合决策？
 3. 将线路深度、双量子比特门、SWAP、shots 和噪声纳入搜索后，能否获得可执行且目标质量可接受的方案？
 
-每个问题都配套经典基线、消融实验和资源统计。详细判据见[研究方案](research/quantum-research.md)。
+问题对应的实验设计、经典基线与证据要求见[量子研究方案](research/quantum-research.md)。希望先补齐背景的读者可按[学习顺序](docs/learning-and-writing.md#learning-path)阅读和提问。
 
-## 前置知识与学习路径
+## 首批可认领任务
 
-- 基础参与：能阅读 Markdown，愿意核对来源并清楚描述问题。
-- 实验参与：Python、线性代数、概率统计、机器学习实验基础。
-- 量子方向：量子态、量子门、测量和参数化线路；可在复现过程中逐步学习。
-- 金融方向：时间序列验证、组合风险和交易成本；数据使用须符合来源许可。
+| 任务 | 交付到哪里 | 怎样验收 | 状态 |
+| --- | --- | --- | --- |
+| **T01 · 引用复核** | Issue 中提交一条复核记录；如需修改，更新 [research/references.md](research/references.md) 与研究方案对应陈述 | 原始来源的版本与位置明确；判断支持程度并说明理由；建议能定位到具体文字 | 未认领 |
+| **T02 · 经典基线公平性复核** | Issue 中提交比较条件清单；建议落实到 [research/quantum-research.md](research/quantum-research.md) 的首个实验或下游评价 | 指定一组比较，逐项检查数据划分、调参、预算、指标与随机性；列出每项依据、缺项及补齐方法 | 未认领 |
+| **T03 · 前置概念说明** | 在 [docs/learning-and-writing.md](docs/learning-and-writing.md) 的“前置概念说明”中提交一个完整小节 | 解释量子核或时间外验证中的一个概念；包含前置知识、研究用途、最小例子、原始来源与一道自检题 | 未认领 |
 
-推荐顺序：**理解问题 → 阅读原始资料 → 复现最小基线 → 对照实验 → 解释结果 → 提交贡献**。初期学习和小规模模拟以普通计算环境为起点；实际硬件实验另行记录后端、预算与使用条件。
+认领方式、完整验收条件和任务状态见[路线图](docs/roadmap.md#starter-tasks)。
 
-## 进展
+## 参与与维护
 
-| 工作 | 状态 | 交付物 |
-| --- | --- | --- |
-| 项目定位与协作流程 | 已完成 | 本仓库文档及 Issue / PR 模板 |
-| 量子研究方案 | 初稿 | 问题、基线、指标、实验分层 |
-| 参考文献索引 | 已整理 | [研究参考资料](research/references.md) |
-| 最小基线与自动核搜索实验 | 计划中 | 可执行实现、配置与复现实验 |
-| 学习教程与练习 | 计划中 | 随验证过的研究模块逐步发布 |
-| 维护交接 | 已定义流程 | [维护与交接](docs/maintenance.md) |
-
-## 阅读与参与
+可以在线阅读文件，也可以把仓库保存到本地：
 
 ```sh
 git clone https://github.com/Soros2040/julius-future.git
 cd julius-future
 ```
 
-直接阅读 Markdown 即可开始。研究实现的安装步骤和运行命令将在对应模块可运行后随模块提供。
+文档复核可直接从浏览器开始。实验参与需要 Python、线性代数、概率统计与机器学习实验基础；各模块交付时提供相应的环境和运行说明。
 
-我们计划与 Datawhale 社区及相关实验室交流预立项和研究合作。项目目前由 Julius（[@Soros2040](https://github.com/Soros2040)）维护，合作进展将以实际确认的信息更新。
+项目由 Julius（[@Soros2040](https://github.com/Soros2040)）维护。贡献按“提交 → 审阅 → 合并 → 登记”推进，任务负责人和审阅者在 Issue / PR 中记录。具体要求见[贡献指南](CONTRIBUTING.md)，职责、复现与交接安排见[维护与交接](docs/maintenance.md)。欢迎学习者、研究参与者和维护者从一个可独立验收的小任务加入。
 
 ## 致谢与许可
 
-项目组织与协作方式参考了 Datawhale 的 [diy-llm](https://github.com/datawhalechina/diy-llm) 和 [zero-to-sglang](https://github.com/datawhalechina/zero-to-sglang)。本仓库围绕自身研究问题编写说明与协作规范。
+首页的信息组织参考了 Datawhale 的 [diy-llm](https://github.com/datawhalechina/diy-llm) 和 [zero-to-sglang](https://github.com/datawhalechina/zero-to-sglang)：用项目说明、学习入口、材料状态与贡献路径帮助读者开始参与。本项目的内容围绕自身学习与研究问题编写。感谢原始资料作者及参与复核、写作和维护的贡献者。
 
-原创文档采用 [CC BY-NC-SA 4.0](LICENSE)，原创代码采用 [MIT](LICENSE-CODE)。引用资料遵循各自许可，详见[来源与许可说明](THIRD_PARTY_NOTICES.md)。
+原创文档采用 [CC BY-NC-SA 4.0](LICENSE)，原创代码采用 [MIT](LICENSE-CODE)。第三方资料遵循各自许可，详见[来源与许可说明](THIRD_PARTY_NOTICES.md)。
