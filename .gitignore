@@ -1,0 +1,18 @@
+# Local configuration and generated files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.local-backup/
+.work/
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+~$*
