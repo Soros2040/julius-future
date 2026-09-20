@@ -1,0 +1,350 @@
+{
+  "source_title": "alexfin架构（markdown）.docx",
+  "source_sha256": "9314ca5b7f719199f5ad15078116cfb298228b6b1bc5e2e8908a93959e7b9fbd",
+  "public_title": "Alex-Fin 模型架构详解",
+  "source_counts": {
+    "chapters": 5,
+    "native_math": 0,
+    "native_tables": 0,
+    "text_tables": 2
+  },
+  "converted_counts": {
+    "math": 247,
+    "tables": 2
+  },
+  "images": [],
+  "headings": [
+    {
+      "level": 1,
+      "title": "Alex-Fin 模型架构详解",
+      "manuscript_anchor": "alex-fin-模型架构详解"
+    },
+    {
+      "level": 1,
+      "title": "Alex-Fin",
+      "manuscript_anchor": "alex-fin"
+    },
+    {
+      "level": 2,
+      "title": "第一章 问题定义与研究范式",
+      "manuscript_anchor": "第一章-问题定义与研究范式"
+    },
+    {
+      "level": 3,
+      "title": "1.1 序列决策问题的MDP形式化",
+      "manuscript_anchor": "11-序列决策问题的mdp形式化"
+    },
+    {
+      "level": 3,
+      "title": "1.2 核心术语严格定义",
+      "manuscript_anchor": "12-核心术语严格定义"
+    },
+    {
+      "level": 3,
+      "title": "1.3 投资绩效评价指标体系",
+      "manuscript_anchor": "13-投资绩效评价指标体系"
+    },
+    {
+      "level": 2,
+      "title": "第二章 多频率金融时空关联网络构建",
+      "manuscript_anchor": "第二章-多频率金融时空关联网络构建"
+    },
+    {
+      "level": 3,
+      "title": "2.1 多频率时空网络的数学定义",
+      "manuscript_anchor": "21-多频率时空网络的数学定义"
+    },
+    {
+      "level": 3,
+      "title": "2.2 全局频率索引规则与可学习频率嵌入",
+      "manuscript_anchor": "22-全局频率索引规则与可学习频率嵌入"
+    },
+    {
+      "level": 4,
+      "title": "2.2.1 全局固定频率索引映射",
+      "manuscript_anchor": "221-全局固定频率索引映射"
+    },
+    {
+      "level": 4,
+      "title": "2.2.2 可学习频率嵌入层实现",
+      "manuscript_anchor": "222-可学习频率嵌入层实现"
+    },
+    {
+      "level": 4,
+      "title": "2.2.3 嵌入叠加方式与全链路复用规则",
+      "manuscript_anchor": "223-嵌入叠加方式与全链路复用规则"
+    },
+    {
+      "level": 3,
+      "title": "2.3 适配FinCast范式的前置分块实例归一化",
+      "manuscript_anchor": "23-适配fincast范式的前置分块实例归一化"
+    },
+    {
+      "level": 3,
+      "title": "2.4 基于GLASSO-DY的分频率独立动态有向风险溢出邻接矩阵构建",
+      "manuscript_anchor": "24-基于glasso-dy的分频率独立动态有向风险溢出邻接矩阵构建"
+    },
+    {
+      "level": 4,
+      "title": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "manuscript_anchor": "241-分频率独立glasso稀疏精度矩阵估计"
+    },
+    {
+      "level": 4,
+      "title": "2.4.2 分频率独立DY有向风险溢出分解",
+      "manuscript_anchor": "242-分频率独立dy有向风险溢出分解"
+    },
+    {
+      "level": 4,
+      "title": "2.4.3 分频率最终邻接矩阵构建",
+      "manuscript_anchor": "243-分频率最终邻接矩阵构建"
+    },
+    {
+      "level": 3,
+      "title": "2.5 统一的EWMA递归更新体系",
+      "manuscript_anchor": "25-统一的ewma递归更新体系"
+    },
+    {
+      "level": 2,
+      "title": "第三章 多频率并行时空分离注意力图神经网络特征提取模块",
+      "manuscript_anchor": "第三章-多频率并行时空分离注意力图神经网络特征提取模块"
+    },
+    {
+      "level": 3,
+      "title": "3.1 模块整体架构",
+      "manuscript_anchor": "31-模块整体架构"
+    },
+    {
+      "level": 3,
+      "title": "3.2 全频率独立并行时空双分支设计",
+      "manuscript_anchor": "32-全频率独立并行时空双分支设计"
+    },
+    {
+      "level": 4,
+      "title": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "manuscript_anchor": "321-无硬编码因果掩码时序自注意力分支"
+    },
+    {
+      "level": 4,
+      "title": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "manuscript_anchor": "322-轻量级自适应gat空间注意力分支"
+    },
+    {
+      "level": 3,
+      "title": "3.3 时空融合统一注意力层",
+      "manuscript_anchor": "33-时空融合统一注意力层"
+    },
+    {
+      "level": 3,
+      "title": "3.4 全连接多向同步交叉注意力融合模块",
+      "manuscript_anchor": "34-全连接多向同步交叉注意力融合模块"
+    },
+    {
+      "level": 4,
+      "title": "3.4.1 前置因果性时间锚定（无硬对齐、无信息损失）",
+      "manuscript_anchor": "341-前置因果性时间锚定无硬对齐无信息损失"
+    },
+    {
+      "level": 4,
+      "title": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "manuscript_anchor": "342-全连接多向同步交叉注意力原生机制完整落地"
+    },
+    {
+      "level": 4,
+      "title": "3.4.3 跨频率融合特征输出",
+      "manuscript_anchor": "343-跨频率融合特征输出"
+    },
+    {
+      "level": 3,
+      "title": "3.5 特征提纯输出层",
+      "manuscript_anchor": "35-特征提纯输出层"
+    },
+    {
+      "level": 2,
+      "title": "第四章 市场状态自适应的自专业化MoE混合专家模块",
+      "manuscript_anchor": "第四章-市场状态自适应的自专业化moe混合专家模块"
+    },
+    {
+      "level": 3,
+      "title": "4.1 模块整体架构与设计原则",
+      "manuscript_anchor": "41-模块整体架构与设计原则"
+    },
+    {
+      "level": 3,
+      "title": "4.2 输入特征适配：全频率嵌入的全链路承接",
+      "manuscript_anchor": "42-输入特征适配全频率嵌入的全链路承接"
+    },
+    {
+      "level": 3,
+      "title": "4.3 自专业化双轨专家网络结构设计",
+      "manuscript_anchor": "43-自专业化双轨专家网络结构设计"
+    },
+    {
+      "level": 4,
+      "title": "4.3.1 专家基础单元结构",
+      "manuscript_anchor": "431-专家基础单元结构"
+    },
+    {
+      "level": 4,
+      "title": "4.3.2 全局共享专家层",
+      "manuscript_anchor": "432-全局共享专家层"
+    },
+    {
+      "level": 4,
+      "title": "4.3.3 动态路由专家层",
+      "manuscript_anchor": "433-动态路由专家层"
+    },
+    {
+      "level": 3,
+      "title": "4.4 全频率感知的无硬编码纯数据驱动路由机制",
+      "manuscript_anchor": "44-全频率感知的无硬编码纯数据驱动路由机制"
+    },
+    {
+      "level": 4,
+      "title": "4.4.1 门控路由权重计算",
+      "manuscript_anchor": "441-门控路由权重计算"
+    },
+    {
+      "level": 4,
+      "title": "4.4.2 动态偏置项负载均衡机制",
+      "manuscript_anchor": "442-动态偏置项负载均衡机制"
+    },
+    {
+      "level": 3,
+      "title": "4.5 适配全频率感知的表征空间正交化方案",
+      "manuscript_anchor": "45-适配全频率感知的表征空间正交化方案"
+    },
+    {
+      "level": 4,
+      "title": "4.5.1 正交性正则化形式化定义",
+      "manuscript_anchor": "451-正交性正则化形式化定义"
+    },
+    {
+      "level": 4,
+      "title": "4.5.2 全频率适配逻辑与训练稳定性保障",
+      "manuscript_anchor": "452-全频率适配逻辑与训练稳定性保障"
+    },
+    {
+      "level": 3,
+      "title": "4.6 MoE模块完整前向传播流程",
+      "manuscript_anchor": "46-moe模块完整前向传播流程"
+    },
+    {
+      "level": 2,
+      "title": "第五章 基于GRPO的深度强化学习自适应投资组合优化模块",
+      "manuscript_anchor": "第五章-基于grpo的深度强化学习自适应投资组合优化模块"
+    },
+    {
+      "level": 3,
+      "title": "5.1 动态投资组合优化的MDP适配性定义",
+      "manuscript_anchor": "51-动态投资组合优化的mdp适配性定义"
+    },
+    {
+      "level": 4,
+      "title": "5.1.1 动作空间",
+      "manuscript_anchor": "511-动作空间"
+    },
+    {
+      "level": 4,
+      "title": "5.1.2 状态空间",
+      "manuscript_anchor": "512-状态空间"
+    },
+    {
+      "level": 4,
+      "title": "5.1.3 状态转移机制",
+      "manuscript_anchor": "513-状态转移机制"
+    },
+    {
+      "level": 4,
+      "title": "5.1.4 奖励函数",
+      "manuscript_anchor": "514-奖励函数"
+    },
+    {
+      "level": 4,
+      "title": "5.1.5 折扣因子",
+      "manuscript_anchor": "515-折扣因子"
+    },
+    {
+      "level": 3,
+      "title": "5.2 面向金融场景的GRPO算法适配性改进",
+      "manuscript_anchor": "52-面向金融场景的grpo算法适配性改进"
+    },
+    {
+      "level": 4,
+      "title": "5.2.1 GRPO算法核心逻辑与金融场景适配性",
+      "manuscript_anchor": "521-grpo算法核心逻辑与金融场景适配性"
+    },
+    {
+      "level": 4,
+      "title": "5.2.2 DSR即时奖励与GRPO step级优化的融合方案",
+      "manuscript_anchor": "522-dsr即时奖励与grpo-step级优化的融合方案"
+    },
+    {
+      "level": 4,
+      "title": "5.2.3 策略更新幅度约束方案",
+      "manuscript_anchor": "523-策略更新幅度约束方案"
+    },
+    {
+      "level": 4,
+      "title": "5.2.4 优势函数适配优化",
+      "manuscript_anchor": "524-优势函数适配优化"
+    },
+    {
+      "level": 4,
+      "title": "5.2.5 GRPO最终优化目标",
+      "manuscript_anchor": "525-grpo最终优化目标"
+    },
+    {
+      "level": 3,
+      "title": "5.3 策略网络架构与硬约束嵌入设计",
+      "manuscript_anchor": "53-策略网络架构与硬约束嵌入设计"
+    },
+    {
+      "level": 4,
+      "title": "5.3.1 策略网络整体架构",
+      "manuscript_anchor": "531-策略网络整体架构"
+    },
+    {
+      "level": 4,
+      "title": "5.3.2 硬约束嵌入机制",
+      "manuscript_anchor": "532-硬约束嵌入机制"
+    },
+    {
+      "level": 3,
+      "title": "5.4 训练进程规范与收敛性保障",
+      "manuscript_anchor": "54-训练进程规范与收敛性保障"
+    },
+    {
+      "level": 4,
+      "title": "5.4.1 滚动窗口训练范式（全面采用目标论文原生设计）",
+      "manuscript_anchor": "541-滚动窗口训练范式全面采用目标论文原生设计"
+    },
+    {
+      "level": 4,
+      "title": "5.4.2 统一三阶段训练进程规范",
+      "manuscript_anchor": "542-统一三阶段训练进程规范"
+    },
+    {
+      "level": 4,
+      "title": "5.4.3 收敛性保障机制",
+      "manuscript_anchor": "543-收敛性保障机制"
+    },
+    {
+      "level": 3,
+      "title": "5.5 回测与验证细节（全面采用目标论文原生设计）",
+      "manuscript_anchor": "55-回测与验证细节全面采用目标论文原生设计"
+    },
+    {
+      "level": 3,
+      "title": "5.6 样本外泛化性增强机制",
+      "manuscript_anchor": "56-样本外泛化性增强机制"
+    }
+  ],
+  "editorial_changes": [
+    "数学分隔符与多余外层括号整理",
+    "明显的下标转码损坏修复",
+    "表格内数学竖线转为\\vert",
+    "卡尔玛比率截断公式登记为待核"
+  ],
+  "original_title": "Alex-Fin"
+}

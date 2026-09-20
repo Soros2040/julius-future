@@ -1,0 +1,291 @@
+{
+  "source_title": "Alex-FIN1（Benjaminagent）.docx",
+  "source_sha256": "92e17be4508ecbbd9ab03dc388d859706d714954532ba46bd8764ac1aa8003fd",
+  "public_title": "BenjaminAgent 历史研究稿",
+  "source_counts": {
+    "paragraphs": 2000,
+    "tables": 15,
+    "math": 298
+  },
+  "converted_counts": {
+    "math": 298,
+    "tables": 15,
+    "image_occurrences": 9
+  },
+  "images": [
+    {
+      "source_member": "word/media/image1.jpeg",
+      "sha256": "e6d6a3d504b56034938604226cc7cfba8e96bde4d73de1b2e1348ac5588d67ec",
+      "bytes": 161335,
+      "publication": "cover decoration retained privately"
+    },
+    {
+      "source_member": "word/media/image10.png",
+      "sha256": "fa3ba189e7c4c2b7c06c0e6eb193934898130c09e518adfed9778ddaf935f5bc",
+      "bytes": 139491,
+      "publication": "original image",
+      "public_file": "figures/image10.png"
+    },
+    {
+      "source_member": "word/media/image11.png",
+      "sha256": "c4701ae757aa155913b7b69cf15543c183332c9c207eca7eba7b4ae10a48c67a",
+      "bytes": 94977,
+      "publication": "original image",
+      "public_file": "figures/image11.png"
+    },
+    {
+      "source_member": "word/media/image12.png",
+      "sha256": "bacb6c4aa86200b2dca6248de0f2a17cd7215ab457b952a6d4ca565e208b81f5",
+      "bytes": 456788,
+      "publication": "original image",
+      "public_file": "figures/image12.png"
+    },
+    {
+      "source_member": "word/media/image13.png",
+      "sha256": "f7202c4428c7dab3b7dc2669a209479a72cf4c562353ef57d1481f797c6f7612",
+      "bytes": 192095,
+      "publication": "original image",
+      "public_file": "figures/image13.png"
+    },
+    {
+      "source_member": "word/media/image2.webp",
+      "sha256": "98ae7b618960ad2b7b1e4993dd5b7b8a85446b4e7373c69a3bd8c5ddf94d5895",
+      "bytes": 35628,
+      "publication": "cover decoration retained privately"
+    },
+    {
+      "source_member": "word/media/image3.png",
+      "sha256": "ad6d678f70417f5883cceeb3d7c6829adcce1545cc57dd69f9ccd2cf6f325e64",
+      "bytes": 114287,
+      "publication": "cover decoration retained privately"
+    },
+    {
+      "source_member": "word/media/image4.jpeg",
+      "sha256": "31efba1d1ef56d5d103f515d4c84bbe828862103ce08e1026c305accbab3e054",
+      "bytes": 526531,
+      "publication": "cover decoration retained privately"
+    },
+    {
+      "source_member": "word/media/image5.jpeg",
+      "sha256": "84da99e948278a41a11c250d201388090ebe85e423bc383fdd4780d8fa866e08",
+      "bytes": 756180,
+      "publication": "original image",
+      "public_file": "figures/image5.jpeg"
+    },
+    {
+      "source_member": "word/media/image6.jpeg",
+      "sha256": "bf8f1d566237c64b05c72c500ef560cde1d089e25bd6287d0f7a72016fdbd221",
+      "bytes": 695814,
+      "publication": "original image",
+      "public_file": "figures/image6.jpeg"
+    },
+    {
+      "source_member": "word/media/image7.png",
+      "sha256": "ec3c6e9ead8ff88bc252772a9f49b63bd24a5031b41f1ad2239db212efdde001",
+      "bytes": 153026,
+      "publication": "original image",
+      "public_file": "figures/image7.png"
+    },
+    {
+      "source_member": "word/media/image8.png",
+      "sha256": "ee06f69ef5f5f1ec45f41b8210505eebcce62a5977383a10338e24d5169c2aec",
+      "bytes": 121376,
+      "publication": "original image",
+      "public_file": "figures/image8.png"
+    },
+    {
+      "source_member": "word/media/image9.png",
+      "sha256": "d389c384fcea93afde937ab0998dadf3fb163e4dee640f73a1a29cf5d763b2cf",
+      "bytes": 238704,
+      "publication": "original image",
+      "public_file": "figures/image9.png"
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "title": "引言",
+      "manuscript_anchor": "引言"
+    },
+    {
+      "level": 1,
+      "title": "相关工作",
+      "manuscript_anchor": "相关工作"
+    },
+    {
+      "level": 2,
+      "title": "因子挖掘",
+      "manuscript_anchor": "因子挖掘"
+    },
+    {
+      "level": 2,
+      "title": "预测模型与因子-模型协同优化",
+      "manuscript_anchor": "预测模型与因子-模型协同优化"
+    },
+    {
+      "level": 2,
+      "title": "大语言模型驱动的金融智能体",
+      "manuscript_anchor": "大语言模型驱动的金融智能体"
+    },
+    {
+      "level": 1,
+      "title": "研究方法：DAG拓扑驱动的贝叶斯检索-生成与Bandit调度",
+      "manuscript_anchor": "研究方法dag拓扑驱动的贝叶斯检索-生成与bandit调度"
+    },
+    {
+      "level": 2,
+      "title": "系统总体架构：胖节点DAG与8步闭环",
+      "manuscript_anchor": "系统总体架构胖节点dag与8步闭环"
+    },
+    {
+      "level": 2,
+      "title": "DAG拓扑感知因子挖掘：贝叶斯检索与定向生成",
+      "manuscript_anchor": "dag拓扑感知因子挖掘贝叶斯检索与定向生成"
+    },
+    {
+      "level": 3,
+      "title": "基于DAG的因子演化拓扑建模",
+      "manuscript_anchor": "基于dag的因子演化拓扑建模"
+    },
+    {
+      "level": 3,
+      "title": "贝叶斯因子检索器",
+      "manuscript_anchor": "贝叶斯因子检索器"
+    },
+    {
+      "level": 3,
+      "title": "DAG感知因子生成器",
+      "manuscript_anchor": "dag感知因子生成器"
+    },
+    {
+      "level": 2,
+      "title": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "manuscript_anchor": "双臂bandit因子-模型联合调度与跨类型知识共享"
+    },
+    {
+      "level": 3,
+      "title": "上下文双臂老虎机建模",
+      "manuscript_anchor": "上下文双臂老虎机建模"
+    },
+    {
+      "level": 3,
+      "title": "线性Thompson采样调度",
+      "manuscript_anchor": "线性thompson采样调度"
+    },
+    {
+      "level": 3,
+      "title": "DAG上下文感知的跨类型知识共享",
+      "manuscript_anchor": "dag上下文感知的跨类型知识共享"
+    },
+    {
+      "level": 3,
+      "title": "模型优化管线",
+      "manuscript_anchor": "模型优化管线"
+    },
+    {
+      "level": 2,
+      "title": "闭环整合：双条件准入、三维度过滤与统一知识更新",
+      "manuscript_anchor": "闭环整合双条件准入三维度过滤与统一知识更新"
+    },
+    {
+      "level": 3,
+      "title": "双条件准入机制",
+      "manuscript_anchor": "双条件准入机制"
+    },
+    {
+      "level": 3,
+      "title": "三维度多样性过滤",
+      "manuscript_anchor": "三维度多样性过滤"
+    },
+    {
+      "level": 3,
+      "title": "因子池动态管理",
+      "manuscript_anchor": "因子池动态管理"
+    },
+    {
+      "level": 3,
+      "title": "闭环反馈与知识更新",
+      "manuscript_anchor": "闭环反馈与知识更新"
+    },
+    {
+      "level": 1,
+      "title": "实证实验",
+      "manuscript_anchor": "实证实验"
+    },
+    {
+      "level": 2,
+      "title": "实验设置",
+      "manuscript_anchor": "实验设置"
+    },
+    {
+      "level": 2,
+      "title": "主要实验",
+      "manuscript_anchor": "主要实验"
+    },
+    {
+      "level": 3,
+      "title": "主要结果分析",
+      "manuscript_anchor": "主要结果分析"
+    },
+    {
+      "level": 3,
+      "title": "贝叶斯DAG因子组件分析",
+      "manuscript_anchor": "贝叶斯dag因子组件分析"
+    },
+    {
+      "level": 3,
+      "title": "联合调度消融实验",
+      "manuscript_anchor": "联合调度消融实验"
+    },
+    {
+      "level": 1,
+      "title": "讨论",
+      "manuscript_anchor": "讨论"
+    },
+    {
+      "level": 2,
+      "title": "诊断性洞察",
+      "manuscript_anchor": "诊断性洞察"
+    },
+    {
+      "level": 2,
+      "title": "系统设计反思",
+      "manuscript_anchor": "系统设计反思"
+    },
+    {
+      "level": 2,
+      "title": "更广泛的影响",
+      "manuscript_anchor": "更广泛的影响"
+    },
+    {
+      "level": 1,
+      "title": "结论",
+      "manuscript_anchor": "结论"
+    },
+    {
+      "level": 1,
+      "title": "局限性与伦理考量",
+      "manuscript_anchor": "局限性与伦理考量"
+    },
+    {
+      "level": 2,
+      "title": "局限性",
+      "manuscript_anchor": "局限性"
+    },
+    {
+      "level": 2,
+      "title": "伦理考量",
+      "manuscript_anchor": "伦理考量"
+    },
+    {
+      "level": 3,
+      "title": "交易策略",
+      "manuscript_anchor": "交易策略"
+    }
+  ],
+  "editorial_changes": [
+    "personal cover block",
+    "cached table of contents"
+  ],
+  "original_title": "Alex-Fin：DAG拓扑驱动的贝叶斯检索-生成与双臂Bandit自进化联合调度的Multi-Agent投资策略"
+}

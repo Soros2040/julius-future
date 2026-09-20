@@ -1,0 +1,416 @@
+{
+  "source_title": "（有插图）Alex-Fin：多频率时空图网络与深度强化学习的自适应动态投资组合优化框架.docx",
+  "source_sha256": "a99bcfb09d1a007361a75b681eb4eb574f4956ba3aef7abfc387255c4269a7f4",
+  "public_title": "Alex-Fin 投资组合研究稿",
+  "source_counts": {
+    "paragraphs": 641,
+    "tables": 10,
+    "math": 243
+  },
+  "converted_counts": {
+    "math": 243,
+    "tables": 10,
+    "image_occurrences": 2
+  },
+  "images": [
+    {
+      "source_member": "word/media/image1.png",
+      "sha256": "9e3e37771855d870d14724ad47a349cff3f90f450f476c919bd22d27b06c2708",
+      "bytes": 183370,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 2",
+      "source_url": "https://arxiv.org/abs/2412.19437"
+    },
+    {
+      "source_member": "word/media/image10.png",
+      "sha256": "38dcc917f5e36dbacde0cdd155202e359ea8625d7405f7d40f295e273f2fed76",
+      "bytes": 109682,
+      "publication": "reference link",
+      "reference_label": "Deep Reinforcement Learning for Optimal Portfolio Allocation, Figure 2",
+      "source_url": "https://arxiv.org/abs/2602.17098"
+    },
+    {
+      "source_member": "word/media/image11.png",
+      "sha256": "1645fb34cf601a8f64b69b15cf4ac9366f3f0385b2c09ec1d24dacb7a0be5a76",
+      "bytes": 298043,
+      "publication": "reference link",
+      "reference_label": "MIDAS-TGCN 总关联性图；原稿未给出逐图出处",
+      "source_url": ""
+    },
+    {
+      "source_member": "word/media/image12.png",
+      "sha256": "2af5696a09d2fce3f5b75fb26409d29a315e14332f8297bbbb1e61d3e5b0bdb7",
+      "bytes": 203392,
+      "publication": "reference link",
+      "reference_label": "VAR、TVP-VAR 与 BK 关联性图；原稿未给出逐图出处",
+      "source_url": ""
+    },
+    {
+      "source_member": "word/media/image13.png",
+      "sha256": "0aac23ad28e3e38c7360c3d025fe34e7c2eff961ecaee4985f4dba33a5e04dd4",
+      "bytes": 109539,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 10",
+      "source_url": "https://arxiv.org/abs/2412.19437"
+    },
+    {
+      "source_member": "word/media/image14.png",
+      "sha256": "27f4a7d52ad18c021d46b936e1a57d03cdbad3d51cdf0259877b4577f7d5d4b4",
+      "bytes": 119623,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Table 4",
+      "source_url": "https://arxiv.org/abs/2412.19437"
+    },
+    {
+      "source_member": "word/media/image2.png",
+      "sha256": "acc4b382448fc2c2b15d5914420296fa27dd0535f355a63c795c833acc4e2c17",
+      "bytes": 184379,
+      "publication": "reference link",
+      "reference_label": "FinCast, joint conditional training component",
+      "source_url": "https://arxiv.org/abs/2508.19609"
+    },
+    {
+      "source_member": "word/media/image3.png",
+      "sha256": "50fbde8cba59880ccec27c6f1b08b90ea06dcb18f358ae390724458e93fa8af8",
+      "bytes": 1103838,
+      "publication": "original image",
+      "public_file": "figures/image3.png"
+    },
+    {
+      "source_member": "word/media/image4.png",
+      "sha256": "7e4ef15fe747aca07ecb2ddbf559f94acc2fa10066ca138967e32ec2beabf945",
+      "bytes": 128900,
+      "publication": "reference link",
+      "reference_label": "基于风险溢出网络的 MTGNN 预测模型图；原稿未给出逐图出处",
+      "source_url": ""
+    },
+    {
+      "source_member": "word/media/image5.png",
+      "sha256": "564ce302a42e8de82c9f28f55d1407662f1fa26d83d08024e5e3c583a7b33a73",
+      "bytes": 178295,
+      "publication": "original image",
+      "public_file": "figures/image5.png"
+    },
+    {
+      "source_member": "word/media/image6.png",
+      "sha256": "923e8b3367513f1b6342db7e3688bd6f482a8ba8632c330644fb7818bde26b00",
+      "bytes": 183809,
+      "publication": "reference link",
+      "reference_label": "2007—2014 年行业间风险溢出网络图；原稿未给出逐图出处",
+      "source_url": ""
+    },
+    {
+      "source_member": "word/media/image7.png",
+      "sha256": "84a4d75d8cb38de7e568a16958ce14b2c88b44a4e24d64d335b7992893959a75",
+      "bytes": 77796,
+      "publication": "reference link",
+      "reference_label": "图卷积模块和混合跳跃传播层图；原稿未给出逐图出处",
+      "source_url": ""
+    },
+    {
+      "source_member": "word/media/image8.png",
+      "sha256": "744842a59a1f756d1548b0848aaa43516ca7748d3da21fd444b262f171028abc",
+      "bytes": 88753,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 3",
+      "source_url": "https://arxiv.org/abs/2412.19437"
+    },
+    {
+      "source_member": "word/media/image9.png",
+      "sha256": "6cde84697c45a0104b9a0117e2462cf563b2c9abbb5130d55dbed2fb43e19d75",
+      "bytes": 162015,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 9",
+      "source_url": "https://arxiv.org/abs/2412.19437"
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "title": "引言",
+      "manuscript_anchor": "引言"
+    },
+    {
+      "level": 2,
+      "title": "研究背景与问题提出",
+      "manuscript_anchor": "研究背景与问题提出"
+    },
+    {
+      "level": 2,
+      "title": "研究内容与边际贡献",
+      "manuscript_anchor": "研究内容与边际贡献"
+    },
+    {
+      "level": 2,
+      "title": "论文结构安排",
+      "manuscript_anchor": "论文结构安排"
+    },
+    {
+      "level": 1,
+      "title": "相关研究综述",
+      "manuscript_anchor": "相关研究综述"
+    },
+    {
+      "level": 2,
+      "title": "动态投资组合优化研究进展",
+      "manuscript_anchor": "动态投资组合优化研究进展"
+    },
+    {
+      "level": 2,
+      "title": "多频率金融时间序列建模研究",
+      "manuscript_anchor": "多频率金融时间序列建模研究"
+    },
+    {
+      "level": 2,
+      "title": "深度强化学习在资产配置中的应用研究",
+      "manuscript_anchor": "深度强化学习在资产配置中的应用研究"
+    },
+    {
+      "level": 2,
+      "title": "现有研究评述",
+      "manuscript_anchor": "现有研究评述"
+    },
+    {
+      "level": 1,
+      "title": "理论框架与问题形式化",
+      "manuscript_anchor": "理论框架与问题形式化"
+    },
+    {
+      "level": 2,
+      "title": "动态投资组合优化的理论基础",
+      "manuscript_anchor": "动态投资组合优化的理论基础"
+    },
+    {
+      "level": 2,
+      "title": "序列决策问题的MDP形式化定义",
+      "manuscript_anchor": "序列决策问题的mdp形式化定义"
+    },
+    {
+      "level": 2,
+      "title": "核心术语规范界定",
+      "manuscript_anchor": "核心术语规范界定"
+    },
+    {
+      "level": 2,
+      "title": "投资绩效评价指标体系构建",
+      "manuscript_anchor": "投资绩效评价指标体系构建"
+    },
+    {
+      "level": 1,
+      "title": "Alex-Fin模型设计",
+      "manuscript_anchor": "alex-fin模型设计"
+    },
+    {
+      "level": 2,
+      "title": "模型整体架构",
+      "manuscript_anchor": "模型整体架构"
+    },
+    {
+      "level": 2,
+      "title": "多频率金融时空关联网络构建",
+      "manuscript_anchor": "多频率金融时空关联网络构建"
+    },
+    {
+      "level": 3,
+      "title": "多频率金融时空网络的数学定义",
+      "manuscript_anchor": "多频率金融时空网络的数学定义"
+    },
+    {
+      "level": 3,
+      "title": "异频特征维度对齐与标准化处理",
+      "manuscript_anchor": "异频特征维度对齐与标准化处理"
+    },
+    {
+      "level": 3,
+      "title": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "manuscript_anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建"
+    },
+    {
+      "level": 3,
+      "title": "全链路统一EWMA递归更新体系",
+      "manuscript_anchor": "全链路统一ewma递归更新体系"
+    },
+    {
+      "level": 2,
+      "title": "多频率并行时空分离注意力图神经网络特征提取",
+      "manuscript_anchor": "多频率并行时空分离注意力图神经网络特征提取"
+    },
+    {
+      "level": 3,
+      "title": "4.3.1 全频率独立并行时空双分支设计",
+      "manuscript_anchor": "431-全频率独立并行时空双分支设计"
+    },
+    {
+      "level": 3,
+      "title": "时空融合统一注意力层",
+      "manuscript_anchor": "时空融合统一注意力层"
+    },
+    {
+      "level": 3,
+      "title": "全连接多向同步交叉注意力融合模块",
+      "manuscript_anchor": "全连接多向同步交叉注意力融合模块"
+    },
+    {
+      "level": 3,
+      "title": "特征提纯输出层",
+      "manuscript_anchor": "特征提纯输出层"
+    },
+    {
+      "level": 2,
+      "title": "市场状态自适应的自专业化MoE混合专家模块",
+      "manuscript_anchor": "市场状态自适应的自专业化moe混合专家模块"
+    },
+    {
+      "level": 3,
+      "title": "模块整体架构与设计原则",
+      "manuscript_anchor": "模块整体架构与设计原则"
+    },
+    {
+      "level": 3,
+      "title": "自专业化双轨专家网络结构设计",
+      "manuscript_anchor": "自专业化双轨专家网络结构设计"
+    },
+    {
+      "level": 3,
+      "title": "全频率感知的无硬编码路由机制",
+      "manuscript_anchor": "全频率感知的无硬编码路由机制"
+    },
+    {
+      "level": 3,
+      "title": "适配全频率感知的表征空间正交化方案",
+      "manuscript_anchor": "适配全频率感知的表征空间正交化方案"
+    },
+    {
+      "level": 3,
+      "title": "MoE模块完整前向传播流程",
+      "manuscript_anchor": "moe模块完整前向传播流程"
+    },
+    {
+      "level": 2,
+      "title": "基于GRPO的深度强化学习投资组合优化框架",
+      "manuscript_anchor": "基于grpo的深度强化学习投资组合优化框架"
+    },
+    {
+      "level": 3,
+      "title": "动态投资组合优化的MDP适配性定义",
+      "manuscript_anchor": "动态投资组合优化的mdp适配性定义"
+    },
+    {
+      "level": 3,
+      "title": "面向金融场景的GRPO算法适配性改进",
+      "manuscript_anchor": "面向金融场景的grpo算法适配性改进"
+    },
+    {
+      "level": 3,
+      "title": "策略网络架构与训练规范",
+      "manuscript_anchor": "策略网络架构与训练规范"
+    },
+    {
+      "level": 1,
+      "title": "实证研究设计",
+      "manuscript_anchor": "实证研究设计"
+    },
+    {
+      "level": 2,
+      "title": "数据来源与样本选择",
+      "manuscript_anchor": "数据来源与样本选择"
+    },
+    {
+      "level": 2,
+      "title": "变量定义",
+      "manuscript_anchor": "变量定义"
+    },
+    {
+      "level": 2,
+      "title": "基准模型设置",
+      "manuscript_anchor": "基准模型设置"
+    },
+    {
+      "level": 2,
+      "title": "实证回测框架",
+      "manuscript_anchor": "实证回测框架"
+    },
+    {
+      "level": 1,
+      "title": "实证结果与分析",
+      "manuscript_anchor": "实证结果与分析"
+    },
+    {
+      "level": 2,
+      "title": "基准实证结果",
+      "manuscript_anchor": "基准实证结果"
+    },
+    {
+      "level": 2,
+      "title": "作用机制分析",
+      "manuscript_anchor": "作用机制分析"
+    },
+    {
+      "level": 3,
+      "title": "多频率时空网络的信息增量机制",
+      "manuscript_anchor": "多频率时空网络的信息增量机制"
+    },
+    {
+      "level": 3,
+      "title": "MoE模块的市场自适应机制",
+      "manuscript_anchor": "moe模块的市场自适应机制"
+    },
+    {
+      "level": 3,
+      "title": "GRPO算法的策略优化机制",
+      "manuscript_anchor": "grpo算法的策略优化机制"
+    },
+    {
+      "level": 2,
+      "title": "异质性分析",
+      "manuscript_anchor": "异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同市场行情的异质性分析",
+      "manuscript_anchor": "不同市场行情的异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同市场波动水平的异质性分析",
+      "manuscript_anchor": "不同市场波动水平的异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同行业板块的异质性分析",
+      "manuscript_anchor": "不同行业板块的异质性分析"
+    },
+    {
+      "level": 1,
+      "title": "稳健性检验与研究展望",
+      "manuscript_anchor": "稳健性检验与研究展望"
+    },
+    {
+      "level": 2,
+      "title": "核心模块消融实验",
+      "manuscript_anchor": "核心模块消融实验"
+    },
+    {
+      "level": 2,
+      "title": "安慰剂检验",
+      "manuscript_anchor": "安慰剂检验"
+    },
+    {
+      "level": 2,
+      "title": "其他稳健性检验",
+      "manuscript_anchor": "其他稳健性检验"
+    },
+    {
+      "level": 2,
+      "title": "研究局限与未来展望",
+      "manuscript_anchor": "研究局限与未来展望"
+    },
+    {
+      "level": 3,
+      "title": "参考文献",
+      "manuscript_anchor": "参考文献"
+    }
+  ],
+  "editorial_changes": [],
+  "original_title": "Alex-Fin：多频率时空图网络与深度强化学习的自适应动态投资组合优化框架"
+}

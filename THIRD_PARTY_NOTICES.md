@@ -27,3 +27,8 @@ The [research bibliography](research/references.en.md) lists bibliographic recor
 The [reflection sources](docs/reading-sources.md) identify videos, literary and cultural works that prompted original reflection. The linked material is not relicensed or reproduced in full here.
 
 When introducing third-party material, record its source, author, version, license and modifications, and retain required notices.
+
+
+## Images and citations in the collected works
+
+The [provenance index](works/figure-provenance.md) records source images, SHA-256 checksums and use locations. Reference illustrations from DeepSeek-V3, FinCast and other papers in the Alex-Fin manuscript retain source-position notices. Where redistribution rights are unconfirmed, the collection supplies source references. Citations, quotations and underlying research retain their original rights.

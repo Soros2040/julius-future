@@ -1,0 +1,2191 @@
+{
+  "chapters": [
+    {
+      "level": 1,
+      "title": "引言",
+      "manuscript_anchor": "引言"
+    },
+    {
+      "level": 2,
+      "title": "研究背景与问题提出",
+      "manuscript_anchor": "研究背景与问题提出"
+    },
+    {
+      "level": 2,
+      "title": "研究内容与边际贡献",
+      "manuscript_anchor": "研究内容与边际贡献"
+    },
+    {
+      "level": 2,
+      "title": "论文结构安排",
+      "manuscript_anchor": "论文结构安排"
+    },
+    {
+      "level": 1,
+      "title": "相关研究综述",
+      "manuscript_anchor": "相关研究综述"
+    },
+    {
+      "level": 2,
+      "title": "动态投资组合优化研究进展",
+      "manuscript_anchor": "动态投资组合优化研究进展"
+    },
+    {
+      "level": 2,
+      "title": "多频率金融时间序列建模研究",
+      "manuscript_anchor": "多频率金融时间序列建模研究"
+    },
+    {
+      "level": 2,
+      "title": "深度强化学习在资产配置中的应用研究",
+      "manuscript_anchor": "深度强化学习在资产配置中的应用研究"
+    },
+    {
+      "level": 2,
+      "title": "现有研究评述",
+      "manuscript_anchor": "现有研究评述"
+    },
+    {
+      "level": 1,
+      "title": "理论框架与问题形式化",
+      "manuscript_anchor": "理论框架与问题形式化"
+    },
+    {
+      "level": 2,
+      "title": "动态投资组合优化的理论基础",
+      "manuscript_anchor": "动态投资组合优化的理论基础"
+    },
+    {
+      "level": 2,
+      "title": "序列决策问题的MDP形式化定义",
+      "manuscript_anchor": "序列决策问题的mdp形式化定义"
+    },
+    {
+      "level": 2,
+      "title": "核心术语规范界定",
+      "manuscript_anchor": "核心术语规范界定"
+    },
+    {
+      "level": 2,
+      "title": "投资绩效评价指标体系构建",
+      "manuscript_anchor": "投资绩效评价指标体系构建"
+    },
+    {
+      "level": 1,
+      "title": "Alex-Fin模型设计",
+      "manuscript_anchor": "alex-fin模型设计"
+    },
+    {
+      "level": 2,
+      "title": "模型整体架构",
+      "manuscript_anchor": "模型整体架构"
+    },
+    {
+      "level": 2,
+      "title": "多频率金融时空关联网络构建",
+      "manuscript_anchor": "多频率金融时空关联网络构建"
+    },
+    {
+      "level": 3,
+      "title": "多频率金融时空网络的数学定义",
+      "manuscript_anchor": "多频率金融时空网络的数学定义"
+    },
+    {
+      "level": 3,
+      "title": "异频特征维度对齐与标准化处理",
+      "manuscript_anchor": "异频特征维度对齐与标准化处理"
+    },
+    {
+      "level": 3,
+      "title": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "manuscript_anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建"
+    },
+    {
+      "level": 3,
+      "title": "全链路统一EWMA递归更新体系",
+      "manuscript_anchor": "全链路统一ewma递归更新体系"
+    },
+    {
+      "level": 2,
+      "title": "多频率并行时空分离注意力图神经网络特征提取",
+      "manuscript_anchor": "多频率并行时空分离注意力图神经网络特征提取"
+    },
+    {
+      "level": 3,
+      "title": "4.3.1 全频率独立并行时空双分支设计",
+      "manuscript_anchor": "431-全频率独立并行时空双分支设计"
+    },
+    {
+      "level": 3,
+      "title": "时空融合统一注意力层",
+      "manuscript_anchor": "时空融合统一注意力层"
+    },
+    {
+      "level": 3,
+      "title": "全连接多向同步交叉注意力融合模块",
+      "manuscript_anchor": "全连接多向同步交叉注意力融合模块"
+    },
+    {
+      "level": 3,
+      "title": "特征提纯输出层",
+      "manuscript_anchor": "特征提纯输出层"
+    },
+    {
+      "level": 2,
+      "title": "市场状态自适应的自专业化MoE混合专家模块",
+      "manuscript_anchor": "市场状态自适应的自专业化moe混合专家模块"
+    },
+    {
+      "level": 3,
+      "title": "模块整体架构与设计原则",
+      "manuscript_anchor": "模块整体架构与设计原则"
+    },
+    {
+      "level": 3,
+      "title": "自专业化双轨专家网络结构设计",
+      "manuscript_anchor": "自专业化双轨专家网络结构设计"
+    },
+    {
+      "level": 3,
+      "title": "全频率感知的无硬编码路由机制",
+      "manuscript_anchor": "全频率感知的无硬编码路由机制"
+    },
+    {
+      "level": 3,
+      "title": "适配全频率感知的表征空间正交化方案",
+      "manuscript_anchor": "适配全频率感知的表征空间正交化方案"
+    },
+    {
+      "level": 3,
+      "title": "MoE模块完整前向传播流程",
+      "manuscript_anchor": "moe模块完整前向传播流程"
+    },
+    {
+      "level": 2,
+      "title": "基于GRPO的深度强化学习投资组合优化框架",
+      "manuscript_anchor": "基于grpo的深度强化学习投资组合优化框架"
+    },
+    {
+      "level": 3,
+      "title": "动态投资组合优化的MDP适配性定义",
+      "manuscript_anchor": "动态投资组合优化的mdp适配性定义"
+    },
+    {
+      "level": 3,
+      "title": "面向金融场景的GRPO算法适配性改进",
+      "manuscript_anchor": "面向金融场景的grpo算法适配性改进"
+    },
+    {
+      "level": 3,
+      "title": "策略网络架构与训练规范",
+      "manuscript_anchor": "策略网络架构与训练规范"
+    },
+    {
+      "level": 1,
+      "title": "实证研究设计",
+      "manuscript_anchor": "实证研究设计"
+    },
+    {
+      "level": 2,
+      "title": "数据来源与样本选择",
+      "manuscript_anchor": "数据来源与样本选择"
+    },
+    {
+      "level": 2,
+      "title": "变量定义",
+      "manuscript_anchor": "变量定义"
+    },
+    {
+      "level": 2,
+      "title": "基准模型设置",
+      "manuscript_anchor": "基准模型设置"
+    },
+    {
+      "level": 2,
+      "title": "实证回测框架",
+      "manuscript_anchor": "实证回测框架"
+    },
+    {
+      "level": 1,
+      "title": "实证结果与分析",
+      "manuscript_anchor": "实证结果与分析"
+    },
+    {
+      "level": 2,
+      "title": "基准实证结果",
+      "manuscript_anchor": "基准实证结果"
+    },
+    {
+      "level": 2,
+      "title": "作用机制分析",
+      "manuscript_anchor": "作用机制分析"
+    },
+    {
+      "level": 3,
+      "title": "多频率时空网络的信息增量机制",
+      "manuscript_anchor": "多频率时空网络的信息增量机制"
+    },
+    {
+      "level": 3,
+      "title": "MoE模块的市场自适应机制",
+      "manuscript_anchor": "moe模块的市场自适应机制"
+    },
+    {
+      "level": 3,
+      "title": "GRPO算法的策略优化机制",
+      "manuscript_anchor": "grpo算法的策略优化机制"
+    },
+    {
+      "level": 2,
+      "title": "异质性分析",
+      "manuscript_anchor": "异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同市场行情的异质性分析",
+      "manuscript_anchor": "不同市场行情的异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同市场波动水平的异质性分析",
+      "manuscript_anchor": "不同市场波动水平的异质性分析"
+    },
+    {
+      "level": 3,
+      "title": "不同行业板块的异质性分析",
+      "manuscript_anchor": "不同行业板块的异质性分析"
+    },
+    {
+      "level": 1,
+      "title": "稳健性检验与研究展望",
+      "manuscript_anchor": "稳健性检验与研究展望"
+    },
+    {
+      "level": 2,
+      "title": "核心模块消融实验",
+      "manuscript_anchor": "核心模块消融实验"
+    },
+    {
+      "level": 2,
+      "title": "安慰剂检验",
+      "manuscript_anchor": "安慰剂检验"
+    },
+    {
+      "level": 2,
+      "title": "其他稳健性检验",
+      "manuscript_anchor": "其他稳健性检验"
+    },
+    {
+      "level": 2,
+      "title": "研究局限与未来展望",
+      "manuscript_anchor": "研究局限与未来展望"
+    },
+    {
+      "level": 3,
+      "title": "参考文献",
+      "manuscript_anchor": "参考文献"
+    }
+  ],
+  "formulas": [
+    {
+      "occurrence": 1,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": true,
+      "tex": "\\max_{\\theta} \\mathbb{ E}_{\\tau\\sim \\pi_{\\theta}}\\left\\lbrack\\sum_{ t = 0}^{\\infty} \\gamma^{ t} R\\left(s_ t, a_ t, s_{ t + 1}\\right)\\right\\rbrack \\qquad\\text{(3.1)}"
+    },
+    {
+      "occurrence": 2,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "\\pi_{\\theta}"
+    },
+    {
+      "occurrence": 3,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "\\theta"
+    },
+    {
+      "occurrence": 4,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "\\gamma \\in \\left( 0,1 \\right)"
+    },
+    {
+      "occurrence": 5,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "\\gamma = 0.9"
+    },
+    {
+      "occurrence": 6,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "s_{t} \\in S"
+    },
+    {
+      "occurrence": 7,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 8,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "a_{t} \\in A"
+    },
+    {
+      "occurrence": 9,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 10,
+      "section": "序列决策问题的MDP形式化定义",
+      "anchor": "序列决策问题的mdp形式化定义",
+      "display": false,
+      "tex": "R( \\cdot )"
+    },
+    {
+      "occurrence": 11,
+      "section": "核心术语规范界定",
+      "anchor": "核心术语规范界定",
+      "display": false,
+      "tex": "T"
+    },
+    {
+      "occurrence": 12,
+      "section": "核心术语规范界定",
+      "anchor": "核心术语规范界定",
+      "display": false,
+      "tex": "T = 252"
+    },
+    {
+      "occurrence": 13,
+      "section": "核心术语规范界定",
+      "anchor": "核心术语规范界定",
+      "display": false,
+      "tex": "s_{0}"
+    },
+    {
+      "occurrence": 14,
+      "section": "核心术语规范界定",
+      "anchor": "核心术语规范界定",
+      "display": false,
+      "tex": "T"
+    },
+    {
+      "occurrence": 15,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\text{ Sharpe Ratio}  =  \\frac{\\mathbb{ E}\\lbrack R_ p  -  R_ f\\rbrack}{\\sigma_ p}"
+    },
+    {
+      "occurrence": 16,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "R_{p}"
+    },
+    {
+      "occurrence": 17,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "R_{f}"
+    },
+    {
+      "occurrence": 18,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\sigma_{p}"
+    },
+    {
+      "occurrence": 19,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\text{ Annual Return}  =  \\left( \\frac{\\text{ PortVal}_ T}{\\text{ PortVal}_ 0} \\right)^{ 252/T}  -  1"
+    },
+    {
+      "occurrence": 20,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\text{ PortVal}_ t"
+    },
+    {
+      "occurrence": 21,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 22,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\text{ MDD}  =  \\max_{\\tau \\in \\lbrack 0,T\\rbrack} \\left( \\frac{\\text{ PortVal}_\\tau  -  \\text{ PortVal}_{\\tau^ \\ast }}{\\text{ PortVal}_{\\tau^ \\ast }} \\right)"
+    },
+    {
+      "occurrence": 23,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\tau^ \\ast   =  \\arg\\max_{ t \\in \\lbrack 0,\\tau\\rbrack} \\text{ PortVal}_ t"
+    },
+    {
+      "occurrence": 24,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\text{ Information Ratio}  =  \\frac{\\mathbb{ E}\\lbrack R_ p  -  R_{ m}\\rbrack}{\\sigma_{ p - m}}"
+    },
+    {
+      "occurrence": 25,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "R_{m}"
+    },
+    {
+      "occurrence": 26,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "display": false,
+      "tex": "\\sigma_{p - m}"
+    },
+    {
+      "occurrence": 27,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "G = \\left( \\mathcal{V},\\mathcal{E},\\mathcal{A},\\mathcal{F} \\right)"
+    },
+    {
+      "occurrence": 28,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\mathcal{ V}  =  { v_ 1, v_ 2, \\dots, v_ N}"
+    },
+    {
+      "occurrence": 29,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\mathcal{E} \\subseteq \\mathcal{V} \\times \\mathcal{V} \\times \\mathcal{F}"
+    },
+    {
+      "occurrence": 30,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\left( v_{i},v_{j},f \\right)"
+    },
+    {
+      "occurrence": 31,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 32,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 33,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "j"
+    },
+    {
+      "occurrence": 34,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\mathcal{ A} = \\left\\{ A^f|f\\in \\mathcal{ F}\\right\\}"
+    },
+    {
+      "occurrence": 35,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "A^{f} \\in \\mathbb{R}^{N \\times N}"
+    },
+    {
+      "occurrence": 36,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 37,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\mathcal{F} \\in \\mathbb{R}^{T \\times N \\times d \\times |\\mathcal{F}|}"
+    },
+    {
+      "occurrence": 38,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "T = 60"
+    },
+    {
+      "occurrence": 39,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "d"
+    },
+    {
+      "occurrence": 40,
+      "section": "多频率金融时空网络的数学定义",
+      "anchor": "多频率金融时空网络的数学定义",
+      "display": false,
+      "tex": "\\mathcal{F} = 0,1,2,3,4,5,6"
+    },
+    {
+      "occurrence": 41,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 3600"
+    },
+    {
+      "occurrence": 42,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 60"
+    },
+    {
+      "occurrence": 43,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 20"
+    },
+    {
+      "occurrence": 44,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 5"
+    },
+    {
+      "occurrence": 45,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 4"
+    },
+    {
+      "occurrence": 46,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 3"
+    },
+    {
+      "occurrence": 47,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P = 4"
+    },
+    {
+      "occurrence": 48,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "P"
+    },
+    {
+      "occurrence": 49,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": true,
+      "tex": "\\tilde{ X}_{ n,p}  =  \\frac{ X_{ n,p}  -  \\mu_ n}{\\sigma_ n  +  \\epsilon} \\qquad\\text{(4.1)}"
+    },
+    {
+      "occurrence": 50,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "X_{n,p}"
+    },
+    {
+      "occurrence": 51,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 52,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "p"
+    },
+    {
+      "occurrence": 53,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "\\mu_{n} = \\frac{1}{P}\\sum_{p = 1}^{P}{}X_{n,p}"
+    },
+    {
+      "occurrence": 54,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 55,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "\\sigma_{n} = \\sqrt{\\frac{1}{P}\\sum_{p = 1}^{P}\\left( X_{n,p} - \\mu_{n} \\right)^{2}}"
+    },
+    {
+      "occurrence": 56,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 57,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "display": false,
+      "tex": "\\epsilon = 1e - 8"
+    },
+    {
+      "occurrence": 58,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 59,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\lambda"
+    },
+    {
+      "occurrence": 60,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 61,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "Z^{f} \\in \\mathbb{R}^{T \\times N}"
+    },
+    {
+      "occurrence": 62,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\Sigma^{f}"
+    },
+    {
+      "occurrence": 63,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\Omega^{f} = \\left( \\Sigma^{f} \\right)^{- 1}"
+    },
+    {
+      "occurrence": 64,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": true,
+      "tex": "\\min_{\\Omega^f \\succ 0} \\left( \\text{ tr}(\\Sigma^f \\Omega^f)  -  \\log\\det(\\Omega^f)  +  \\lambda |\\Omega^f|_ 1 \\right) \\qquad\\text{(4.2)}"
+    },
+    {
+      "occurrence": 65,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\text{ tr}(\\cdot)"
+    },
+    {
+      "occurrence": 66,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\det( \\cdot )"
+    },
+    {
+      "occurrence": 67,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\Omega^{f} \\succ 0"
+    },
+    {
+      "occurrence": 68,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "| \\cdot |_{1}"
+    },
+    {
+      "occurrence": 69,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\Omega^{f}"
+    },
+    {
+      "occurrence": 70,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 71,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "j"
+    },
+    {
+      "occurrence": 72,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 73,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "H"
+    },
+    {
+      "occurrence": 74,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": true,
+      "tex": "d^{ f,H}_{ ij}  =  \\frac{\\sigma_{ jj}^{ - 1} \\cdot (\\Omega^f_{ ij})^2}{\\sum_{ k = 1}^N \\sigma_{ kk}^{ - 1} \\cdot (\\Omega^f_{ ik})^2} \\qquad\\text{(4.3)}"
+    },
+    {
+      "occurrence": 75,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "\\sigma_{jj}"
+    },
+    {
+      "occurrence": 76,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "j"
+    },
+    {
+      "occurrence": 77,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "j"
+    },
+    {
+      "occurrence": 78,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 79,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "d_{ij}^{f,H} \\neq d_{ji}^{f,H}"
+    },
+    {
+      "occurrence": 80,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "A^{f,risk}"
+    },
+    {
+      "occurrence": 81,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": true,
+      "tex": "\\tilde{ d}^{ f,H}_{ ij}  =  \\frac{ d^{ f,H}_{ ij}}{\\sum_{ j = 1}^N d^{ f,H}_{ ij}}, \\quad i \\neq j \\qquad\\text{(4.4)}"
+    },
+    {
+      "occurrence": 82,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": true,
+      "tex": "A^{ f,risk}_{ ii}  =  0 \\qquad\\text{(4.5)}"
+    },
+    {
+      "occurrence": 83,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 84,
+      "section": "基于GLASSO-DY的分频率有向风险溢出邻接矩阵构建",
+      "anchor": "基于glasso-dy的分频率有向风险溢出邻接矩阵构建",
+      "display": true,
+      "tex": "A^{ f,final}_ t  =  A^{ f,risk}_ t \\qquad\\text{(4.6)}"
+    },
+    {
+      "occurrence": 85,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "\\eta = 2/253"
+    },
+    {
+      "occurrence": 86,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "\\lambda = 0.94"
+    },
+    {
+      "occurrence": 87,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "\\gamma = 0.9"
+    },
+    {
+      "occurrence": 88,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "x_{t}"
+    },
+    {
+      "occurrence": 89,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "\\mu_{t}"
+    },
+    {
+      "occurrence": 90,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": false,
+      "tex": "V_{t}"
+    },
+    {
+      "occurrence": 91,
+      "section": "全链路统一EWMA递归更新体系",
+      "anchor": "全链路统一ewma递归更新体系",
+      "display": true,
+      "tex": "\\begin{cases}\n\\mu_ t  =  \\left(1 - \\eta\\right)\\mu_{ t - 1}  +  \\eta x_ t \\\\\nV_ t  =  \\left(1 - \\eta\\right)V_{ t - 1}  +  \\eta \\left(x_ t  -  \\mu_ t\\right)^2\n\\end{cases} \\qquad\\text{(4.7)}"
+    },
+    {
+      "occurrence": 92,
+      "section": "多频率并行时空分离注意力图神经网络特征提取",
+      "anchor": "多频率并行时空分离注意力图神经网络特征提取",
+      "display": false,
+      "tex": "D_{model} = 256"
+    },
+    {
+      "occurrence": 93,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "f"
+    },
+    {
+      "occurrence": 94,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "H^f  =  \\lbrack h_{ 1}^f, h_{ 2}^f, \\dots, h_{ T}^f\\rbrack \\in \\mathbb{ R}^{ T \\times N \\times D_{ model}}"
+    },
+    {
+      "occurrence": 95,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "M^{time}"
+    },
+    {
+      "occurrence": 96,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 97,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "M_{ ij}^{ time}  =  \\begin{cases}\n0, & j \\leq i \\\\\n - \\infty, & j  >  i\n\\end{cases} \\qquad\\text{(4.8)}"
+    },
+    {
+      "occurrence": 98,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 99,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 100,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "j"
+    },
+    {
+      "occurrence": 101,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "\\left\\lbrack Q^{ f,time}, K^{ f,time}, V^{ f,time}\\right\\rbrack  =  H^f W^f_{ qkv,time} \\qquad\\text{(4.9)}"
+    },
+    {
+      "occurrence": 102,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "\\text{ Scores}^{ f,time}  =  \\text{ softmax}\\left( \\frac{ Q^{ f,time} K^{ f,time\\top}}{\\sqrt{ d_ k}}  +  M^{ time} \\right) \\qquad\\text{(4.10)}"
+    },
+    {
+      "occurrence": 103,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "H^{ f,time}  =  \\text{ Scores}^{ f,time} V^{ f,time} \\qquad\\text{(4.11)}"
+    },
+    {
+      "occurrence": 104,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "W_{qkv,time}^{f}"
+    },
+    {
+      "occurrence": 105,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "d_{k} = D_{model}/H"
+    },
+    {
+      "occurrence": 106,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "H^{f,time} \\in \\mathbb{R}^{T \\times N \\times D_{model}}"
+    },
+    {
+      "occurrence": 107,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "v_{i}"
+    },
+    {
+      "occurrence": 108,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 109,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "v_{j}"
+    },
+    {
+      "occurrence": 110,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "e_{ ij}^{ f,k}  =  \\text{ LeakyReLU}\\left( a^{ f,k} \\left\\lbrack W^{ f,k} H^f_{ t,i} \\parallel W^{ f,k} H^f_{ t,j} \\right\\rbrack \\right) \\qquad\\text{(4.12)}"
+    },
+    {
+      "occurrence": 111,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "\\parallel"
+    },
+    {
+      "occurrence": 112,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "a^{f,k}"
+    },
+    {
+      "occurrence": 113,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 114,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "W^{f,k}"
+    },
+    {
+      "occurrence": 115,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "H_{t,i}^{f}"
+    },
+    {
+      "occurrence": 116,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 117,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 118,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "\\alpha_{ ij}^{ f,k}  =  \\frac{\\exp\\left(e_{ ij}^{ f,k}\\right) A^{ f,final}_{ ij}}{\\sum_{ l\\in \\mathcal{ N}(i)} \\exp\\left(e_{ il}^{ f,k}\\right) A^{ f,final}_{ il}} \\qquad\\text{(4.13)}"
+    },
+    {
+      "occurrence": 119,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "\\mathcal{N}(i)"
+    },
+    {
+      "occurrence": 120,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "v_{i}"
+    },
+    {
+      "occurrence": 121,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "h_{ i}^{ f,k}  =  \\sigma\\left( \\sum_{ j \\in \\mathcal{ N}(i)} \\alpha_{ ij}^{ f,k} W^{ f,k} H^f_{ t,j} \\right) \\qquad\\text{(4.14)}"
+    },
+    {
+      "occurrence": 122,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": true,
+      "tex": "H^{ f,space}  =  \\text{ Concat}(h^{ f,1}, h^{ f,2}, \\dots, h^{ f,H}) \\qquad\\text{(4.15)}"
+    },
+    {
+      "occurrence": 123,
+      "section": "4.3.1 全频率独立并行时空双分支设计",
+      "anchor": "431-全频率独立并行时空双分支设计",
+      "display": false,
+      "tex": "H^{f,space} \\in \\mathbb{R}^{T \\times N \\times D_{model}}"
+    },
+    {
+      "occurrence": 124,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": true,
+      "tex": "g_{ time}  =  \\sigma\\left( \\text{ Linear}(H^{ f,time}) \\right), \\quad g_{ space}  =  \\sigma\\left( \\text{ Linear}(H^{ f,space}) \\right) \\qquad\\text{(4.16)}"
+    },
+    {
+      "occurrence": 125,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": true,
+      "tex": "\\tilde{ H}^{ f,st}  =  g_{ time} \\odot H^{ f,time}  +  g_{ space} \\odot H^{ f,space} \\qquad\\text{(4.17)}"
+    },
+    {
+      "occurrence": 126,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": true,
+      "tex": "H^{ f,fuse}  =  \\text{ LayerNorm}\\left( H^f  +  \\text{ Dropout}(\\tilde{ H}^{ f,st}) \\right) \\qquad\\text{(4.18)}"
+    },
+    {
+      "occurrence": 127,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "\\sigma( \\cdot )"
+    },
+    {
+      "occurrence": 128,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "\\odot"
+    },
+    {
+      "occurrence": 129,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "H^{f}"
+    },
+    {
+      "occurrence": 130,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "g_{time}"
+    },
+    {
+      "occurrence": 131,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "g_{space}"
+    },
+    {
+      "occurrence": 132,
+      "section": "时空融合统一注意力层",
+      "anchor": "时空融合统一注意力层",
+      "display": false,
+      "tex": "H^{f,fuse}"
+    },
+    {
+      "occurrence": 133,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "K^{ all}  =  \\text{ Concat}(H^{ 0}, H^{ 1}, H^{ 2}, H^{ 3}, H^{ 4}, H^{ 5}, H^{ 6})"
+    },
+    {
+      "occurrence": 134,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "V^{ all}  =  \\text{ Concat}(H^{ 0}, H^{ 1}, H^{ 2}, H^{ 3}, H^{ 4}, H^{ 5}, H^{ 6})"
+    },
+    {
+      "occurrence": 135,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "\\left\\lbrack Q^{3},K^{all},V^{all} \\right\\rbrack = \\left\\lbrack H^{3}W_{q}^{3},K^{all}W_{k}^{all},V^{all}W_{v}^{all} \\right\\rbrack"
+    },
+    {
+      "occurrence": 136,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "\\text{ Scores}^{ 3\\leftarrow all}  =  \\text{ softmax}\\left( \\frac{ Q^{ 3} K^{ all\\top}}{\\sqrt{ d_ k}}  +  M^{ causal} \\right)"
+    },
+    {
+      "occurrence": 137,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "H^{ 3,fuse}  =  \\text{ Scores}^{ 3\\leftarrow all} V^{ all}"
+    },
+    {
+      "occurrence": 138,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": false,
+      "tex": "M^{causal}"
+    },
+    {
+      "occurrence": 139,
+      "section": "全连接多向同步交叉注意力融合模块",
+      "anchor": "全连接多向同步交叉注意力融合模块",
+      "display": true,
+      "tex": "H^{ cross}  =  \\text{ Concat}(H^{ 0,fuse}, H^{ 1,fuse}, H^{ 2,fuse}, H^{ 3,fuse}, H^{ 4,fuse}, H^{ 5,fuse}, H^{ 6,fuse})"
+    },
+    {
+      "occurrence": 140,
+      "section": "特征提纯输出层",
+      "anchor": "特征提纯输出层",
+      "display": true,
+      "tex": "H^{ st}  =  \\text{ LayerNorm}\\left( H^{ 3}  +  \\text{ Dropout}(H^{ cross}) \\right) \\qquad\\text{(4.19)}"
+    },
+    {
+      "occurrence": 141,
+      "section": "特征提纯输出层",
+      "anchor": "特征提纯输出层",
+      "display": false,
+      "tex": "H^{st}"
+    },
+    {
+      "occurrence": 142,
+      "section": "模块整体架构与设计原则",
+      "anchor": "模块整体架构与设计原则",
+      "display": false,
+      "tex": "D_{model} = 256"
+    },
+    {
+      "occurrence": 143,
+      "section": "模块整体架构与设计原则",
+      "anchor": "模块整体架构与设计原则",
+      "display": false,
+      "tex": "4 \\times D_{model}"
+    },
+    {
+      "occurrence": 144,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": true,
+      "tex": "\\text{ Expert}(x)  =  (\\text{ Swish}(x W_ 1) \\odot x W_ 2) W_ 3 \\qquad\\text{(4.20)}"
+    },
+    {
+      "occurrence": 145,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": false,
+      "tex": "W_{1},W_{2} \\in \\mathbb{R}^{D_{model} \\times 4D_{model}}"
+    },
+    {
+      "occurrence": 146,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": false,
+      "tex": "W_{3} \\in \\mathbb{R}^{4D_{model} \\times D_{model}}"
+    },
+    {
+      "occurrence": 147,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": false,
+      "tex": "\\text{ Swish}(x)  =  x \\cdot \\sigma(x)"
+    },
+    {
+      "occurrence": 148,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": false,
+      "tex": "\\sigma( \\cdot )"
+    },
+    {
+      "occurrence": 149,
+      "section": "自专业化双轨专家网络结构设计",
+      "anchor": "自专业化双轨专家网络结构设计",
+      "display": false,
+      "tex": "\\odot"
+    },
+    {
+      "occurrence": 150,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": true,
+      "tex": "s_{ n,k}  =  \\text{ Sigmoid}(x_ n \\cdot W_{ gate,k})  +  B_ k \\qquad\\text{(4.21)}"
+    },
+    {
+      "occurrence": 151,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "x_{n}"
+    },
+    {
+      "occurrence": 152,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "W_{gate,k} \\in \\mathbb{R}^{D_{model}}"
+    },
+    {
+      "occurrence": 153,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 154,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "B_{k}"
+    },
+    {
+      "occurrence": 155,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 156,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "s_{n,k}"
+    },
+    {
+      "occurrence": 157,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 158,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 159,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": true,
+      "tex": "g_{ n,k}  =  \\begin{cases}\ns_{ n,k}, & \\text{ if } k \\in \\text{ Top2}({ s_{ n,1}, s_{ n,2}, \\dots, s_{ n,8}}) \\\\\n0, & \\text{ otherwise}\n\\end{cases} \\qquad\\text{(4.22)}"
+    },
+    {
+      "occurrence": 160,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "g_{n,k}"
+    },
+    {
+      "occurrence": 161,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 162,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 163,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "L_{k}"
+    },
+    {
+      "occurrence": 164,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "L_ k  =  \\frac{\\text{ 该专家处理的Token数量}}{\\text{ 该batch总Token数量}}"
+    },
+    {
+      "occurrence": 165,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "\\bar{L} = 2/8 = 0.25"
+    },
+    {
+      "occurrence": 166,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "e_{k} = L_{k} - \\bar{L}"
+    },
+    {
+      "occurrence": 167,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "B_ k^{ t + 1}  =  B_ k^t  -  \\gamma \\cdot \\text{ sign}(e_ k) \\qquad\\text{(4.23)}"
+    },
+    {
+      "occurrence": 168,
+      "section": "全频率感知的无硬编码路由机制",
+      "anchor": "全频率感知的无硬编码路由机制",
+      "display": false,
+      "tex": "\\gamma"
+    },
+    {
+      "occurrence": 169,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": true,
+      "tex": "\\mathcal{ L}_{ o} = \\sum_{ n = 1}^N \\left\\lbrack \\sum_{ i\\in \\{ A,B\\}}\\left(\\frac{ E_{ n,shared}^{\\top} E_{ n,i}}{|E_{ n,shared}|_{ 2}|E_{ n,i}|_{ 2}}\\right)^{ 2}  +  \\left(\\frac{ E_{ n,A}^{\\top} E_{ n,B}}{|E_{ n,A}|_{ 2}|E_{ n,B}|_{ 2}}\\right)^{ 2} \\right\\rbrack \\qquad\\text{(4.24)}"
+    },
+    {
+      "occurrence": 170,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "N"
+    },
+    {
+      "occurrence": 171,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "A,B"
+    },
+    {
+      "occurrence": 172,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "E_{n,shared}"
+    },
+    {
+      "occurrence": 173,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 174,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "E_{n,A},E_{n,B}"
+    },
+    {
+      "occurrence": 175,
+      "section": "适配全频率感知的表征空间正交化方案",
+      "anchor": "适配全频率感知的表征空间正交化方案",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 176,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "r = x"
+    },
+    {
+      "occurrence": 177,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "x"
+    },
+    {
+      "occurrence": 178,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "x_{ norm}  =  \\text{ RMSNorm}(x)"
+    },
+    {
+      "occurrence": 179,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "h_{ shared}  =  \\text{ SharedExpert}(x_{ norm})"
+    },
+    {
+      "occurrence": 180,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "h_{special}"
+    },
+    {
+      "occurrence": 181,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": true,
+      "tex": "y  =  h_{ shared}  +  h_{ special}  +  r \\qquad\\text{(4.25)}"
+    },
+    {
+      "occurrence": 182,
+      "section": "MoE模块完整前向传播流程",
+      "anchor": "moe模块完整前向传播流程",
+      "display": false,
+      "tex": "y"
+    },
+    {
+      "occurrence": 183,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "\\max_{\\theta} \\mathbb{ E}_{\\tau\\sim \\pi_{\\theta}}\\left\\lbrack\\sum_{ t = 0}^{\\infty} \\gamma^{ t} R\\left(s_ t, a_ t, s_{ t + 1}\\right)\\right\\rbrack \\qquad\\text{(4.26)}"
+    },
+    {
+      "occurrence": 184,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "N"
+    },
+    {
+      "occurrence": 185,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 186,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "a_{t}"
+    },
+    {
+      "occurrence": 187,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "N + 1"
+    },
+    {
+      "occurrence": 188,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "w_ t = \\left\\lbrack w_{ 1,t},w_{ 2,t},\\dots,w_{ N,t},w_{ c,t}\\right\\rbrack"
+    },
+    {
+      "occurrence": 189,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "w_{i,t}"
+    },
+    {
+      "occurrence": 190,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "i"
+    },
+    {
+      "occurrence": 191,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "w_{c,t}"
+    },
+    {
+      "occurrence": 192,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\sum_{i = 1}^{N}{}w_{i,t} + w_{c,t} = 1"
+    },
+    {
+      "occurrence": 193,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "0 \\leq w_{i,t} \\leq 1"
+    },
+    {
+      "occurrence": 194,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "0 \\leq w_{c,t} \\leq 1"
+    },
+    {
+      "occurrence": 195,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "N"
+    },
+    {
+      "occurrence": 196,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "T = 60"
+    },
+    {
+      "occurrence": 197,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 198,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "s_{t}"
+    },
+    {
+      "occurrence": 199,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\left\\lbrack (N + 1) \\times T \\right\\rbrack"
+    },
+    {
+      "occurrence": 200,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "s_ t  =  \\begin{pmatrix}\nw_{ 1,t} & r_{ 1,t - 1} & \\cdots & r_{ 1,t - T + 1} \\\\\nw_{ 2,t} & r_{ 2,t - 1} & \\cdots & r_{ 2,t - T + 1} \\\\\n\\vdots & & \\ddots & \\vdots \\\\\nw_{ N,t} & r_{ N,t - 1} & \\cdots & r_{ N,t - T + 1} \\\\\nw_{ c,t} & vol_{ 20,t} & \\frac{ vol_{ 20,t}}{ vol_{ 60,t}} & VIX_ t\n\\end{pmatrix} \\qquad\\text{(4.27)}"
+    },
+    {
+      "occurrence": 201,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 202,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 203,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "s_{t}"
+    },
+    {
+      "occurrence": 204,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "a_{t}"
+    },
+    {
+      "occurrence": 205,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "s_{t + 1}"
+    },
+    {
+      "occurrence": 206,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t + 1"
+    },
+    {
+      "occurrence": 207,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "a_{t}"
+    },
+    {
+      "occurrence": 208,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 209,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t + 1"
+    },
+    {
+      "occurrence": 210,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "A_{t}"
+    },
+    {
+      "occurrence": 211,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "B_{t}"
+    },
+    {
+      "occurrence": 212,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\eta = 2/253"
+    },
+    {
+      "occurrence": 213,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "\\begin{cases}\nA_ t  =  A_{ t - 1}  +  \\eta\\left(R_ t  -  A_{ t - 1}\\right) \\\\\nB_ t  =  B_{ t - 1}  +  \\eta\\left(R_ t^2  -  B_{ t - 1}\\right)\n\\end{cases} \\qquad\\text{(4.28)}"
+    },
+    {
+      "occurrence": 214,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "R_{t}"
+    },
+    {
+      "occurrence": 215,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 216,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "A_{0} = 0,B_{0} = 0"
+    },
+    {
+      "occurrence": 217,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "DSR_ t  =  \\frac{ B_{ t - 1}\\left(R_ t  -  A_{ t - 1}\\right)  -  \\frac{ 1}{ 2} A_{ t - 1}\\left(R_ t^2  -  B_{ t - 1}\\right)}{\\left(B_{ t - 1}  -  A_{ t - 1}^2  +  \\epsilon\\right)^{\\frac{ 3}{ 2}}} \\qquad\\text{(4.29)}"
+    },
+    {
+      "occurrence": 218,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\epsilon = 1e - 8"
+    },
+    {
+      "occurrence": 219,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "R_ t^{ final}  =  DSR_ t  -  \\lambda_{ cost} \\cdot |w_ t  -  w_{ t - 1}|_ 1 \\qquad\\text{(4.30)}"
+    },
+    {
+      "occurrence": 220,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\lambda_{cost} = 1.0"
+    },
+    {
+      "occurrence": 221,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "R_{t}^{final} \\in \\left\\lbrack - 10,10 \\right\\rbrack"
+    },
+    {
+      "occurrence": 222,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\gamma = 0.9"
+    },
+    {
+      "occurrence": 223,
+      "section": "动态投资组合优化的MDP适配性定义",
+      "anchor": "动态投资组合优化的mdp适配性定义",
+      "display": false,
+      "tex": "\\lambda = 0.95"
+    },
+    {
+      "occurrence": 224,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "s_{t}"
+    },
+    {
+      "occurrence": 225,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "G = 64"
+    },
+    {
+      "occurrence": 226,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "R_{t,g}"
+    },
+    {
+      "occurrence": 227,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\pi_{\\theta_{old}}"
+    },
+    {
+      "occurrence": 228,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\theta_{old} \\leftarrow \\theta"
+    },
+    {
+      "occurrence": 229,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "G"
+    },
+    {
+      "occurrence": 230,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "R_{ t,1},R_{ t,2},\\dots,R_{ t,G}"
+    },
+    {
+      "occurrence": 231,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": true,
+      "tex": "\\hat{ A}_ g  =  \\frac{ R_{ t,g}  -  \\mathbb{ E}\\lbrack R_{ t,g}\\rbrack}{\\text{ std}(R_{ t,g})  +  \\epsilon} \\qquad\\text{(4.31)}"
+    },
+    {
+      "occurrence": 232,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\mathbb{E}\\left\\lbrack R_{t,g} \\right\\rbrack"
+    },
+    {
+      "occurrence": 233,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\text{ std}(R_{ t,g})"
+    },
+    {
+      "occurrence": 234,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\epsilon = 1e - 8"
+    },
+    {
+      "occurrence": 235,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": true,
+      "tex": "\\mathcal{ L}_{ GRPO}  =   - \\frac{ 1}{ G} \\sum_{ g = 1}^G \\min\\left( r_ g \\cdot \\hat{ A}_ g, \\text{ clip}\\left( r_ g, 1 - \\epsilon, 1 + \\epsilon \\right) \\cdot \\hat{ A}_ g \\right) \\qquad\\text{(4.32)}"
+    },
+    {
+      "occurrence": 236,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "r_{g} = \\frac{\\pi_{\\theta}\\left( a_{g}|s_{g} \\right)}{\\pi_{\\theta_{old}}\\left( a_{g}|s_{g} \\right)}"
+    },
+    {
+      "occurrence": 237,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "Â_{g}"
+    },
+    {
+      "occurrence": 238,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\epsilon = 0.2"
+    },
+    {
+      "occurrence": 239,
+      "section": "面向金融场景的GRPO算法适配性改进",
+      "anchor": "面向金融场景的grpo算法适配性改进",
+      "display": false,
+      "tex": "\\theta"
+    },
+    {
+      "occurrence": 240,
+      "section": "策略网络架构与训练规范",
+      "anchor": "策略网络架构与训练规范",
+      "display": true,
+      "tex": "\\pi_{\\theta}\\left(a|s\\right)  =  \\mathcal{ N}\\left( \\text{ Tanh}\\left( \\mu_{\\theta}\\left(s\\right) \\right), \\sigma_{\\theta}^2 \\right) \\qquad\\text{(4.33)}"
+    },
+    {
+      "occurrence": 241,
+      "section": "策略网络架构与训练规范",
+      "anchor": "策略网络架构与训练规范",
+      "display": false,
+      "tex": "\\mu_{\\theta}(s)"
+    },
+    {
+      "occurrence": 242,
+      "section": "策略网络架构与训练规范",
+      "anchor": "策略网络架构与训练规范",
+      "display": false,
+      "tex": "log\\sigma"
+    },
+    {
+      "occurrence": 243,
+      "section": "策略网络架构与训练规范",
+      "anchor": "策略网络架构与训练规范",
+      "display": false,
+      "tex": "\\left\\lbrack - 20,2 \\right\\rbrack"
+    }
+  ],
+  "tables": [
+    {
+      "occurrence": 1,
+      "section": "投资绩效评价指标体系构建",
+      "anchor": "投资绩效评价指标体系构建",
+      "preceding_caption": "表3-1 模型投资绩效评价指标体系",
+      "rows": 8
+    },
+    {
+      "occurrence": 2,
+      "section": "异频特征维度对齐与标准化处理",
+      "anchor": "异频特征维度对齐与标准化处理",
+      "preceding_caption": "表4-1 全局频率索引与对应金融属性",
+      "rows": 8
+    },
+    {
+      "occurrence": 3,
+      "section": "基准实证结果",
+      "anchor": "基准实证结果",
+      "preceding_caption": "表6-1 全样本外测试区间核心投资绩效对比",
+      "rows": 11
+    },
+    {
+      "occurrence": 4,
+      "section": "多频率时空网络的信息增量机制",
+      "anchor": "多频率时空网络的信息增量机制",
+      "preceding_caption": "表6-2 不同频率输入下的模型绩效对比",
+      "rows": 6
+    },
+    {
+      "occurrence": 5,
+      "section": "MoE模块的市场自适应机制",
+      "anchor": "moe模块的市场自适应机制",
+      "preceding_caption": "表6-3 有无MoE模块的分市场绩效对比",
+      "rows": 3
+    },
+    {
+      "occurrence": 6,
+      "section": "GRPO算法的策略优化机制",
+      "anchor": "grpo算法的策略优化机制",
+      "preceding_caption": "表6-4 GRPO与PPO算法的训练与泛化能力对比",
+      "rows": 3
+    },
+    {
+      "occurrence": 7,
+      "section": "不同市场行情的异质性分析",
+      "anchor": "不同市场行情的异质性分析",
+      "preceding_caption": "表6-5 不同市场行情下的年化夏普比率对比",
+      "rows": 5
+    },
+    {
+      "occurrence": 8,
+      "section": "不同市场波动水平的异质性分析",
+      "anchor": "不同市场波动水平的异质性分析",
+      "preceding_caption": "表6-6 不同市场波动水平下的年化夏普比率对比",
+      "rows": 4
+    },
+    {
+      "occurrence": 9,
+      "section": "不同行业板块的异质性分析",
+      "anchor": "不同行业板块的异质性分析",
+      "preceding_caption": "表6-7 不同行业板块的年化夏普比率对比",
+      "rows": 6
+    },
+    {
+      "occurrence": 10,
+      "section": "核心模块消融实验",
+      "anchor": "核心模块消融实验",
+      "preceding_caption": "图 7-1 核心创新模块增量贡献瀑布图",
+      "rows": 7
+    }
+  ],
+  "figures": [
+    {
+      "source_member": "word/media/image1.png",
+      "sha256": "9e3e37771855d870d14724ad47a349cff3f90f450f476c919bd22d27b06c2708",
+      "bytes": 183370,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 2",
+      "source_url": "https://arxiv.org/abs/2412.19437",
+      "caption_or_reference": "DeepSeek-V3 technical report, Figure 2"
+    },
+    {
+      "source_member": "word/media/image2.png",
+      "sha256": "acc4b382448fc2c2b15d5914420296fa27dd0535f355a63c795c833acc4e2c17",
+      "bytes": 184379,
+      "publication": "reference link",
+      "reference_label": "FinCast, joint conditional training component",
+      "source_url": "https://arxiv.org/abs/2508.19609",
+      "caption_or_reference": "FinCast, joint conditional training component"
+    },
+    {
+      "source_member": "word/media/image3.png",
+      "sha256": "50fbde8cba59880ccec27c6f1b08b90ea06dcb18f358ae390724458e93fa8af8",
+      "bytes": 1103838,
+      "publication": "original image",
+      "public_file": "figures/image3.png",
+      "caption_or_reference": "多频率输入、GLASSO-DY 与 MB-PSTSA-GNN 总体架构 / Model architecture"
+    },
+    {
+      "source_member": "word/media/image4.png",
+      "sha256": "7e4ef15fe747aca07ecb2ddbf559f94acc2fa10066ca138967e32ec2beabf945",
+      "bytes": 128900,
+      "publication": "reference link",
+      "reference_label": "基于风险溢出网络的 MTGNN 预测模型图；原稿未给出逐图出处",
+      "source_url": "",
+      "caption_or_reference": "基于风险溢出网络的 MTGNN 预测模型图；原稿未给出逐图出处"
+    },
+    {
+      "source_member": "word/media/image5.png",
+      "sha256": "564ce302a42e8de82c9f28f55d1407662f1fa26d83d08024e5e3c583a7b33a73",
+      "bytes": 178295,
+      "publication": "original image",
+      "public_file": "figures/image5.png",
+      "caption_or_reference": "GLASSO-DY 股票网络示意 / Stock-network illustration",
+      "source_image_limitation": "Original title contains missing Chinese glyphs; image bytes preserved."
+    },
+    {
+      "source_member": "word/media/image6.png",
+      "sha256": "923e8b3367513f1b6342db7e3688bd6f482a8ba8632c330644fb7818bde26b00",
+      "bytes": 183809,
+      "publication": "reference link",
+      "reference_label": "2007—2014 年行业间风险溢出网络图；原稿未给出逐图出处",
+      "source_url": "",
+      "caption_or_reference": "2007—2014 年行业间风险溢出网络图；原稿未给出逐图出处"
+    },
+    {
+      "source_member": "word/media/image7.png",
+      "sha256": "84a4d75d8cb38de7e568a16958ce14b2c88b44a4e24d64d335b7992893959a75",
+      "bytes": 77796,
+      "publication": "reference link",
+      "reference_label": "图卷积模块和混合跳跃传播层图；原稿未给出逐图出处",
+      "source_url": "",
+      "caption_or_reference": "图卷积模块和混合跳跃传播层图；原稿未给出逐图出处"
+    },
+    {
+      "source_member": "word/media/image8.png",
+      "sha256": "744842a59a1f756d1548b0848aaa43516ca7748d3da21fd444b262f171028abc",
+      "bytes": 88753,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 3",
+      "source_url": "https://arxiv.org/abs/2412.19437",
+      "caption_or_reference": "DeepSeek-V3 technical report, Figure 3"
+    },
+    {
+      "source_member": "word/media/image9.png",
+      "sha256": "6cde84697c45a0104b9a0117e2462cf563b2c9abbb5130d55dbed2fb43e19d75",
+      "bytes": 162015,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 9",
+      "source_url": "https://arxiv.org/abs/2412.19437",
+      "caption_or_reference": "DeepSeek-V3 technical report, Figure 9"
+    },
+    {
+      "source_member": "word/media/image10.png",
+      "sha256": "38dcc917f5e36dbacde0cdd155202e359ea8625d7405f7d40f295e273f2fed76",
+      "bytes": 109682,
+      "publication": "reference link",
+      "reference_label": "Deep Reinforcement Learning for Optimal Portfolio Allocation, Figure 2",
+      "source_url": "https://arxiv.org/abs/2602.17098",
+      "caption_or_reference": "Deep Reinforcement Learning for Optimal Portfolio Allocation, Figure 2"
+    },
+    {
+      "source_member": "word/media/image11.png",
+      "sha256": "1645fb34cf601a8f64b69b15cf4ac9366f3f0385b2c09ec1d24dacb7a0be5a76",
+      "bytes": 298043,
+      "publication": "reference link",
+      "reference_label": "MIDAS-TGCN 总关联性图；原稿未给出逐图出处",
+      "source_url": "",
+      "caption_or_reference": "MIDAS-TGCN 总关联性图；原稿未给出逐图出处"
+    },
+    {
+      "source_member": "word/media/image12.png",
+      "sha256": "2af5696a09d2fce3f5b75fb26409d29a315e14332f8297bbbb1e61d3e5b0bdb7",
+      "bytes": 203392,
+      "publication": "reference link",
+      "reference_label": "VAR、TVP-VAR 与 BK 关联性图；原稿未给出逐图出处",
+      "source_url": "",
+      "caption_or_reference": "VAR、TVP-VAR 与 BK 关联性图；原稿未给出逐图出处"
+    },
+    {
+      "source_member": "word/media/image13.png",
+      "sha256": "0aac23ad28e3e38c7360c3d025fe34e7c2eff961ecaee4985f4dba33a5e04dd4",
+      "bytes": 109539,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Figure 10",
+      "source_url": "https://arxiv.org/abs/2412.19437",
+      "caption_or_reference": "DeepSeek-V3 technical report, Figure 10"
+    },
+    {
+      "source_member": "word/media/image14.png",
+      "sha256": "27f4a7d52ad18c021d46b936e1a57d03cdbad3d51cdf0259877b4577f7d5d4b4",
+      "bytes": 119623,
+      "publication": "reference link",
+      "reference_label": "DeepSeek-V3 technical report, Table 4",
+      "source_url": "https://arxiv.org/abs/2412.19437",
+      "caption_or_reference": "DeepSeek-V3 technical report, Table 4"
+    }
+  ]
+}

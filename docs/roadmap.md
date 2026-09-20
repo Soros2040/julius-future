@@ -13,6 +13,10 @@ This roadmap connects the project record to actions that can produce a useful ar
 | Community | Contribution process and example | A source review or a documented improvement | An Issue, reviewed PR and recorded result |
 | Maintenance | Handoff checklist | Another person can pick up one task | Entry point, owner, dependencies and next action are clear |
 
+## Current research entry
+
+The current priorities are quantum computing and quantum machine learning; the concrete new topic remains open. Q-Fintelligence already contains E02 frozen-catalogue fidelity kernels and E03 local-observable experiments. Further kernel design should begin with those outcomes, classical comparisons and total resource costs. The milestones below preserve the earlier proposal as discussion material. Thresholds and execution plans will be frozen after selecting the research question and evaluation contract. The [works collection](../works/README.md) is available, alongside the [Datawhale preparation draft](https://github.com/Soros2040/Q-Fintelligence/blob/main/docs/datawhale-preinitiation.md).
+
 ## Quantum milestones
 
 1. **Kernel comparison.** Compare classical linear/RBF kernels, a fixed quantum map, random search and a predictor-guided search under the same evaluation budget. Record kernel-estimation work as well as model quality.

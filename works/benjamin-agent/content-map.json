@@ -1,0 +1,2483 @@
+{
+  "chapters": [
+    {
+      "level": 1,
+      "title": "引言",
+      "manuscript_anchor": "引言"
+    },
+    {
+      "level": 1,
+      "title": "相关工作",
+      "manuscript_anchor": "相关工作"
+    },
+    {
+      "level": 2,
+      "title": "因子挖掘",
+      "manuscript_anchor": "因子挖掘"
+    },
+    {
+      "level": 2,
+      "title": "预测模型与因子-模型协同优化",
+      "manuscript_anchor": "预测模型与因子-模型协同优化"
+    },
+    {
+      "level": 2,
+      "title": "大语言模型驱动的金融智能体",
+      "manuscript_anchor": "大语言模型驱动的金融智能体"
+    },
+    {
+      "level": 1,
+      "title": "研究方法：DAG拓扑驱动的贝叶斯检索-生成与Bandit调度",
+      "manuscript_anchor": "研究方法dag拓扑驱动的贝叶斯检索-生成与bandit调度"
+    },
+    {
+      "level": 2,
+      "title": "系统总体架构：胖节点DAG与8步闭环",
+      "manuscript_anchor": "系统总体架构胖节点dag与8步闭环"
+    },
+    {
+      "level": 2,
+      "title": "DAG拓扑感知因子挖掘：贝叶斯检索与定向生成",
+      "manuscript_anchor": "dag拓扑感知因子挖掘贝叶斯检索与定向生成"
+    },
+    {
+      "level": 3,
+      "title": "基于DAG的因子演化拓扑建模",
+      "manuscript_anchor": "基于dag的因子演化拓扑建模"
+    },
+    {
+      "level": 3,
+      "title": "贝叶斯因子检索器",
+      "manuscript_anchor": "贝叶斯因子检索器"
+    },
+    {
+      "level": 3,
+      "title": "DAG感知因子生成器",
+      "manuscript_anchor": "dag感知因子生成器"
+    },
+    {
+      "level": 2,
+      "title": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "manuscript_anchor": "双臂bandit因子-模型联合调度与跨类型知识共享"
+    },
+    {
+      "level": 3,
+      "title": "上下文双臂老虎机建模",
+      "manuscript_anchor": "上下文双臂老虎机建模"
+    },
+    {
+      "level": 3,
+      "title": "线性Thompson采样调度",
+      "manuscript_anchor": "线性thompson采样调度"
+    },
+    {
+      "level": 3,
+      "title": "DAG上下文感知的跨类型知识共享",
+      "manuscript_anchor": "dag上下文感知的跨类型知识共享"
+    },
+    {
+      "level": 3,
+      "title": "模型优化管线",
+      "manuscript_anchor": "模型优化管线"
+    },
+    {
+      "level": 2,
+      "title": "闭环整合：双条件准入、三维度过滤与统一知识更新",
+      "manuscript_anchor": "闭环整合双条件准入三维度过滤与统一知识更新"
+    },
+    {
+      "level": 3,
+      "title": "双条件准入机制",
+      "manuscript_anchor": "双条件准入机制"
+    },
+    {
+      "level": 3,
+      "title": "三维度多样性过滤",
+      "manuscript_anchor": "三维度多样性过滤"
+    },
+    {
+      "level": 3,
+      "title": "因子池动态管理",
+      "manuscript_anchor": "因子池动态管理"
+    },
+    {
+      "level": 3,
+      "title": "闭环反馈与知识更新",
+      "manuscript_anchor": "闭环反馈与知识更新"
+    },
+    {
+      "level": 1,
+      "title": "实证实验",
+      "manuscript_anchor": "实证实验"
+    },
+    {
+      "level": 2,
+      "title": "实验设置",
+      "manuscript_anchor": "实验设置"
+    },
+    {
+      "level": 2,
+      "title": "主要实验",
+      "manuscript_anchor": "主要实验"
+    },
+    {
+      "level": 3,
+      "title": "主要结果分析",
+      "manuscript_anchor": "主要结果分析"
+    },
+    {
+      "level": 3,
+      "title": "贝叶斯DAG因子组件分析",
+      "manuscript_anchor": "贝叶斯dag因子组件分析"
+    },
+    {
+      "level": 3,
+      "title": "联合调度消融实验",
+      "manuscript_anchor": "联合调度消融实验"
+    },
+    {
+      "level": 1,
+      "title": "讨论",
+      "manuscript_anchor": "讨论"
+    },
+    {
+      "level": 2,
+      "title": "诊断性洞察",
+      "manuscript_anchor": "诊断性洞察"
+    },
+    {
+      "level": 2,
+      "title": "系统设计反思",
+      "manuscript_anchor": "系统设计反思"
+    },
+    {
+      "level": 2,
+      "title": "更广泛的影响",
+      "manuscript_anchor": "更广泛的影响"
+    },
+    {
+      "level": 1,
+      "title": "结论",
+      "manuscript_anchor": "结论"
+    },
+    {
+      "level": 1,
+      "title": "局限性与伦理考量",
+      "manuscript_anchor": "局限性与伦理考量"
+    },
+    {
+      "level": 2,
+      "title": "局限性",
+      "manuscript_anchor": "局限性"
+    },
+    {
+      "level": 2,
+      "title": "伦理考量",
+      "manuscript_anchor": "伦理考量"
+    },
+    {
+      "level": 3,
+      "title": "交易策略",
+      "manuscript_anchor": "交易策略"
+    }
+  ],
+  "formulas": [
+    {
+      "occurrence": 1,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "\\mathcal{G} = (V,E)"
+    },
+    {
+      "occurrence": 2,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "V"
+    },
+    {
+      "occurrence": 3,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "E"
+    },
+    {
+      "occurrence": 4,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "(v_{p},v_{c}) \\in E"
+    },
+    {
+      "occurrence": 5,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "v_{c}"
+    },
+    {
+      "occurrence": 6,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "v_{p}"
+    },
+    {
+      "occurrence": 7,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "v_{p}^{\\ast}"
+    },
+    {
+      "occurrence": 8,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "v_{new}"
+    },
+    {
+      "occurrence": 9,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": true,
+      "tex": "v_{p}^{\\ast} = arg\\max_{v_{p} \\in V}\\mathbb{E}\\left\\lbrack Qual\\left( v_{new} \\right) \\mid parent\\left( v_{new} \\right) = v_{p},\\mathcal{G} \\right\\rbrack"
+    },
+    {
+      "occurrence": 10,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "\\mathbf{\\{}\\mathbf{v}_{\\mathbf{c}}\\mathbf{\\}}"
+    },
+    {
+      "occurrence": 11,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": true,
+      "tex": "\\left\\{ v_{c,1},\\ldots,v_{c,k} \\right\\} = G\\left( v_{p}^{\\ast},T\\left( v_{p}^{\\ast} \\right) \\right)\\quad(2)"
+    },
+    {
+      "occurrence": 12,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "\\{ v_{c,1},\\ldots,v_{c,k}\\}"
+    },
+    {
+      "occurrence": 13,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "T(v_{p}^{\\ast})"
+    },
+    {
+      "occurrence": 14,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "\\mathcal{G}"
+    },
+    {
+      "occurrence": 15,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "v_{p}^{\\ast}"
+    },
+    {
+      "occurrence": 16,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "G"
+    },
+    {
+      "occurrence": 17,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "R\\& D - Agent(Q)"
+    },
+    {
+      "occurrence": 18,
+      "section": "系统总体架构：胖节点DAG与8步闭环",
+      "anchor": "系统总体架构胖节点dag与8步闭环",
+      "display": false,
+      "tex": "sorted(V,key = \\tau)"
+    },
+    {
+      "occurrence": 19,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\mathcal{G} = (V,E)"
+    },
+    {
+      "occurrence": 20,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "V"
+    },
+    {
+      "occurrence": 21,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "E \\subseteq V \\times V"
+    },
+    {
+      "occurrence": 22,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "(v_{u},v_{w}) \\in E"
+    },
+    {
+      "occurrence": 23,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v_{w}"
+    },
+    {
+      "occurrence": 24,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v_{u}"
+    },
+    {
+      "occurrence": 25,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "depth(v_{w}) = depth(v_{u}) + 1"
+    },
+    {
+      "occurrence": 26,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v \\in V"
+    },
+    {
+      "occurrence": 27,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v = (factor,topology,trace,knowledge)"
+    },
+    {
+      "occurrence": 28,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "factor = (\\varphi,\\psi,m)"
+    },
+    {
+      "occurrence": 29,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\varphi"
+    },
+    {
+      "occurrence": 30,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "None"
+    },
+    {
+      "occurrence": 31,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\psi"
+    },
+    {
+      "occurrence": 32,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "m \\in \\mathbb{R}^{8}"
+    },
+    {
+      "occurrence": 33,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": true,
+      "tex": "m = \\lbrack IC,ICIR,RankIC,RankICIR,ARR,IR, - MDD,Sharpe\\rbrack^{\\top}"
+    },
+    {
+      "occurrence": 34,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "topology = (v_{parent},\\mathcal{C}_{children},d)"
+    },
+    {
+      "occurrence": 35,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v_{parent}"
+    },
+    {
+      "occurrence": 36,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\mathcal{C}_{children}"
+    },
+    {
+      "occurrence": 37,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "d"
+    },
+    {
+      "occurrence": 38,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "trace = (\\tau,h,fb,\\delta,s)"
+    },
+    {
+      "occurrence": 39,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\tau"
+    },
+    {
+      "occurrence": 40,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "h"
+    },
+    {
+      "occurrence": 41,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "fb"
+    },
+    {
+      "occurrence": 42,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\delta \\in \\{ True,False\\}"
+    },
+    {
+      "occurrence": 43,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "s \\in \\{ active,rejected,evicted\\}"
+    },
+    {
+      "occurrence": 44,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "knowledge = code\\_ experience"
+    },
+    {
+      "occurrence": 45,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": true,
+      "tex": "s = active"
+    },
+    {
+      "occurrence": 46,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": true,
+      "tex": "s = rejected"
+    },
+    {
+      "occurrence": 47,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": true,
+      "tex": "s = evicted"
+    },
+    {
+      "occurrence": 48,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "rejected"
+    },
+    {
+      "occurrence": 49,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "evicted"
+    },
+    {
+      "occurrence": 50,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "tokens(v_{c})"
+    },
+    {
+      "occurrence": 51,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "tokens(v_{p})"
+    },
+    {
+      "occurrence": 52,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "(v_{p},v_{c})"
+    },
+    {
+      "occurrence": 53,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\varphi = None"
+    },
+    {
+      "occurrence": 54,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "Dim(\\varphi) = 0"
+    },
+    {
+      "occurrence": 55,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "path\\_ to\\_ root(v):V \\rightarrow V^{\\ast}"
+    },
+    {
+      "occurrence": 56,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 57,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\mathbf{trace}"
+    },
+    {
+      "occurrence": 58,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": true,
+      "tex": "path\\_ to\\_ root(v) = \\lbrack v_{0},v_{1},\\ldots,v_{k} = v\\rbrack,\\quad(v_{i},v_{i + 1}) \\in E"
+    },
+    {
+      "occurrence": 59,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "get\\_ hist():V^{\\ast}"
+    },
+    {
+      "occurrence": 60,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "sorted(V,key = \\tau)"
+    },
+    {
+      "occurrence": 61,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "get\\_ sota():V"
+    },
+    {
+      "occurrence": 62,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "\\delta = True"
+    },
+    {
+      "occurrence": 63,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "query\\_ code\\_ experience(q,top\\_ k):V^{\\ast}"
+    },
+    {
+      "occurrence": 64,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "display": false,
+      "tex": "knowledge"
+    },
+    {
+      "occurrence": 65,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{G}"
+    },
+    {
+      "occurrence": 66,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v \\in V"
+    },
+    {
+      "occurrence": 67,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v_{new}"
+    },
+    {
+      "occurrence": 68,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{D}"
+    },
+    {
+      "occurrence": 69,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "\\begin{aligned}\n & arg\\max_{v \\in V}\\mathbb{E}\\left\\lbrack Qual\\left( v_{new} \\right) \\mid parent\\left( v_{new} \\right) = v,\\mathcal{D} \\right\\rbrack \\\\\n & \\propto \\frac{P\\left( v_{new} \\right)P\\left( \\mathcal{D} \\mid v_{new} \\right)}{P(\\mathcal{D})} \\propto P\\left( v_{new} \\right)P\\left( \\mathcal{D} \\mid v_{new} \\right)\n\\end{aligned}"
+    },
+    {
+      "occurrence": 70,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "P(v_{new})"
+    },
+    {
+      "occurrence": 71,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "P(\\mathcal{D} \\mid v_{new})"
+    },
+    {
+      "occurrence": 72,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "P(\\mathcal{D})"
+    },
+    {
+      "occurrence": 73,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathbf{P(}\\mathbf{v}_{\\mathbf{new}}\\mathbf{)}"
+    },
+    {
+      "occurrence": 74,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathbf{v}"
+    },
+    {
+      "occurrence": 75,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 76,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{G}"
+    },
+    {
+      "occurrence": 77,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 78,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "\\begin{aligned}\nP(v) = & \\underset{归一化质量}{\\underbrace{\\sigma\\left( \\frac{Qual(v) - \\mu_{Qual(V)}}{\\varsigma_{Qual(V)}} \\right)}} \\cdot \\underset{深度惩罚}{\\underbrace{(1 - \\gamma)^{depth(v)}}} \\\\\n & \\cdot \\underset{检索惩罚}{\\underbrace{(1 - \\omega)^{k(v)}}}\n\\end{aligned}"
+    },
+    {
+      "occurrence": 79,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Qual(v)"
+    },
+    {
+      "occurrence": 80,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "V"
+    },
+    {
+      "occurrence": 81,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\sigma"
+    },
+    {
+      "occurrence": 82,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mu_{Qual(V)}"
+    },
+    {
+      "occurrence": 83,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\varsigma_{Qual(V)}"
+    },
+    {
+      "occurrence": 84,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "V"
+    },
+    {
+      "occurrence": 85,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Qual( \\cdot )"
+    },
+    {
+      "occurrence": 86,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "depth(v)"
+    },
+    {
+      "occurrence": 87,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 88,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{G}"
+    },
+    {
+      "occurrence": 89,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "k(v)"
+    },
+    {
+      "occurrence": 90,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 91,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\gamma"
+    },
+    {
+      "occurrence": 92,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\omega"
+    },
+    {
+      "occurrence": 93,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Qual(v)"
+    },
+    {
+      "occurrence": 94,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathbf{P(}\\mathcal{D}\\mathbf{\\mid}\\mathbf{v}_{\\mathbf{new}}\\mathbf{)}"
+    },
+    {
+      "occurrence": 95,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 96,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{C}_{children} = \\varnothing"
+    },
+    {
+      "occurrence": 97,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathcal{C}_{children} \\neq \\varnothing"
+    },
+    {
+      "occurrence": 98,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\mathbf{V}"
+    },
+    {
+      "occurrence": 99,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "P(\\mathcal{D} \\mid v_{new})"
+    },
+    {
+      "occurrence": 100,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "ValDiv(v,V) \\cdot SemDiv(v,V) \\cdot SynDiv(v,V)\\quad(6)"
+    },
+    {
+      "occurrence": 101,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "V"
+    },
+    {
+      "occurrence": 102,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "ValDiv(v,V) = 1 - \\left. \\parallel\\frac{1}{|V|}\\sum_{v' \\in V}^{}Corr(v,v') \\right.\\parallel\\quad(7)"
+    },
+    {
+      "occurrence": 103,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "SemDiv(v,V) = \\sigma\\left( 1 - CosSim\\left( emb(v.llm\\_ explanation),emb(V) \\right) \\right)\\quad(8)"
+    },
+    {
+      "occurrence": 104,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "emb( \\cdot )"
+    },
+    {
+      "occurrence": 105,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v.llm\\_ explanation"
+    },
+    {
+      "occurrence": 106,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 107,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "SynDiv(v,V) = \\frac{1}{|V|}\\sum_{v' \\in V}^{}\\frac{ED(v.\\varphi,v'.\\varphi)}{len(v.\\varphi) + len(v'.\\varphi)}\\quad(9)"
+    },
+    {
+      "occurrence": 108,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "ED( \\cdot , \\cdot )"
+    },
+    {
+      "occurrence": 109,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v.\\varphi"
+    },
+    {
+      "occurrence": 110,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v.\\varphi = None"
+    },
+    {
+      "occurrence": 111,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "P(\\mathcal{D} \\mid v_{new})"
+    },
+    {
+      "occurrence": 112,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "P(\\mathcal{D} \\mid v_{new}) \\propto \\overline{PG}(v) \\cdot Spar\\left( \\mathcal{C}_{children}(v) \\right)\\quad(10)"
+    },
+    {
+      "occurrence": 113,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "\\overline{PG}(v)"
+    },
+    {
+      "occurrence": 114,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 115,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Spar"
+    },
+    {
+      "occurrence": 116,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "Spar\\left( \\mathcal{C}_{children}(v) \\right) = Spar_{p - c}(v) \\cdot Spar_{c - c}(v)\\quad(11)"
+    },
+    {
+      "occurrence": 117,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Spar_{p - c}"
+    },
+    {
+      "occurrence": 118,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "Spar_{p - c}(v) = 1 - \\frac{1}{|\\mathcal{C}_{children}(v)|}\\sum_{v' \\in \\mathcal{C}_{children}(v)}^{}Corr(v,v')\\quad(12)"
+    },
+    {
+      "occurrence": 119,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Spar_{c - c}"
+    },
+    {
+      "occurrence": 120,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "Spar_{c - c}(v) = 1"
+    },
+    {
+      "occurrence": 121,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": true,
+      "tex": "\\begin{matrix}\nSpar_{c - c}(v) = 1 - \\frac{1}{\\left( \\frac{|\\mathcal{C}_{children}(v)|}{2} \\right)}\\sum_{\\substack{v_{i},v_{j} \\in \\mathcal{C}_{children}(v) \\\\ i < j}}^{}Corr\\left( v_{i},v_{j} \\right)\\quad(13)\n\\end{matrix}"
+    },
+    {
+      "occurrence": 122,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "posterior = P(v) \\cdot P(\\mathcal{D} \\mid v_{new})"
+    },
+    {
+      "occurrence": 123,
+      "section": "贝叶斯因子检索器",
+      "anchor": "贝叶斯因子检索器",
+      "display": false,
+      "tex": "k"
+    },
+    {
+      "occurrence": 124,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "v_{p}"
+    },
+    {
+      "occurrence": 125,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "T(v_{p})"
+    },
+    {
+      "occurrence": 126,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathcal{S}"
+    },
+    {
+      "occurrence": 127,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "\\left\\{ \\mathcal{S}_{1},\\ldots,\\mathcal{S}_{m} \\right\\} = G_{strategy}\\left( v_{p},T\\left( v_{p} \\right) \\right)\\quad(14)"
+    },
+    {
+      "occurrence": 128,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathcal{S}_{i}"
+    },
+    {
+      "occurrence": 129,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "v_{{c,i}'}.\\varphi"
+    },
+    {
+      "occurrence": 130,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "v_{{c,i}'}.\\varphi = G_{synth}\\left( v_{p},\\mathcal{S}_{i} \\right)\\quad\\forall i \\in \\{ 1,\\ldots,m\\}\\quad(15)"
+    },
+    {
+      "occurrence": 131,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "v_{{c,i}'}.\\varphi"
+    },
+    {
+      "occurrence": 132,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "Dim(v_{{c,i}'}.\\varphi) = 0"
+    },
+    {
+      "occurrence": 133,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "V_{c}^{\\varphi} \\subseteq V_{c'}"
+    },
+    {
+      "occurrence": 134,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "v_{c}.\\psi = G_{translate}\\left( v_{c}.\\varphi,\\mathcal{K}_{code} \\right)\\quad(16)"
+    },
+    {
+      "occurrence": 135,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathcal{K}_{code}"
+    },
+    {
+      "occurrence": 136,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "G_{translate}"
+    },
+    {
+      "occurrence": 137,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathbf{knowledge}"
+    },
+    {
+      "occurrence": 138,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathcal{U} = (N_{\\mathcal{U}},E_{\\mathcal{U}})"
+    },
+    {
+      "occurrence": 139,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "N_{\\mathcal{U}}"
+    },
+    {
+      "occurrence": 140,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "N_{\\mathcal{U}} = N_{comp} \\cup N_{task} \\cup N_{trace} \\cup N_{success} \\cup N_{error}"
+    },
+    {
+      "occurrence": 141,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "n \\in N_{comp}"
+    },
+    {
+      "occurrence": 142,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "n \\in N_{task}"
+    },
+    {
+      "occurrence": 143,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "n \\in N_{trace}"
+    },
+    {
+      "occurrence": 144,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "n \\in N_{success}"
+    },
+    {
+      "occurrence": 145,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "n \\in N_{error}"
+    },
+    {
+      "occurrence": 146,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathbf{former\\_ trace\\_ query}"
+    },
+    {
+      "occurrence": 147,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 148,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "Q_{trace}(t) = top\\_ k\\left( sorted\\left( N_{trace},key = \\{ n \\in N_{trace}:sim(t,n.task\\_ desc)\\} \\right) \\right)\\quad(17)"
+    },
+    {
+      "occurrence": 149,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "sim( \\cdot , \\cdot )"
+    },
+    {
+      "occurrence": 150,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "top\\_ k"
+    },
+    {
+      "occurrence": 151,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathbf{component\\_ query}"
+    },
+    {
+      "occurrence": 152,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 153,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "comp(t)"
+    },
+    {
+      "occurrence": 154,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "Q_{comp}(t) = top\\_ k\\left( sorted\\left( n \\in N_{success},key = \\left\\{ n:\\max_{c \\in comp(t)}sim(c,n.components) \\right\\} \\right) \\right)\\quad(18)"
+    },
+    {
+      "occurrence": 155,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "\\mathbf{error\\_ query}"
+    },
+    {
+      "occurrence": 156,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "e"
+    },
+    {
+      "occurrence": 157,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "Q_{error}(e) = top\\_ k\\left( sorted\\left( N_{success},key = \\left\\{ n:\\max_{e' \\in N_{error} \\cap adjacent(n)}sim(e,e') \\right\\} \\right) \\right)\\quad(19)"
+    },
+    {
+      "occurrence": 158,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "adjacent(n)"
+    },
+    {
+      "occurrence": 159,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "n"
+    },
+    {
+      "occurrence": 160,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": true,
+      "tex": "\\mathcal{K}_{code} = Q_{trace}(t) \\cup Q_{comp}(t) \\cup Q_{error}(e)\\quad(20)"
+    },
+    {
+      "occurrence": 161,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "e = (code,feedback)"
+    },
+    {
+      "occurrence": 162,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "feedback"
+    },
+    {
+      "occurrence": 163,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "generate\\_ knowledge(e)"
+    },
+    {
+      "occurrence": 164,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "N"
+    },
+    {
+      "occurrence": 165,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "N = 10"
+    },
+    {
+      "occurrence": 166,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "s = rejected"
+    },
+    {
+      "occurrence": 167,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "V_{c} \\subseteq V_{c'}"
+    },
+    {
+      "occurrence": 168,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "display": false,
+      "tex": "v_{p}"
+    },
+    {
+      "occurrence": 169,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 170,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "x_{t} \\in \\mathbb{R}^{8}"
+    },
+    {
+      "occurrence": 171,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "\\mathcal{A} = \\{ a_{factor},a_{model}\\}"
+    },
+    {
+      "occurrence": 172,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "a \\in \\mathcal{A}"
+    },
+    {
+      "occurrence": 173,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": true,
+      "tex": "r_{t}^{(a)} = \\theta^{(a)\\top}x_{t}"
+    },
+    {
+      "occurrence": 174,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "\\theta^{(a)} \\in \\mathbb{R}^{8}"
+    },
+    {
+      "occurrence": 175,
+      "section": "双臂Bandit因子-模型联合调度与跨类型知识共享",
+      "anchor": "双臂bandit因子-模型联合调度与跨类型知识共享",
+      "display": false,
+      "tex": "a"
+    },
+    {
+      "occurrence": 176,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 177,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "x_{t}"
+    },
+    {
+      "occurrence": 178,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "\\mathcal{A}"
+    },
+    {
+      "occurrence": 179,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "a_{t}"
+    },
+    {
+      "occurrence": 180,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "r_{t}"
+    },
+    {
+      "occurrence": 181,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "\\sum_{t = 1}^{T}r_{t}"
+    },
+    {
+      "occurrence": 182,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "x_{t}"
+    },
+    {
+      "occurrence": 183,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": true,
+      "tex": "x_{t} = \\lbrack IC,ICIR,RankIC,RankICIR,ARR,IR, - MDD,Sharpe\\rbrack^{\\top} \\in \\mathbb{R}^{8}"
+    },
+    {
+      "occurrence": 184,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "x_{t}"
+    },
+    {
+      "occurrence": 185,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": true,
+      "tex": "r_{t} = w^{\\top}x_{t}"
+    },
+    {
+      "occurrence": 186,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "w = (0.1,0.1,0.05,0.05,0.25,0.15,0.1,0.2)"
+    },
+    {
+      "occurrence": 187,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "\\mathcal{A} = \\{ a_{factor},a_{model}\\}"
+    },
+    {
+      "occurrence": 188,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "a_{factor}"
+    },
+    {
+      "occurrence": 189,
+      "section": "上下文双臂老虎机建模",
+      "anchor": "上下文双臂老虎机建模",
+      "display": false,
+      "tex": "a_{model}"
+    },
+    {
+      "occurrence": 190,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "a \\in \\mathcal{A}"
+    },
+    {
+      "occurrence": 191,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "\\theta^{(a)}"
+    },
+    {
+      "occurrence": 192,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "\\mu^{(a)} = 0"
+    },
+    {
+      "occurrence": 193,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "P^{(a)} = \\tau^{- 2}I"
+    },
+    {
+      "occurrence": 194,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "\\tau^{2} = 10"
+    },
+    {
+      "occurrence": 195,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "\\mu^{(a)} = 0 \\in \\mathbb{R}^{8},\\quad P^{(a)} = \\frac{1}{\\tau^{2}}I_{8}"
+    },
+    {
+      "occurrence": 196,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 197,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "a"
+    },
+    {
+      "occurrence": 198,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "{\\widetilde{\\theta}}^{(a)} \\sim \\mathcal{N}\\left( \\mu^{(a)},\\left( P^{(a)} \\right)^{- 1} \\right)"
+    },
+    {
+      "occurrence": 199,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "x_{t}"
+    },
+    {
+      "occurrence": 200,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "{\\widehat{r}}^{(a)} = {\\widetilde{\\theta}}^{(a)\\top}x_{t}"
+    },
+    {
+      "occurrence": 201,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "a_{t} = arg\\max_{a \\in \\mathcal{A}}{\\widehat{r}}^{(a)}"
+    },
+    {
+      "occurrence": 202,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "P^{(a)}"
+    },
+    {
+      "occurrence": 203,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "a_{t}"
+    },
+    {
+      "occurrence": 204,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "r_{t}"
+    },
+    {
+      "occurrence": 205,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "P^{(a_{t})} \\leftarrow P^{(a_{t})} + \\frac{1}{\\sigma^{2}}x_{t}x_{t}^{\\top}"
+    },
+    {
+      "occurrence": 206,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": true,
+      "tex": "\\mu^{(a_{t})} \\leftarrow \\left( P^{(a_{t})} \\right)^{- 1}\\left( P^{(a_{t})}\\mu^{(a_{t})} + \\frac{r_{t}}{\\sigma^{2}}x_{t} \\right)"
+    },
+    {
+      "occurrence": 207,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "\\sigma^{2} = 0.5"
+    },
+    {
+      "occurrence": 208,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "\\frac{1}{\\sigma^{2}}x_{t}x_{t}^{\\top}"
+    },
+    {
+      "occurrence": 209,
+      "section": "线性Thompson采样调度",
+      "anchor": "线性thompson采样调度",
+      "display": false,
+      "tex": "a_{1} = a_{factor}"
+    },
+    {
+      "occurrence": 210,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "model\\_ context"
+    },
+    {
+      "occurrence": 211,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "a_{model}"
+    },
+    {
+      "occurrence": 212,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "s = active"
+    },
+    {
+      "occurrence": 213,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "\\delta = True"
+    },
+    {
+      "occurrence": 214,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": true,
+      "tex": "Ctx_{factor \\rightarrow model} = \\left\\{ (v.\\varphi,v.\\psi,v.m):v \\in V,s(v) = active,\\delta(v) = True \\right\\}"
+    },
+    {
+      "occurrence": 215,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "a_{factor}"
+    },
+    {
+      "occurrence": 216,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "\\delta = True"
+    },
+    {
+      "occurrence": 217,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "model\\_ context"
+    },
+    {
+      "occurrence": 218,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": true,
+      "tex": "Ctx_{model \\rightarrow factor} = \\left( e^{\\ast}.architecture,e^{\\ast}.metrics \\right):e^{\\ast} = arg\\max_{e \\in \\mathcal{E}}\\tau(e) \\cdot \\mathbb{1}\\lbrack\\delta(e) = True\\rbrack"
+    },
+    {
+      "occurrence": 219,
+      "section": "DAG上下文感知的跨类型知识共享",
+      "anchor": "dag上下文感知的跨类型知识共享",
+      "display": false,
+      "tex": "\\mathcal{E}"
+    },
+    {
+      "occurrence": 220,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "a_{model}"
+    },
+    {
+      "occurrence": 221,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "Ctx_{factor \\rightarrow model}"
+    },
+    {
+      "occurrence": 222,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "h_{model}"
+    },
+    {
+      "occurrence": 223,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "h_{model}"
+    },
+    {
+      "occurrence": 224,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "\\mathcal{U}"
+    },
+    {
+      "occurrence": 225,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "\\delta \\in \\{ True,False\\}"
+    },
+    {
+      "occurrence": 226,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "e = (id,\\tau,h,architecture,\\psi,m,fb,\\delta,knowledge)"
+    },
+    {
+      "occurrence": 227,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "\\psi"
+    },
+    {
+      "occurrence": 228,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "m"
+    },
+    {
+      "occurrence": 229,
+      "section": "模型优化管线",
+      "anchor": "模型优化管线",
+      "display": false,
+      "tex": "knowledge"
+    },
+    {
+      "occurrence": 230,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 231,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "v_{p}"
+    },
+    {
+      "occurrence": 232,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": true,
+      "tex": "Admit_{A}(v) = \\mathbb{1}\\left\\lbrack |IC(v)| > \\theta_{ic} \\land |ICIR(v)| > |ICIR(v_{p})| \\right\\rbrack\\quad(21)"
+    },
+    {
+      "occurrence": 233,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "\\theta_{ic} = 0.10"
+    },
+    {
+      "occurrence": 234,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": true,
+      "tex": "Admit_{B}(v) = \\mathbb{1}\\left\\lbrack |IC(v)| > \\theta_{ic} \\land |ICIR(v)| > |ICIR(v_{p})| \\times \\eta_{icir} \\land \\max_{v' \\in Pool}|MutIC(v,v')| < \\theta_{new} \\land \\max_{v' \\in Pool}|MutIC(v,v')| < \\max_{v' \\in Pool}|MutIC(v_{p},v')| \\right\\rbrack\\quad(22)"
+    },
+    {
+      "occurrence": 235,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "\\eta_{icir} = 0.90"
+    },
+    {
+      "occurrence": 236,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "\\theta_{new} = 0.70"
+    },
+    {
+      "occurrence": 237,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "MutIC(v,v')"
+    },
+    {
+      "occurrence": 238,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 239,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": false,
+      "tex": "v'"
+    },
+    {
+      "occurrence": 240,
+      "section": "双条件准入机制",
+      "anchor": "双条件准入机制",
+      "display": true,
+      "tex": "Admit(v) = Admit_{A}(v) \\vee Admit_{B}(v)\\quad(23)"
+    },
+    {
+      "occurrence": 241,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 242,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "Pool"
+    },
+    {
+      "occurrence": 243,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": true,
+      "tex": "DiversityFilter(v,Pool) = ValDiv(v,Pool) \\land SemDiv(v,Pool) \\land SynDiv(v,Pool)\\quad(24)"
+    },
+    {
+      "occurrence": 244,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "\\theta_{val}"
+    },
+    {
+      "occurrence": 245,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": true,
+      "tex": "ValDiv(v,Pool) = \\forall v' \\in Pool:|pearsonr(v.values,v'.values)| \\leq \\theta_{val}( = 0.7)\\quad(25)"
+    },
+    {
+      "occurrence": 246,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "v.values"
+    },
+    {
+      "occurrence": 247,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "\\theta_{sem}"
+    },
+    {
+      "occurrence": 248,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": true,
+      "tex": "SemDiv(v,Pool) = \\forall v' \\in Pool:cos\\_ sim(emb(v.llm\\_ explanation),emb(v'.llm\\_ explanation)) \\leq \\theta_{sem}( = 0.85)\\quad(26)"
+    },
+    {
+      "occurrence": 249,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "v.llm\\_ explanation"
+    },
+    {
+      "occurrence": 250,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "\\theta_{syn}"
+    },
+    {
+      "occurrence": 251,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": true,
+      "tex": "SynDiv(v,Pool) = \\forall v' \\in Pool:\\frac{ED(v.\\varphi,v'.\\varphi)}{len(v.\\varphi) + len(v'.\\varphi)} \\geq \\theta_{syn}( = 0.2)\\quad(27)"
+    },
+    {
+      "occurrence": 252,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "v.\\varphi = None"
+    },
+    {
+      "occurrence": 253,
+      "section": "三维度多样性过滤",
+      "anchor": "三维度多样性过滤",
+      "display": false,
+      "tex": "ValDiv \\times SemDiv \\times SynDiv"
+    },
+    {
+      "occurrence": 254,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "C"
+    },
+    {
+      "occurrence": 255,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "C = 50"
+    },
+    {
+      "occurrence": 256,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 257,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": true,
+      "tex": "\\max_{v' \\in Pool}|MutIC(v,v')| \\leq \\theta_{pool}( = 0.90)\\quad(28)"
+    },
+    {
+      "occurrence": 258,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "s = active"
+    },
+    {
+      "occurrence": 259,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "|IC(v)| > \\min_{v' \\in Pool}|IC(v')|"
+    },
+    {
+      "occurrence": 260,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "v_{\\min}"
+    },
+    {
+      "occurrence": 261,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": true,
+      "tex": "v_{\\min} = arg\\min_{v' \\in Pool}|IC(v')|"
+    },
+    {
+      "occurrence": 262,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "s = evicted"
+    },
+    {
+      "occurrence": 263,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "W \\in \\mathbb{R}^{|Pool|}"
+    },
+    {
+      "occurrence": 264,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": true,
+      "tex": "loss = W^{\\top}{IC}_{mut}W - 2W^{\\top}{IC}_{ret} + 1 + \\alpha \\parallel W \\parallel_{1}\\quad(29)"
+    },
+    {
+      "occurrence": 265,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "{IC}_{mut}"
+    },
+    {
+      "occurrence": 266,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "{IC}_{ret}"
+    },
+    {
+      "occurrence": 267,
+      "section": "因子池动态管理",
+      "anchor": "因子池动态管理",
+      "display": false,
+      "tex": "\\alpha = 5 \\times 10^{- 3}"
+    },
+    {
+      "occurrence": 268,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": false,
+      "tex": "v"
+    },
+    {
+      "occurrence": 269,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "v.trace \\leftarrow (\\tau = now,h = hypothesis,fb = feedback,\\delta = admit\\_ result,s = node\\_ status)"
+    },
+    {
+      "occurrence": 270,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "v.knowledge \\leftarrow code\\_ experience"
+    },
+    {
+      "occurrence": 271,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "v.model\\_ context \\leftarrow current\\_ sota\\_ model\\_ id"
+    },
+    {
+      "occurrence": 272,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "fb = LLM(h,results,sota\\_ results) \\rightarrow \\{ Observations,Feedback,NewHypothesis,Reasoning,Decision\\}"
+    },
+    {
+      "occurrence": 273,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": false,
+      "tex": "fb"
+    },
+    {
+      "occurrence": 274,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": false,
+      "tex": "r_{t} = w^{\\top}x_{t}"
+    },
+    {
+      "occurrence": 275,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "P^{(a_{t})} \\leftarrow P^{(a_{t})} + \\frac{1}{\\sigma^{2}}x_{t}x_{t}^{\\top}"
+    },
+    {
+      "occurrence": 276,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": true,
+      "tex": "\\mu^{(a_{t})} \\leftarrow \\left( P^{(a_{t})} \\right)^{- 1}\\left( P^{(a_{t})}\\mu^{(a_{t})} + \\frac{r_{t}}{\\sigma^{2}}x_{t} \\right)"
+    },
+    {
+      "occurrence": 277,
+      "section": "闭环反馈与知识更新",
+      "anchor": "闭环反馈与知识更新",
+      "display": false,
+      "tex": "knowledge"
+    },
+    {
+      "occurrence": 278,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "IC = \\frac{(\\widehat{y} - \\mathbb{E}\\lbrack\\widehat{y}\\rbrack)^{\\top}(y - \\mathbb{E}\\lbrack y\\rbrack)}{\\sigma(\\widehat{y}) \\cdot \\sigma(y)}"
+    },
+    {
+      "occurrence": 279,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "\\widehat{y}"
+    },
+    {
+      "occurrence": 280,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "y"
+    },
+    {
+      "occurrence": 281,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "\\mathbb{E}\\lbrack \\cdot \\rbrack"
+    },
+    {
+      "occurrence": 282,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "\\sigma( \\cdot )"
+    },
+    {
+      "occurrence": 283,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "ICIR = \\frac{mean(IC)}{std(IC)}\\quad(12)"
+    },
+    {
+      "occurrence": 284,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "RankICIR = \\frac{mean(RankIC)}{std(RankIC)}\\quad(13)"
+    },
+    {
+      "occurrence": 285,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "ARR = \\left( \\prod_{t = 1}^{T}\\left( 1 + r_{t} \\right) \\right)^{\\frac{252}{T}} - 1"
+    },
+    {
+      "occurrence": 286,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "r_{t}"
+    },
+    {
+      "occurrence": 287,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "T"
+    },
+    {
+      "occurrence": 288,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "IR = \\frac{mean\\left( r_{t} - r_{b} \\right)}{std\\left( r_{t} - r_{b} \\right)} \\times \\sqrt{252}\\quad(15)"
+    },
+    {
+      "occurrence": 289,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "r_{b}"
+    },
+    {
+      "occurrence": 290,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "r_{b}"
+    },
+    {
+      "occurrence": 291,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "r_{f}"
+    },
+    {
+      "occurrence": 292,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "r_{b} = r_{f}"
+    },
+    {
+      "occurrence": 293,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "(SHR \\ast )",
+      "source_tex": "(SHR \\ast ) \\ast \\ast",
+      "formatting_note": "Removed closing bold-markup residue; retained the single source asterisk inside parentheses."
+    },
+    {
+      "occurrence": 294,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "MDD = \\max_{t \\in \\lbrack 1,T\\rbrack}\\left( \\frac{\\max_{i \\in \\lbrack 1,t\\rbrack}P_{i} - P_{t}}{\\max_{i \\in \\lbrack 1,t\\rbrack}P_{i}} \\right)\\quad(16)"
+    },
+    {
+      "occurrence": 295,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "P_{t}"
+    },
+    {
+      "occurrence": 296,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "t"
+    },
+    {
+      "occurrence": 297,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": false,
+      "tex": "T"
+    },
+    {
+      "occurrence": 298,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "display": true,
+      "tex": "CalmarRatio = \\frac{ARR}{|MDD|}\\quad(17)"
+    }
+  ],
+  "tables": [
+    {
+      "occurrence": 1,
+      "section": "基于DAG的因子演化拓扑建模",
+      "anchor": "基于dag的因子演化拓扑建模",
+      "preceding_caption": "表1 因子节点三态生命周期",
+      "rows": 4
+    },
+    {
+      "occurrence": 2,
+      "section": "DAG感知因子生成器",
+      "anchor": "dag感知因子生成器",
+      "preceding_caption": "表2 五节点定义",
+      "rows": 6
+    },
+    {
+      "occurrence": 3,
+      "section": "主要结果分析",
+      "anchor": "主要结果分析",
+      "preceding_caption": "表3 Alex-Fin及所有模型在沪深 300 成分股数据集上的实验结果",
+      "rows": 1
+    },
+    {
+      "occurrence": 4,
+      "section": "主要结果分析",
+      "anchor": "主要结果分析",
+      "preceding_caption": "表3 Alex-Fin及所有模型在沪深 300 成分股数据集上的实验结果",
+      "rows": 29
+    },
+    {
+      "occurrence": 5,
+      "section": "贝叶斯DAG因子组件分析",
+      "anchor": "贝叶斯dag因子组件分析",
+      "preceding_caption": "Predictive power(%)",
+      "rows": 11
+    },
+    {
+      "occurrence": 6,
+      "section": "贝叶斯DAG因子组件分析",
+      "anchor": "贝叶斯dag因子组件分析",
+      "preceding_caption": "Portfolio construction",
+      "rows": 11
+    },
+    {
+      "occurrence": 7,
+      "section": "联合调度消融实验",
+      "anchor": "联合调度消融实验",
+      "preceding_caption": "表5 Alex-Fin(DeepSeek-V4)动作选择策略的消融实验",
+      "rows": 5
+    },
+    {
+      "occurrence": 8,
+      "section": "伦理考量",
+      "anchor": "伦理考量",
+      "preceding_caption": "表6 实验参数",
+      "rows": 18
+    },
+    {
+      "occurrence": 9,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "表7 中证500指数数据集的样本外实验结果",
+      "rows": 23
+    },
+    {
+      "occurrence": 10,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "表8 中证1000指数数据集的样本外实验结果",
+      "rows": 1
+    },
+    {
+      "occurrence": 11,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "表8 中证1000指数数据集的样本外实验结果",
+      "rows": 22
+    },
+    {
+      "occurrence": 12,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "表9 检索器（retriever）和生成器（generator）消融实验",
+      "rows": 13
+    },
+    {
+      "occurrence": 13,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "我们列出了各因素的ID、表达式、描述及其在测试期间的表现ICIR。",
+      "rows": 29
+    },
+    {
+      "occurrence": 14,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "表11 Alpha20基准因子公式",
+      "rows": 21
+    },
+    {
+      "occurrence": 15,
+      "section": "交易策略",
+      "anchor": "交易策略",
+      "preceding_caption": "以下是当优化目标为因子（Factor）时所使用的提示词：",
+      "rows": 2
+    }
+  ],
+  "figures": [
+    {
+      "source_member": "word/media/image1.jpeg",
+      "sha256": "e6d6a3d504b56034938604226cc7cfba8e96bde4d73de1b2e1348ac5588d67ec",
+      "bytes": 161335,
+      "publication": "cover decoration retained privately",
+      "caption_or_reference": "封面装饰 / Cover decoration"
+    },
+    {
+      "source_member": "word/media/image2.webp",
+      "sha256": "98ae7b618960ad2b7b1e4993dd5b7b8a85446b4e7373c69a3bd8c5ddf94d5895",
+      "bytes": 35628,
+      "publication": "cover decoration retained privately",
+      "caption_or_reference": "封面装饰 / Cover decoration"
+    },
+    {
+      "source_member": "word/media/image3.png",
+      "sha256": "ad6d678f70417f5883cceeb3d7c6829adcce1545cc57dd69f9ccd2cf6f325e64",
+      "bytes": 114287,
+      "publication": "cover decoration retained privately",
+      "caption_or_reference": "封面装饰 / Cover decoration"
+    },
+    {
+      "source_member": "word/media/image4.jpeg",
+      "sha256": "31efba1d1ef56d5d103f515d4c84bbe828862103ce08e1026c305accbab3e054",
+      "bytes": 526531,
+      "publication": "cover decoration retained privately",
+      "caption_or_reference": "封面装饰 / Cover decoration"
+    },
+    {
+      "source_member": "word/media/image5.jpeg",
+      "sha256": "84da99e948278a41a11c250d201388090ebe85e423bc383fdd4780d8fa866e08",
+      "bytes": 756180,
+      "publication": "original image",
+      "public_file": "figures/image5.jpeg",
+      "caption_or_reference": "图1 Alex-Fin技术路线图"
+    },
+    {
+      "source_member": "word/media/image6.jpeg",
+      "sha256": "bf8f1d566237c64b05c72c500ef560cde1d089e25bd6287d0f7a72016fdbd221",
+      "bytes": 695814,
+      "publication": "original image",
+      "public_file": "figures/image6.jpeg",
+      "caption_or_reference": "图2 Alex-Fin架构图"
+    },
+    {
+      "source_member": "word/media/image7.png",
+      "sha256": "ec3c6e9ead8ff88bc252772a9f49b63bd24a5031b41f1ad2239db212efdde001",
+      "bytes": 153026,
+      "publication": "original image",
+      "public_file": "figures/image7.png",
+      "caption_or_reference": "图3 全局感知因子挖掘架构图"
+    },
+    {
+      "source_member": "word/media/image8.png",
+      "sha256": "ee06f69ef5f5f1ec45f41b8210505eebcce62a5977383a10338e24d5169c2aec",
+      "bytes": 121376,
+      "publication": "original image",
+      "public_file": "figures/image8.png",
+      "caption_or_reference": "图4 Alex-Factor因子假设余弦相似度热力图"
+    },
+    {
+      "source_member": "word/media/image9.png",
+      "sha256": "d389c384fcea93afde937ab0998dadf3fb163e4dee640f73a1a29cf5d763b2cf",
+      "bytes": 238704,
+      "publication": "original image",
+      "public_file": "figures/image9.png",
+      "caption_or_reference": "图5 沪深300指数回测曲线"
+    },
+    {
+      "source_member": "word/media/image10.png",
+      "sha256": "fa3ba189e7c4c2b7c06c0e6eb193934898130c09e518adfed9778ddaf935f5bc",
+      "bytes": 139491,
+      "publication": "original image",
+      "public_file": "figures/image10.png",
+      "caption_or_reference": "图6 Alex-Fin敏感性分析"
+    },
+    {
+      "source_member": "word/media/image11.png",
+      "sha256": "c4701ae757aa155913b7b69cf15543c183332c9c207eca7eba7b4ae10a48c67a",
+      "bytes": 94977,
+      "publication": "original image",
+      "public_file": "figures/image11.png",
+      "caption_or_reference": "图7 Alex-FinIC动态变化对比"
+    },
+    {
+      "source_member": "word/media/image12.png",
+      "sha256": "bacb6c4aa86200b2dca6248de0f2a17cd7215ab457b952a6d4ca565e208b81f5",
+      "bytes": 456788,
+      "publication": "original image",
+      "public_file": "figures/image12.png",
+      "caption_or_reference": "图8 因子效应评估实验的完整结果"
+    },
+    {
+      "source_member": "word/media/image13.png",
+      "sha256": "f7202c4428c7dab3b7dc2669a209479a72cf4c562353ef57d1481f797c6f7612",
+      "bytes": 192095,
+      "publication": "original image",
+      "public_file": "figures/image13.png",
+      "caption_or_reference": "图9 基于日频价格变动提取的沪深CSI300因子挖掘拓扑结构"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "source_tex": "\\backslash max\\_\\{\\backslash theta\\}\\ \\backslash mathbb\\{ E\\}\\_\\{\\backslash tau\\backslash sim\\ \\backslash pi\\_\\{\\backslash theta\\}\\}\\backslash left\\lbrack\\backslash sum\\_\\{ t = 0\\}\\hat{}\\{\\backslash infty\\}\\ \\backslash gamma\\hat{}\\{ t\\}\\ R\\backslash left(s\\_ t,\\ a\\_ t,\\ s\\_\\{ t + 1\\}\\backslash right)\\backslash right\\rbrack\\ \\backslash tag\\{ 3.1\\}\n",
+    "display_tex": "\\max_{\\theta} \\mathbb{ E}_{\\tau\\sim \\pi_{\\theta}}\\left\\lbrack\\sum_{ t = 0}^{\\infty} \\gamma^{ t} R\\left(s_ t, a_ t, s_{ t + 1}\\right)\\right\\rbrack \\qquad\\text{(3.1)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Sharpe\\ Ratio\\}\\  = \\ \\backslash frac\\{\\backslash mathbb\\{ E\\}\\lbrack R\\_ p\\  - \\ R\\_ f\\rbrack\\}\\{\\backslash sigma\\_ p\\}",
+    "display_tex": "\\text{ Sharpe Ratio}  =  \\frac{\\mathbb{ E}\\lbrack R_ p  -  R_ f\\rbrack}{\\sigma_ p}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Annual\\ Return\\}\\  = \\ \\backslash left(\\ \\backslash frac\\{\\backslash text\\{ PortVal\\}\\_ T\\}\\{\\backslash text\\{ PortVal\\}\\_ 0\\}\\ \\backslash right)\\hat{}\\{ 252/T\\}\\  - \\ 1",
+    "display_tex": "\\text{ Annual Return}  =  \\left( \\frac{\\text{ PortVal}_ T}{\\text{ PortVal}_ 0} \\right)^{ 252/T}  -  1"
+  },
+  {
+    "source_tex": "\\backslash text\\{ PortVal\\}\\_ t",
+    "display_tex": "\\text{ PortVal}_ t"
+  },
+  {
+    "source_tex": "\\backslash text\\{ MDD\\}\\  = \\ \\backslash max\\_\\{\\backslash tau\\ \\backslash in\\ \\lbrack 0,T\\rbrack\\}\\ \\backslash left(\\ \\backslash frac\\{\\backslash text\\{ PortVal\\}\\_\\backslash tau\\  - \\ \\backslash text\\{ PortVal\\}\\_\\{\\backslash tau\\hat{} \\ast \\}\\}\\{\\backslash text\\{ PortVal\\}\\_\\{\\backslash tau\\hat{} \\ast \\}\\}\\ \\backslash right)",
+    "display_tex": "\\text{ MDD}  =  \\max_{\\tau \\in \\lbrack 0,T\\rbrack} \\left( \\frac{\\text{ PortVal}_\\tau  -  \\text{ PortVal}_{\\tau^ \\ast }}{\\text{ PortVal}_{\\tau^ \\ast }} \\right)"
+  },
+  {
+    "source_tex": "\\backslash tau\\hat{} \\ast \\  = \\ \\backslash arg\\backslash max\\_\\{ t\\ \\backslash in\\ \\lbrack 0,\\backslash tau\\rbrack\\}\\ \\backslash text\\{ PortVal\\}\\_ t",
+    "display_tex": "\\tau^ \\ast   =  \\arg\\max_{ t \\in \\lbrack 0,\\tau\\rbrack} \\text{ PortVal}_ t"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Information\\ Ratio\\}\\  = \\ \\backslash frac\\{\\backslash mathbb\\{ E\\}\\lbrack R\\_ p\\  - \\ R\\_\\{ m\\}\\rbrack\\}\\{\\backslash sigma\\_\\{ p - m\\}\\}",
+    "display_tex": "\\text{ Information Ratio}  =  \\frac{\\mathbb{ E}\\lbrack R_ p  -  R_{ m}\\rbrack}{\\sigma_{ p - m}}"
+  },
+  {
+    "source_tex": "\\backslash mathcal\\{ V\\}\\  = \\ \\{ v\\_ 1,\\ v\\_ 2,\\ \\backslash dots,\\ v\\_ N\\}",
+    "display_tex": "\\mathcal{ V}  =  { v_ 1, v_ 2, \\dots, v_ N}"
+  },
+  {
+    "source_tex": "\\backslash mathcal\\{ A\\} = \\backslash left\\{ A\\hat{}f|f\\backslash in\\ \\backslash mathcal\\{ F\\}\\backslash right\\}",
+    "display_tex": "\\mathcal{ A} = \\left\\{ A^f|f\\in \\mathcal{ F}\\right\\}"
+  },
+  {
+    "source_tex": "\\backslash tilde\\{ X\\}\\_\\{ n,p\\}\\  = \\ \\backslash frac\\{ X\\_\\{ n,p\\}\\  - \\ \\backslash mu\\_ n\\}\\{\\backslash sigma\\_ n\\  + \\ \\backslash epsilon\\}\\ \\backslash tag\\{ 4.1\\}\n",
+    "display_tex": "\\tilde{ X}_{ n,p}  =  \\frac{ X_{ n,p}  -  \\mu_ n}{\\sigma_ n  +  \\epsilon} \\qquad\\text{(4.1)}"
+  },
+  {
+    "source_tex": "\\backslash min\\_\\{\\backslash Omega\\hat{}f\\ \\backslash succ\\ 0\\}\\ \\backslash left(\\ \\backslash text\\{ tr\\}(\\backslash Sigma\\hat{}f\\ \\backslash Omega\\hat{}f)\\  - \\ \\backslash log\\backslash det(\\backslash Omega\\hat{}f)\\  + \\ \\backslash lambda\\ |\\backslash Omega\\hat{}f|\\_ 1\\ \\backslash right)\\ \\backslash tag\\{ 4.2\\}\n",
+    "display_tex": "\\min_{\\Omega^f \\succ 0} \\left( \\text{ tr}(\\Sigma^f \\Omega^f)  -  \\log\\det(\\Omega^f)  +  \\lambda |\\Omega^f|_ 1 \\right) \\qquad\\text{(4.2)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ tr\\}(\\backslash cdot)",
+    "display_tex": "\\text{ tr}(\\cdot)"
+  },
+  {
+    "source_tex": "d\\hat{}\\{ f,H\\}\\_\\{ ij\\}\\  = \\ \\backslash frac\\{\\backslash sigma\\_\\{ jj\\}\\hat{}\\{ - 1\\}\\ \\backslash cdot\\ (\\backslash Omega\\hat{}f\\_\\{ ij\\})\\hat{}2\\}\\{\\backslash sum\\_\\{ k = 1\\}\\hat{}N\\ \\backslash sigma\\_\\{ kk\\}\\hat{}\\{ - 1\\}\\ \\backslash cdot\\ (\\backslash Omega\\hat{}f\\_\\{ ik\\})\\hat{}2\\}\\ \\backslash tag\\{ 4.3\\}\n",
+    "display_tex": "d^{ f,H}_{ ij}  =  \\frac{\\sigma_{ jj}^{ - 1} \\cdot (\\Omega^f_{ ij})^2}{\\sum_{ k = 1}^N \\sigma_{ kk}^{ - 1} \\cdot (\\Omega^f_{ ik})^2} \\qquad\\text{(4.3)}"
+  },
+  {
+    "source_tex": "\\backslash tilde\\{ d\\}\\hat{}\\{ f,H\\}\\_\\{ ij\\}\\  = \\ \\backslash frac\\{ d\\hat{}\\{ f,H\\}\\_\\{ ij\\}\\}\\{\\backslash sum\\_\\{ j = 1\\}\\hat{}N\\ d\\hat{}\\{ f,H\\}\\_\\{ ij\\}\\},\\ \\backslash quad\\ i\\ \\backslash neq\\ j\\ \\backslash tag\\{ 4.4\\}\n",
+    "display_tex": "\\tilde{ d}^{ f,H}_{ ij}  =  \\frac{ d^{ f,H}_{ ij}}{\\sum_{ j = 1}^N d^{ f,H}_{ ij}}, \\quad i \\neq j \\qquad\\text{(4.4)}"
+  },
+  {
+    "source_tex": "A\\hat{}\\{ f,risk\\}\\_\\{ ii\\}\\  = \\ 0\\ \\backslash tag\\{ 4.5\\}\n",
+    "display_tex": "A^{ f,risk}_{ ii}  =  0 \\qquad\\text{(4.5)}"
+  },
+  {
+    "source_tex": "A\\hat{}\\{ f,final\\}\\_ t\\  = \\ A\\hat{}\\{ f,risk\\}\\_ t\\ \\backslash tag\\{ 4.6\\}\n",
+    "display_tex": "A^{ f,final}_ t  =  A^{ f,risk}_ t \\qquad\\text{(4.6)}"
+  },
+  {
+    "source_tex": "\\backslash begin\\{ cases\\}\n\\backslash mu\\_ t\\  = \\ \\backslash left(1 - \\backslash eta\\backslash right)\\backslash mu\\_\\{ t - 1\\}\\  + \\ \\backslash eta\\ x\\_ t\\ \\backslash\\backslash\nV\\_ t\\  = \\ \\backslash left(1 - \\backslash eta\\backslash right)V\\_\\{ t - 1\\}\\  + \\ \\backslash eta\\ \\backslash left(x\\_ t\\  - \\ \\backslash mu\\_ t\\backslash right)\\hat{}2\n\\backslash end\\{ cases\\}\\ \\backslash tag\\{ 4.7\\}",
+    "display_tex": "\\begin{cases}\n\\mu_ t  =  \\left(1 - \\eta\\right)\\mu_{ t - 1}  +  \\eta x_ t \\\\\nV_ t  =  \\left(1 - \\eta\\right)V_{ t - 1}  +  \\eta \\left(x_ t  -  \\mu_ t\\right)^2\n\\end{cases} \\qquad\\text{(4.7)}"
+  },
+  {
+    "source_tex": "H\\hat{}f\\  = \\ \\lbrack h\\_\\{ 1\\}\\hat{}f,\\ h\\_\\{ 2\\}\\hat{}f,\\ \\backslash dots,\\ h\\_\\{ T\\}\\hat{}f\\rbrack\\ \\backslash in\\ \\backslash mathbb\\{ R\\}\\hat{}\\{ T\\ \\backslash times\\ N\\ \\backslash times\\ D\\_\\{ model\\}\\}",
+    "display_tex": "H^f  =  \\lbrack h_{ 1}^f, h_{ 2}^f, \\dots, h_{ T}^f\\rbrack \\in \\mathbb{ R}^{ T \\times N \\times D_{ model}}"
+  },
+  {
+    "source_tex": "M\\_\\{ ij\\}\\hat{}\\{ time\\}\\  = \\ \\backslash begin\\{ cases\\}\n0,\\ \\&\\ j\\ \\backslash leq\\ i\\ \\backslash\\backslash\n - \\backslash infty,\\ \\&\\ j\\  > \\ i\n\\backslash end\\{ cases\\}\\ \\backslash tag\\{ 4.8\\}",
+    "display_tex": "M_{ ij}^{ time}  =  \\begin{cases}\n0, & j \\leq i \\\\\n - \\infty, & j  >  i\n\\end{cases} \\qquad\\text{(4.8)}"
+  },
+  {
+    "source_tex": "\\backslash left\\lbrack Q\\hat{}\\{ f,time\\},\\ K\\hat{}\\{ f,time\\},\\ V\\hat{}\\{ f,time\\}\\backslash right\\rbrack\\  = \\ H\\hat{}f\\ W\\hat{}f\\_\\{ qkv,time\\}\\ \\backslash tag\\{ 4.9\\}\n",
+    "display_tex": "\\left\\lbrack Q^{ f,time}, K^{ f,time}, V^{ f,time}\\right\\rbrack  =  H^f W^f_{ qkv,time} \\qquad\\text{(4.9)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Scores\\}\\hat{}\\{ f,time\\}\\  = \\ \\backslash text\\{ softmax\\}\\backslash left(\\ \\backslash frac\\{ Q\\hat{}\\{ f,time\\}\\ K\\hat{}\\{ f,time\\backslash top\\}\\}\\{\\backslash sqrt\\{ d\\_ k\\}\\}\\  + \\ M\\hat{}\\{ time\\}\\ \\backslash right)\\ \\backslash tag\\{ 4.10\\}\n",
+    "display_tex": "\\text{ Scores}^{ f,time}  =  \\text{ softmax}\\left( \\frac{ Q^{ f,time} K^{ f,time\\top}}{\\sqrt{ d_ k}}  +  M^{ time} \\right) \\qquad\\text{(4.10)}"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ f,time\\}\\  = \\ \\backslash text\\{ Scores\\}\\hat{}\\{ f,time\\}\\ V\\hat{}\\{ f,time\\}\\ \\backslash tag\\{ 4.11\\}\n",
+    "display_tex": "H^{ f,time}  =  \\text{ Scores}^{ f,time} V^{ f,time} \\qquad\\text{(4.11)}"
+  },
+  {
+    "source_tex": "e\\_\\{ ij\\}\\hat{}\\{ f,k\\}\\  = \\ \\backslash text\\{ LeakyReLU\\}\\backslash left(\\ a\\hat{}\\{ f,k\\}\\ \\backslash left\\lbrack\\ W\\hat{}\\{ f,k\\}\\ H\\hat{}f\\_\\{ t,i\\}\\ \\backslash parallel\\ W\\hat{}\\{ f,k\\}\\ H\\hat{}f\\_\\{ t,j\\}\\ \\backslash right\\rbrack\\ \\backslash right)\\ \\backslash tag\\{ 4.12\\}\n",
+    "display_tex": "e_{ ij}^{ f,k}  =  \\text{ LeakyReLU}\\left( a^{ f,k} \\left\\lbrack W^{ f,k} H^f_{ t,i} \\parallel W^{ f,k} H^f_{ t,j} \\right\\rbrack \\right) \\qquad\\text{(4.12)}"
+  },
+  {
+    "source_tex": "\\backslash alpha\\_\\{ ij\\}\\hat{}\\{ f,k\\}\\  = \\ \\backslash frac\\{\\backslash exp\\backslash left(e\\_\\{ ij\\}\\hat{}\\{ f,k\\}\\backslash right)\\ A\\hat{}\\{ f,final\\}\\_\\{ ij\\}\\}\\{\\backslash sum\\_\\{ l\\backslash in\\ \\backslash mathcal\\{ N\\}(i)\\}\\ \\backslash exp\\backslash left(e\\_\\{ il\\}\\hat{}\\{ f,k\\}\\backslash right)\\ A\\hat{}\\{ f,final\\}\\_\\{ il\\}\\}\\ \\backslash tag\\{ 4.13\\}\n",
+    "display_tex": "\\alpha_{ ij}^{ f,k}  =  \\frac{\\exp\\left(e_{ ij}^{ f,k}\\right) A^{ f,final}_{ ij}}{\\sum_{ l\\in \\mathcal{ N}(i)} \\exp\\left(e_{ il}^{ f,k}\\right) A^{ f,final}_{ il}} \\qquad\\text{(4.13)}"
+  },
+  {
+    "source_tex": "h\\_\\{ i\\}\\hat{}\\{ f,k\\}\\  = \\ \\backslash sigma\\backslash left(\\ \\backslash sum\\_\\{ j\\ \\backslash in\\ \\backslash mathcal\\{ N\\}(i)\\}\\ \\backslash alpha\\_\\{ ij\\}\\hat{}\\{ f,k\\}\\ W\\hat{}\\{ f,k\\}\\ H\\hat{}f\\_\\{ t,j\\}\\ \\backslash right)\\ \\backslash tag\\{ 4.14\\}\n",
+    "display_tex": "h_{ i}^{ f,k}  =  \\sigma\\left( \\sum_{ j \\in \\mathcal{ N}(i)} \\alpha_{ ij}^{ f,k} W^{ f,k} H^f_{ t,j} \\right) \\qquad\\text{(4.14)}"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ f,space\\}\\  = \\ \\backslash text\\{ Concat\\}(h\\hat{}\\{ f,1\\},\\ h\\hat{}\\{ f,2\\},\\ \\backslash dots,\\ h\\hat{}\\{ f,H\\})\\ \\backslash tag\\{ 4.15\\}\n",
+    "display_tex": "H^{ f,space}  =  \\text{ Concat}(h^{ f,1}, h^{ f,2}, \\dots, h^{ f,H}) \\qquad\\text{(4.15)}"
+  },
+  {
+    "source_tex": "g\\_\\{ time\\}\\  = \\ \\backslash sigma\\backslash left(\\ \\backslash text\\{ Linear\\}(H\\hat{}\\{ f,time\\})\\ \\backslash right),\\ \\backslash quad\\ g\\_\\{ space\\}\\  = \\ \\backslash sigma\\backslash left(\\ \\backslash text\\{ Linear\\}(H\\hat{}\\{ f,space\\})\\ \\backslash right)\\ \\backslash tag\\{ 4.16\\}\n",
+    "display_tex": "g_{ time}  =  \\sigma\\left( \\text{ Linear}(H^{ f,time}) \\right), \\quad g_{ space}  =  \\sigma\\left( \\text{ Linear}(H^{ f,space}) \\right) \\qquad\\text{(4.16)}"
+  },
+  {
+    "source_tex": "\\backslash tilde\\{ H\\}\\hat{}\\{ f,st\\}\\  = \\ g\\_\\{ time\\}\\ \\backslash odot\\ H\\hat{}\\{ f,time\\}\\  + \\ g\\_\\{ space\\}\\ \\backslash odot\\ H\\hat{}\\{ f,space\\}\\ \\backslash tag\\{ 4.17\\}\n",
+    "display_tex": "\\tilde{ H}^{ f,st}  =  g_{ time} \\odot H^{ f,time}  +  g_{ space} \\odot H^{ f,space} \\qquad\\text{(4.17)}"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ f,fuse\\}\\  = \\ \\backslash text\\{ LayerNorm\\}\\backslash left(\\ H\\hat{}f\\  + \\ \\backslash text\\{ Dropout\\}(\\backslash tilde\\{ H\\}\\hat{}\\{ f,st\\})\\ \\backslash right)\\ \\backslash tag\\{ 4.18\\}\n",
+    "display_tex": "H^{ f,fuse}  =  \\text{ LayerNorm}\\left( H^f  +  \\text{ Dropout}(\\tilde{ H}^{ f,st}) \\right) \\qquad\\text{(4.18)}"
+  },
+  {
+    "source_tex": "K\\hat{}\\{ all\\}\\  = \\ \\backslash text\\{ Concat\\}(H\\hat{}\\{ 0\\},\\ H\\hat{}\\{ 1\\},\\ H\\hat{}\\{ 2\\},\\ H\\hat{}\\{ 3\\},\\ H\\hat{}\\{ 4\\},\\ H\\hat{}\\{ 5\\},\\ H\\hat{}\\{ 6\\})\n",
+    "display_tex": "K^{ all}  =  \\text{ Concat}(H^{ 0}, H^{ 1}, H^{ 2}, H^{ 3}, H^{ 4}, H^{ 5}, H^{ 6})"
+  },
+  {
+    "source_tex": "V\\hat{}\\{ all\\}\\  = \\ \\backslash text\\{ Concat\\}(H\\hat{}\\{ 0\\},\\ H\\hat{}\\{ 1\\},\\ H\\hat{}\\{ 2\\},\\ H\\hat{}\\{ 3\\},\\ H\\hat{}\\{ 4\\},\\ H\\hat{}\\{ 5\\},\\ H\\hat{}\\{ 6\\})\n",
+    "display_tex": "V^{ all}  =  \\text{ Concat}(H^{ 0}, H^{ 1}, H^{ 2}, H^{ 3}, H^{ 4}, H^{ 5}, H^{ 6})"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Scores\\}\\hat{}\\{ 3\\backslash leftarrow\\ all\\}\\  = \\ \\backslash text\\{ softmax\\}\\backslash left(\\ \\backslash frac\\{ Q\\hat{}\\{ 3\\}\\ K\\hat{}\\{ all\\backslash top\\}\\}\\{\\backslash sqrt\\{ d\\_ k\\}\\}\\  + \\ M\\hat{}\\{ causal\\}\\ \\backslash right)\n",
+    "display_tex": "\\text{ Scores}^{ 3\\leftarrow all}  =  \\text{ softmax}\\left( \\frac{ Q^{ 3} K^{ all\\top}}{\\sqrt{ d_ k}}  +  M^{ causal} \\right)"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ 3,fuse\\}\\  = \\ \\backslash text\\{ Scores\\}\\hat{}\\{ 3\\backslash leftarrow\\ all\\}\\ V\\hat{}\\{ all\\}\n",
+    "display_tex": "H^{ 3,fuse}  =  \\text{ Scores}^{ 3\\leftarrow all} V^{ all}"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ cross\\}\\  = \\ \\backslash text\\{ Concat\\}(H\\hat{}\\{ 0,fuse\\},\\ H\\hat{}\\{ 1,fuse\\},\\ H\\hat{}\\{ 2,fuse\\},\\ H\\hat{}\\{ 3,fuse\\},\\ H\\hat{}\\{ 4,fuse\\},\\ H\\hat{}\\{ 5,fuse\\},\\ H\\hat{}\\{ 6,fuse\\})\n",
+    "display_tex": "H^{ cross}  =  \\text{ Concat}(H^{ 0,fuse}, H^{ 1,fuse}, H^{ 2,fuse}, H^{ 3,fuse}, H^{ 4,fuse}, H^{ 5,fuse}, H^{ 6,fuse})"
+  },
+  {
+    "source_tex": "H\\hat{}\\{ st\\}\\  = \\ \\backslash text\\{ LayerNorm\\}\\backslash left(\\ H\\hat{}\\{ 3\\}\\  + \\ \\backslash text\\{ Dropout\\}(H\\hat{}\\{ cross\\})\\ \\backslash right)\\ \\backslash tag\\{ 4.19\\}\n",
+    "display_tex": "H^{ st}  =  \\text{ LayerNorm}\\left( H^{ 3}  +  \\text{ Dropout}(H^{ cross}) \\right) \\qquad\\text{(4.19)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Expert\\}(x)\\  = \\ (\\backslash text\\{ Swish\\}(x\\ W\\_ 1)\\ \\backslash odot\\ x\\ W\\_ 2)\\ W\\_ 3\\ \\backslash tag\\{ 4.20\\}\n",
+    "display_tex": "\\text{ Expert}(x)  =  (\\text{ Swish}(x W_ 1) \\odot x W_ 2) W_ 3 \\qquad\\text{(4.20)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ Swish\\}(x)\\  = \\ x\\ \\backslash cdot\\ \\backslash sigma(x)",
+    "display_tex": "\\text{ Swish}(x)  =  x \\cdot \\sigma(x)"
+  },
+  {
+    "source_tex": "s\\_\\{ n,k\\}\\  = \\ \\backslash text\\{ Sigmoid\\}(x\\_ n\\ \\backslash cdot\\ W\\_\\{ gate,k\\})\\  + \\ B\\_ k\\ \\backslash tag\\{ 4.21\\}\n",
+    "display_tex": "s_{ n,k}  =  \\text{ Sigmoid}(x_ n \\cdot W_{ gate,k})  +  B_ k \\qquad\\text{(4.21)}"
+  },
+  {
+    "source_tex": "g\\_\\{ n,k\\}\\  = \\ \\backslash begin\\{ cases\\}\ns\\_\\{ n,k\\},\\ \\&\\ \\backslash text\\{ if\\ \\}\\ k\\ \\backslash in\\ \\backslash text\\{ Top2\\}(\\{ s\\_\\{ n,1\\},\\ s\\_\\{ n,2\\},\\ \\backslash dots,\\ s\\_\\{ n,8\\}\\})\\ \\backslash\\backslash\n0,\\ \\&\\ \\backslash text\\{ otherwise\\}\n\\backslash end\\{ cases\\}\\ \\backslash tag\\{ 4.22\\}",
+    "display_tex": "g_{ n,k}  =  \\begin{cases}\ns_{ n,k}, & \\text{ if } k \\in \\text{ Top2}({ s_{ n,1}, s_{ n,2}, \\dots, s_{ n,8}}) \\\\\n0, & \\text{ otherwise}\n\\end{cases} \\qquad\\text{(4.22)}"
+  },
+  {
+    "source_tex": "L\\_ k\\  = \\ \\backslash frac\\{\\backslash text\\{ 该专家处理的Token数量\\}\\}\\{\\backslash text\\{ 该batch总Token数量\\}\\}",
+    "display_tex": "L_ k  =  \\frac{\\text{ 该专家处理的Token数量}}{\\text{ 该batch总Token数量}}"
+  },
+  {
+    "source_tex": "B\\_ k\\hat{}\\{ t + 1\\}\\  = \\ B\\_ k\\hat{}t\\  - \\ \\backslash gamma\\ \\backslash cdot\\ \\backslash text\\{ sign\\}(e\\_ k)\\ \\backslash tag\\{ 4.23\\}",
+    "display_tex": "B_ k^{ t + 1}  =  B_ k^t  -  \\gamma \\cdot \\text{ sign}(e_ k) \\qquad\\text{(4.23)}"
+  },
+  {
+    "source_tex": "\\backslash mathcal\\{ L\\}\\_\\{ o\\} = \\backslash sum\\_\\{ n = 1\\}\\hat{}N\\ \\backslash left\\lbrack\\ \\backslash sum\\_\\{ i\\backslash in\\ \\backslash\\{ A,B\\backslash\\}\\}\\backslash left(\\backslash frac\\{ E\\_\\{ n,shared\\}\\hat{}\\{\\backslash top\\} E\\_\\{ n,i\\}\\}\\{|E\\_\\{ n,shared\\}|\\_\\{ 2\\}|E\\_\\{ n,i\\}|\\_\\{ 2\\}\\}\\backslash right)\\hat{}\\{ 2\\}\\  + \\ \\backslash left(\\backslash frac\\{ E\\_\\{ n,A\\}\\hat{}\\{\\backslash top\\} E\\_\\{ n,B\\}\\}\\{|E\\_\\{ n,A\\}|\\_\\{ 2\\}|E\\_\\{ n,B\\}|\\_\\{ 2\\}\\}\\backslash right)\\hat{}\\{ 2\\}\\ \\backslash right\\rbrack\\ \\backslash tag\\{ 4.24\\}\n",
+    "display_tex": "\\mathcal{ L}_{ o} = \\sum_{ n = 1}^N \\left\\lbrack \\sum_{ i\\in \\{ A,B\\}}\\left(\\frac{ E_{ n,shared}^{\\top} E_{ n,i}}{|E_{ n,shared}|_{ 2}|E_{ n,i}|_{ 2}}\\right)^{ 2}  +  \\left(\\frac{ E_{ n,A}^{\\top} E_{ n,B}}{|E_{ n,A}|_{ 2}|E_{ n,B}|_{ 2}}\\right)^{ 2} \\right\\rbrack \\qquad\\text{(4.24)}"
+  },
+  {
+    "source_tex": "x\\_\\{ norm\\}\\  = \\ \\backslash text\\{ RMSNorm\\}(x)",
+    "display_tex": "x_{ norm}  =  \\text{ RMSNorm}(x)"
+  },
+  {
+    "source_tex": "h\\_\\{ shared\\}\\  = \\ \\backslash text\\{ SharedExpert\\}(x\\_\\{ norm\\})",
+    "display_tex": "h_{ shared}  =  \\text{ SharedExpert}(x_{ norm})"
+  },
+  {
+    "source_tex": "y\\  = \\ h\\_\\{ shared\\}\\  + \\ h\\_\\{ special\\}\\  + \\ r\\ \\backslash tag\\{ 4.25\\}\n",
+    "display_tex": "y  =  h_{ shared}  +  h_{ special}  +  r \\qquad\\text{(4.25)}"
+  },
+  {
+    "source_tex": "\\backslash max\\_\\{\\backslash theta\\}\\ \\backslash mathbb\\{ E\\}\\_\\{\\backslash tau\\backslash sim\\ \\backslash pi\\_\\{\\backslash theta\\}\\}\\backslash left\\lbrack\\backslash sum\\_\\{ t = 0\\}\\hat{}\\{\\backslash infty\\}\\ \\backslash gamma\\hat{}\\{ t\\}\\ R\\backslash left(s\\_ t,\\ a\\_ t,\\ s\\_\\{ t + 1\\}\\backslash right)\\backslash right\\rbrack\\ \\backslash tag\\{ 4.26\\}\n",
+    "display_tex": "\\max_{\\theta} \\mathbb{ E}_{\\tau\\sim \\pi_{\\theta}}\\left\\lbrack\\sum_{ t = 0}^{\\infty} \\gamma^{ t} R\\left(s_ t, a_ t, s_{ t + 1}\\right)\\right\\rbrack \\qquad\\text{(4.26)}"
+  },
+  {
+    "source_tex": "w\\_ t = \\backslash left\\lbrack w\\_\\{ 1,t\\},w\\_\\{ 2,t\\},\\backslash dots,w\\_\\{ N,t\\},w\\_\\{ c,t\\}\\backslash right\\rbrack",
+    "display_tex": "w_ t = \\left\\lbrack w_{ 1,t},w_{ 2,t},\\dots,w_{ N,t},w_{ c,t}\\right\\rbrack"
+  },
+  {
+    "source_tex": "s\\_ t\\  = \\ \\backslash begin\\{ pmatrix\\}\nw\\_\\{ 1,t\\}\\ \\&\\ r\\_\\{ 1,t - 1\\}\\ \\&\\ \\backslash cdots\\ \\&\\ r\\_\\{ 1,t - T + 1\\}\\ \\backslash\\backslash\nw\\_\\{ 2,t\\}\\ \\&\\ r\\_\\{ 2,t - 1\\}\\ \\&\\ \\backslash cdots\\ \\&\\ r\\_\\{ 2,t - T + 1\\}\\ \\backslash\\backslash\n\\backslash vdots\\ \\&\\ \\&\\ \\backslash ddots\\ \\&\\ \\backslash vdots\\ \\backslash\\backslash\nw\\_\\{ N,t\\}\\ \\&\\ r\\_\\{ N,t - 1\\}\\ \\&\\ \\backslash cdots\\ \\&\\ r\\_\\{ N,t - T + 1\\}\\ \\backslash\\backslash\nw\\_\\{ c,t\\}\\ \\&\\ vol\\_\\{ 20,t\\}\\ \\&\\ \\backslash frac\\{ vol\\_\\{ 20,t\\}\\}\\{ vol\\_\\{ 60,t\\}\\}\\ \\&\\ VIX\\_ t\n\\backslash end\\{ pmatrix\\}\\ \\backslash tag\\{ 4.27\\}",
+    "display_tex": "s_ t  =  \\begin{pmatrix}\nw_{ 1,t} & r_{ 1,t - 1} & \\cdots & r_{ 1,t - T + 1} \\\\\nw_{ 2,t} & r_{ 2,t - 1} & \\cdots & r_{ 2,t - T + 1} \\\\\n\\vdots & & \\ddots & \\vdots \\\\\nw_{ N,t} & r_{ N,t - 1} & \\cdots & r_{ N,t - T + 1} \\\\\nw_{ c,t} & vol_{ 20,t} & \\frac{ vol_{ 20,t}}{ vol_{ 60,t}} & VIX_ t\n\\end{pmatrix} \\qquad\\text{(4.27)}"
+  },
+  {
+    "source_tex": "\\backslash begin\\{ cases\\}\nA\\_ t\\  = \\ A\\_\\{ t - 1\\}\\  + \\ \\backslash eta\\backslash left(R\\_ t\\  - \\ A\\_\\{ t - 1\\}\\backslash right)\\ \\backslash\\backslash\nB\\_ t\\  = \\ B\\_\\{ t - 1\\}\\  + \\ \\backslash eta\\backslash left(R\\_ t\\hat{}2\\  - \\ B\\_\\{ t - 1\\}\\backslash right)\n\\backslash end\\{ cases\\}\\ \\backslash tag\\{ 4.28\\}",
+    "display_tex": "\\begin{cases}\nA_ t  =  A_{ t - 1}  +  \\eta\\left(R_ t  -  A_{ t - 1}\\right) \\\\\nB_ t  =  B_{ t - 1}  +  \\eta\\left(R_ t^2  -  B_{ t - 1}\\right)\n\\end{cases} \\qquad\\text{(4.28)}"
+  },
+  {
+    "source_tex": "DSR\\_ t\\  = \\ \\backslash frac\\{ B\\_\\{ t - 1\\}\\backslash left(R\\_ t\\  - \\ A\\_\\{ t - 1\\}\\backslash right)\\  - \\ \\backslash frac\\{ 1\\}\\{ 2\\} A\\_\\{ t - 1\\}\\backslash left(R\\_ t\\hat{}2\\  - \\ B\\_\\{ t - 1\\}\\backslash right)\\}\\{\\backslash left(B\\_\\{ t - 1\\}\\  - \\ A\\_\\{ t - 1\\}\\hat{}2\\  + \\ \\backslash epsilon\\backslash right)\\hat{}\\{\\backslash frac\\{ 3\\}\\{ 2\\}\\}\\}\\ \\backslash tag\\{ 4.29\\}\n",
+    "display_tex": "DSR_ t  =  \\frac{ B_{ t - 1}\\left(R_ t  -  A_{ t - 1}\\right)  -  \\frac{ 1}{ 2} A_{ t - 1}\\left(R_ t^2  -  B_{ t - 1}\\right)}{\\left(B_{ t - 1}  -  A_{ t - 1}^2  +  \\epsilon\\right)^{\\frac{ 3}{ 2}}} \\qquad\\text{(4.29)}"
+  },
+  {
+    "source_tex": "R\\_ t\\hat{}\\{ final\\}\\  = \\ DSR\\_ t\\  - \\ \\backslash lambda\\_\\{ cost\\}\\ \\backslash cdot\\ |w\\_ t\\  - \\ w\\_\\{ t - 1\\}|\\_ 1\\ \\backslash tag\\{ 4.30\\}\n",
+    "display_tex": "R_ t^{ final}  =  DSR_ t  -  \\lambda_{ cost} \\cdot |w_ t  -  w_{ t - 1}|_ 1 \\qquad\\text{(4.30)}"
+  },
+  {
+    "source_tex": "R\\_\\{ t,1\\},R\\_\\{ t,2\\},\\backslash dots,R\\_\\{ t,G\\}",
+    "display_tex": "R_{ t,1},R_{ t,2},\\dots,R_{ t,G}"
+  },
+  {
+    "source_tex": "\\backslash hat\\{ A\\}\\_ g\\  = \\ \\backslash frac\\{ R\\_\\{ t,g\\}\\  - \\ \\backslash mathbb\\{ E\\}\\lbrack R\\_\\{ t,g\\}\\rbrack\\}\\{\\backslash text\\{ std\\}(R\\_\\{ t,g\\})\\  + \\ \\backslash epsilon\\}\\ \\backslash tag\\{ 4.31\\}\n",
+    "display_tex": "\\hat{ A}_ g  =  \\frac{ R_{ t,g}  -  \\mathbb{ E}\\lbrack R_{ t,g}\\rbrack}{\\text{ std}(R_{ t,g})  +  \\epsilon} \\qquad\\text{(4.31)}"
+  },
+  {
+    "source_tex": "\\backslash text\\{ std\\}(R\\_\\{ t,g\\})",
+    "display_tex": "\\text{ std}(R_{ t,g})"
+  },
+  {
+    "source_tex": "\\backslash mathcal\\{ L\\}\\_\\{ GRPO\\}\\  = \\  - \\backslash frac\\{ 1\\}\\{ G\\}\\ \\backslash sum\\_\\{ g = 1\\}\\hat{}G\\ \\backslash min\\backslash left(\\ r\\_ g\\ \\backslash cdot\\ \\backslash hat\\{ A\\}\\_ g,\\ \\backslash text\\{ clip\\}\\backslash left(\\ r\\_ g,\\ 1 - \\backslash epsilon,\\ 1 + \\backslash epsilon\\ \\backslash right)\\ \\backslash cdot\\ \\backslash hat\\{ A\\}\\_ g\\ \\backslash right)\\ \\backslash tag\\{ 4.32\\}\n",
+    "display_tex": "\\mathcal{ L}_{ GRPO}  =   - \\frac{ 1}{ G} \\sum_{ g = 1}^G \\min\\left( r_ g \\cdot \\hat{ A}_ g, \\text{ clip}\\left( r_ g, 1 - \\epsilon, 1 + \\epsilon \\right) \\cdot \\hat{ A}_ g \\right) \\qquad\\text{(4.32)}"
+  },
+  {
+    "source_tex": "\\backslash pi\\_\\{\\backslash theta\\}\\backslash left(a|s\\backslash right)\\  = \\ \\backslash mathcal\\{ N\\}\\backslash left(\\ \\backslash text\\{ Tanh\\}\\backslash left(\\ \\backslash mu\\_\\{\\backslash theta\\}\\backslash left(s\\backslash right)\\ \\backslash right),\\ \\backslash sigma\\_\\{\\backslash theta\\}\\hat{}2\\ \\backslash right)\\ \\backslash tag\\{ 4.33\\}\n",
+    "display_tex": "\\pi_{\\theta}\\left(a|s\\right)  =  \\mathcal{ N}\\left( \\text{ Tanh}\\left( \\mu_{\\theta}\\left(s\\right) \\right), \\sigma_{\\theta}^2 \\right) \\qquad\\text{(4.33)}"
+  },
+  {
+    "truncated_source": "$\\text{Calmar Ratio} = \\frac{\\text{Annual Return}}{"
+  },
+  {
+    "truncated_source": "$\\text{Turnover} = \\frac{1}{T} \\sum_{t=1}^T"
+  }
+]

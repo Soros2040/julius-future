@@ -1,0 +1,2077 @@
+{
+  "chapters": [
+    {
+      "level": 1,
+      "title": "Alex-Fin 模型架构详解",
+      "manuscript_anchor": "alex-fin-模型架构详解"
+    },
+    {
+      "level": 1,
+      "title": "Alex-Fin",
+      "manuscript_anchor": "alex-fin"
+    },
+    {
+      "level": 2,
+      "title": "第一章 问题定义与研究范式",
+      "manuscript_anchor": "第一章-问题定义与研究范式"
+    },
+    {
+      "level": 3,
+      "title": "1.1 序列决策问题的MDP形式化",
+      "manuscript_anchor": "11-序列决策问题的mdp形式化"
+    },
+    {
+      "level": 3,
+      "title": "1.2 核心术语严格定义",
+      "manuscript_anchor": "12-核心术语严格定义"
+    },
+    {
+      "level": 3,
+      "title": "1.3 投资绩效评价指标体系",
+      "manuscript_anchor": "13-投资绩效评价指标体系"
+    },
+    {
+      "level": 2,
+      "title": "第二章 多频率金融时空关联网络构建",
+      "manuscript_anchor": "第二章-多频率金融时空关联网络构建"
+    },
+    {
+      "level": 3,
+      "title": "2.1 多频率时空网络的数学定义",
+      "manuscript_anchor": "21-多频率时空网络的数学定义"
+    },
+    {
+      "level": 3,
+      "title": "2.2 全局频率索引规则与可学习频率嵌入",
+      "manuscript_anchor": "22-全局频率索引规则与可学习频率嵌入"
+    },
+    {
+      "level": 4,
+      "title": "2.2.1 全局固定频率索引映射",
+      "manuscript_anchor": "221-全局固定频率索引映射"
+    },
+    {
+      "level": 4,
+      "title": "2.2.2 可学习频率嵌入层实现",
+      "manuscript_anchor": "222-可学习频率嵌入层实现"
+    },
+    {
+      "level": 4,
+      "title": "2.2.3 嵌入叠加方式与全链路复用规则",
+      "manuscript_anchor": "223-嵌入叠加方式与全链路复用规则"
+    },
+    {
+      "level": 3,
+      "title": "2.3 适配FinCast范式的前置分块实例归一化",
+      "manuscript_anchor": "23-适配fincast范式的前置分块实例归一化"
+    },
+    {
+      "level": 3,
+      "title": "2.4 基于GLASSO-DY的分频率独立动态有向风险溢出邻接矩阵构建",
+      "manuscript_anchor": "24-基于glasso-dy的分频率独立动态有向风险溢出邻接矩阵构建"
+    },
+    {
+      "level": 4,
+      "title": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "manuscript_anchor": "241-分频率独立glasso稀疏精度矩阵估计"
+    },
+    {
+      "level": 4,
+      "title": "2.4.2 分频率独立DY有向风险溢出分解",
+      "manuscript_anchor": "242-分频率独立dy有向风险溢出分解"
+    },
+    {
+      "level": 4,
+      "title": "2.4.3 分频率最终邻接矩阵构建",
+      "manuscript_anchor": "243-分频率最终邻接矩阵构建"
+    },
+    {
+      "level": 3,
+      "title": "2.5 统一的EWMA递归更新体系",
+      "manuscript_anchor": "25-统一的ewma递归更新体系"
+    },
+    {
+      "level": 2,
+      "title": "第三章 多频率并行时空分离注意力图神经网络特征提取模块",
+      "manuscript_anchor": "第三章-多频率并行时空分离注意力图神经网络特征提取模块"
+    },
+    {
+      "level": 3,
+      "title": "3.1 模块整体架构",
+      "manuscript_anchor": "31-模块整体架构"
+    },
+    {
+      "level": 3,
+      "title": "3.2 全频率独立并行时空双分支设计",
+      "manuscript_anchor": "32-全频率独立并行时空双分支设计"
+    },
+    {
+      "level": 4,
+      "title": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "manuscript_anchor": "321-无硬编码因果掩码时序自注意力分支"
+    },
+    {
+      "level": 4,
+      "title": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "manuscript_anchor": "322-轻量级自适应gat空间注意力分支"
+    },
+    {
+      "level": 3,
+      "title": "3.3 时空融合统一注意力层",
+      "manuscript_anchor": "33-时空融合统一注意力层"
+    },
+    {
+      "level": 3,
+      "title": "3.4 全连接多向同步交叉注意力融合模块",
+      "manuscript_anchor": "34-全连接多向同步交叉注意力融合模块"
+    },
+    {
+      "level": 4,
+      "title": "3.4.1 前置因果性时间锚定（无硬对齐、无信息损失）",
+      "manuscript_anchor": "341-前置因果性时间锚定无硬对齐无信息损失"
+    },
+    {
+      "level": 4,
+      "title": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "manuscript_anchor": "342-全连接多向同步交叉注意力原生机制完整落地"
+    },
+    {
+      "level": 4,
+      "title": "3.4.3 跨频率融合特征输出",
+      "manuscript_anchor": "343-跨频率融合特征输出"
+    },
+    {
+      "level": 3,
+      "title": "3.5 特征提纯输出层",
+      "manuscript_anchor": "35-特征提纯输出层"
+    },
+    {
+      "level": 2,
+      "title": "第四章 市场状态自适应的自专业化MoE混合专家模块",
+      "manuscript_anchor": "第四章-市场状态自适应的自专业化moe混合专家模块"
+    },
+    {
+      "level": 3,
+      "title": "4.1 模块整体架构与设计原则",
+      "manuscript_anchor": "41-模块整体架构与设计原则"
+    },
+    {
+      "level": 3,
+      "title": "4.2 输入特征适配：全频率嵌入的全链路承接",
+      "manuscript_anchor": "42-输入特征适配全频率嵌入的全链路承接"
+    },
+    {
+      "level": 3,
+      "title": "4.3 自专业化双轨专家网络结构设计",
+      "manuscript_anchor": "43-自专业化双轨专家网络结构设计"
+    },
+    {
+      "level": 4,
+      "title": "4.3.1 专家基础单元结构",
+      "manuscript_anchor": "431-专家基础单元结构"
+    },
+    {
+      "level": 4,
+      "title": "4.3.2 全局共享专家层",
+      "manuscript_anchor": "432-全局共享专家层"
+    },
+    {
+      "level": 4,
+      "title": "4.3.3 动态路由专家层",
+      "manuscript_anchor": "433-动态路由专家层"
+    },
+    {
+      "level": 3,
+      "title": "4.4 全频率感知的无硬编码纯数据驱动路由机制",
+      "manuscript_anchor": "44-全频率感知的无硬编码纯数据驱动路由机制"
+    },
+    {
+      "level": 4,
+      "title": "4.4.1 门控路由权重计算",
+      "manuscript_anchor": "441-门控路由权重计算"
+    },
+    {
+      "level": 4,
+      "title": "4.4.2 动态偏置项负载均衡机制",
+      "manuscript_anchor": "442-动态偏置项负载均衡机制"
+    },
+    {
+      "level": 3,
+      "title": "4.5 适配全频率感知的表征空间正交化方案",
+      "manuscript_anchor": "45-适配全频率感知的表征空间正交化方案"
+    },
+    {
+      "level": 4,
+      "title": "4.5.1 正交性正则化形式化定义",
+      "manuscript_anchor": "451-正交性正则化形式化定义"
+    },
+    {
+      "level": 4,
+      "title": "4.5.2 全频率适配逻辑与训练稳定性保障",
+      "manuscript_anchor": "452-全频率适配逻辑与训练稳定性保障"
+    },
+    {
+      "level": 3,
+      "title": "4.6 MoE模块完整前向传播流程",
+      "manuscript_anchor": "46-moe模块完整前向传播流程"
+    },
+    {
+      "level": 2,
+      "title": "第五章 基于GRPO的深度强化学习自适应投资组合优化模块",
+      "manuscript_anchor": "第五章-基于grpo的深度强化学习自适应投资组合优化模块"
+    },
+    {
+      "level": 3,
+      "title": "5.1 动态投资组合优化的MDP适配性定义",
+      "manuscript_anchor": "51-动态投资组合优化的mdp适配性定义"
+    },
+    {
+      "level": 4,
+      "title": "5.1.1 动作空间",
+      "manuscript_anchor": "511-动作空间"
+    },
+    {
+      "level": 4,
+      "title": "5.1.2 状态空间",
+      "manuscript_anchor": "512-状态空间"
+    },
+    {
+      "level": 4,
+      "title": "5.1.3 状态转移机制",
+      "manuscript_anchor": "513-状态转移机制"
+    },
+    {
+      "level": 4,
+      "title": "5.1.4 奖励函数",
+      "manuscript_anchor": "514-奖励函数"
+    },
+    {
+      "level": 4,
+      "title": "5.1.5 折扣因子",
+      "manuscript_anchor": "515-折扣因子"
+    },
+    {
+      "level": 3,
+      "title": "5.2 面向金融场景的GRPO算法适配性改进",
+      "manuscript_anchor": "52-面向金融场景的grpo算法适配性改进"
+    },
+    {
+      "level": 4,
+      "title": "5.2.1 GRPO算法核心逻辑与金融场景适配性",
+      "manuscript_anchor": "521-grpo算法核心逻辑与金融场景适配性"
+    },
+    {
+      "level": 4,
+      "title": "5.2.2 DSR即时奖励与GRPO step级优化的融合方案",
+      "manuscript_anchor": "522-dsr即时奖励与grpo-step级优化的融合方案"
+    },
+    {
+      "level": 4,
+      "title": "5.2.3 策略更新幅度约束方案",
+      "manuscript_anchor": "523-策略更新幅度约束方案"
+    },
+    {
+      "level": 4,
+      "title": "5.2.4 优势函数适配优化",
+      "manuscript_anchor": "524-优势函数适配优化"
+    },
+    {
+      "level": 4,
+      "title": "5.2.5 GRPO最终优化目标",
+      "manuscript_anchor": "525-grpo最终优化目标"
+    },
+    {
+      "level": 3,
+      "title": "5.3 策略网络架构与硬约束嵌入设计",
+      "manuscript_anchor": "53-策略网络架构与硬约束嵌入设计"
+    },
+    {
+      "level": 4,
+      "title": "5.3.1 策略网络整体架构",
+      "manuscript_anchor": "531-策略网络整体架构"
+    },
+    {
+      "level": 4,
+      "title": "5.3.2 硬约束嵌入机制",
+      "manuscript_anchor": "532-硬约束嵌入机制"
+    },
+    {
+      "level": 3,
+      "title": "5.4 训练进程规范与收敛性保障",
+      "manuscript_anchor": "54-训练进程规范与收敛性保障"
+    },
+    {
+      "level": 4,
+      "title": "5.4.1 滚动窗口训练范式（全面采用目标论文原生设计）",
+      "manuscript_anchor": "541-滚动窗口训练范式全面采用目标论文原生设计"
+    },
+    {
+      "level": 4,
+      "title": "5.4.2 统一三阶段训练进程规范",
+      "manuscript_anchor": "542-统一三阶段训练进程规范"
+    },
+    {
+      "level": 4,
+      "title": "5.4.3 收敛性保障机制",
+      "manuscript_anchor": "543-收敛性保障机制"
+    },
+    {
+      "level": 3,
+      "title": "5.5 回测与验证细节（全面采用目标论文原生设计）",
+      "manuscript_anchor": "55-回测与验证细节全面采用目标论文原生设计"
+    },
+    {
+      "level": 3,
+      "title": "5.6 样本外泛化性增强机制",
+      "manuscript_anchor": "56-样本外泛化性增强机制"
+    }
+  ],
+  "formulas": [
+    {
+      "occurrence": 1,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": true,
+      "tex": "\n{{\\max_{\\theta} \\mathbb{E}_{\\tau\\sim \\pi_{\\theta}}\\left[\\sum_{t=0}^{\\infty} \\gamma^{t} R\\left(s_t, a_t, s_{t+1}\\right)\\right] \\qquad\\text{(1.1)}\n}}\n"
+    },
+    {
+      "occurrence": 2,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{{π}}_{{θ}}}"
+    },
+    {
+      "occurrence": 3,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{θ}}"
+    },
+    {
+      "occurrence": 4,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{γ∈}\\left({{0}},{{1}}\\right)}"
+    },
+    {
+      "occurrence": 5,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{{s}}_{{t}}{∈S}}"
+    },
+    {
+      "occurrence": 6,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 7,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{{a}}_{{t}}{∈A}}"
+    },
+    {
+      "occurrence": 8,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 9,
+      "section": "1.1 序列决策问题的MDP形式化",
+      "anchor": "11-序列决策问题的mdp形式化",
+      "display": false,
+      "tex": "{{R}\\left({{⋅}}\\right)}"
+    },
+    {
+      "occurrence": 10,
+      "section": "1.2 核心术语严格定义",
+      "anchor": "12-核心术语严格定义",
+      "display": false,
+      "tex": "{{T}}"
+    },
+    {
+      "occurrence": 11,
+      "section": "1.2 核心术语严格定义",
+      "anchor": "12-核心术语严格定义",
+      "display": false,
+      "tex": "{{T=252}}"
+    },
+    {
+      "occurrence": 12,
+      "section": "1.2 核心术语严格定义",
+      "anchor": "12-核心术语严格定义",
+      "display": false,
+      "tex": "{{{s}}_{{0}}}"
+    },
+    {
+      "occurrence": 13,
+      "section": "1.2 核心术语严格定义",
+      "anchor": "12-核心术语严格定义",
+      "display": false,
+      "tex": "{{T}}"
+    },
+    {
+      "occurrence": 14,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{\\text{Sharpe Ratio} = \\frac{\\mathbb{E}[R_p - R_f]}{\\sigma_p}}}}"
+    },
+    {
+      "occurrence": 15,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{R}}_{{p}}}"
+    },
+    {
+      "occurrence": 16,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{R}}_{{f}}}"
+    },
+    {
+      "occurrence": 17,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{σ}}_{{p}}}"
+    },
+    {
+      "occurrence": 18,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{\\text{Annual Return} = \\left( \\frac{\\text{PortVal}_T}{\\text{PortVal}_0} \\right)^{252/T} - 1}}}"
+    },
+    {
+      "occurrence": 19,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{\\text{PortVal}_t}}}"
+    },
+    {
+      "occurrence": 20,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 21,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{\\text{MDD} = \\max_{\\tau \\in [0,T]} \\left( \\frac{\\text{PortVal}_\\tau - \\text{PortVal}_{\\tau^*}}{\\text{PortVal}_{\\tau^*}} \\right)}}}"
+    },
+    {
+      "occurrence": 22,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{\\tau^* = \\arg\\max_{t \\in [0,\\tau]} \\text{PortVal}_t}}}"
+    },
+    {
+      "occurrence": 23,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{\\text{Turnover} = \\frac{1}{T} \\sum_{t=1}^T\\vert \\omega_t - \\omega_{t-1}\\vert _1}"
+    },
+    {
+      "occurrence": 24,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{\\text{Information Ratio} = \\frac{\\mathbb{E}[R_p - R_{m}]}{\\sigma_{p-m}}}}"
+    },
+    {
+      "occurrence": 25,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{R}}_{{m}}}"
+    },
+    {
+      "occurrence": 26,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "display": false,
+      "tex": "{{{σ}}_{{p-m}}}"
+    },
+    {
+      "occurrence": 27,
+      "section": "第二章 多频率金融时空关联网络构建",
+      "anchor": "第二章-多频率金融时空关联网络构建",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 28,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{G=}\\left({{V}},{{ℰ}},{{A}},{{ℱ}}\\right)}"
+    },
+    {
+      "occurrence": 29,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{\\mathcal{V} = {v_1, v_2, \\dots, v_N}}}"
+    },
+    {
+      "occurrence": 30,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{ℰ}{⊆V×V×}{ℱ}}"
+    },
+    {
+      "occurrence": 31,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{\\left({{{v}}_{{i}}},{{{v}}_{{j}}},{{f}}\\right)}"
+    },
+    {
+      "occurrence": 32,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 33,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 34,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{j}}"
+    },
+    {
+      "occurrence": 35,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{{A=}\\left\\{A^{f}\\mid f\\in {\\mathcal{F}}\\right\\}}}"
+    },
+    {
+      "occurrence": 36,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{{A}}^{{f}}{∈}{{ℝ}}^{{N×N}}}"
+    },
+    {
+      "occurrence": 37,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 38,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{ℱ}{∈}{{ℝ}}^{{T×N×d×|}{ℱ}{|}}}"
+    },
+    {
+      "occurrence": 39,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{T=60}}"
+    },
+    {
+      "occurrence": 40,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{d}}"
+    },
+    {
+      "occurrence": 41,
+      "section": "2.1 多频率时空网络的数学定义",
+      "anchor": "21-多频率时空网络的数学定义",
+      "display": false,
+      "tex": "{{{\\mathcal{F}={0,1,2,3,4,5,6}}}}"
+    },
+    {
+      "occurrence": 42,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{P}}"
+    },
+    {
+      "occurrence": 43,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": true,
+      "tex": "\n{{\\tilde{X}_{n,p} = \\frac{X_{n,p} - \\mu_n}{\\sigma_n + \\epsilon} \\qquad\\text{(2.1)}\n}}\n"
+    },
+    {
+      "occurrence": 44,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{{X}}_{{n,p}}}"
+    },
+    {
+      "occurrence": 45,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 46,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{p}}"
+    },
+    {
+      "occurrence": 47,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{{μ}}_{{n}}{=}\\frac{{1}}{{P}}\\sum_{{p=1}}^{{P}}{}{{X}}_{{n,p}}{}}"
+    },
+    {
+      "occurrence": 48,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 49,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{{σ}}_{{n}}{=}\\sqrt[{}]{\\frac{{1}}{{P}}\\sum_{{p=1}}^{{P}}{}{\\left({{{X}}_{{n,p}}{-}{{μ}}_{{n}}}\\right)}^{{2}}}}"
+    },
+    {
+      "occurrence": 50,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 51,
+      "section": "2.3 适配FinCast范式的前置分块实例归一化",
+      "anchor": "23-适配fincast范式的前置分块实例归一化",
+      "display": false,
+      "tex": "{{ϵ=1e-8}}"
+    },
+    {
+      "occurrence": 52,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 53,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{{Z}}^{{f}}{∈}{{ℝ}}^{{T×N}}}"
+    },
+    {
+      "occurrence": 54,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{T}}"
+    },
+    {
+      "occurrence": 55,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 56,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{{Σ}}^{{f}}}"
+    },
+    {
+      "occurrence": 57,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{{Ω}}^{{f}}{=}{\\left({{{Σ}}^{{f}}}\\right)}^{{-1}}}"
+    },
+    {
+      "occurrence": 58,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": true,
+      "tex": "\n{{\\min_{\\Omega^f \\succ 0} \\left( \\text{tr}(\\Sigma^f \\Omega^f) - \\log\\det(\\Omega^f) + \\lambda |\\Omega^f|_1 \\right) \\qquad\\text{(2.2)}\n}}\n"
+    },
+    {
+      "occurrence": 59,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{\\text{tr}(\\cdot)}}"
+    },
+    {
+      "occurrence": 60,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{det}\\left({{⋅}}\\right)}"
+    },
+    {
+      "occurrence": 61,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{{Ω}}^{{f}}{≻0}}"
+    },
+    {
+      "occurrence": 62,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{λ}}"
+    },
+    {
+      "occurrence": 63,
+      "section": "2.4.1 分频率独立GLASSO稀疏精度矩阵估计",
+      "anchor": "241-分频率独立glasso稀疏精度矩阵估计",
+      "display": false,
+      "tex": "{{|⋅}{{|}}_{{1}}}"
+    },
+    {
+      "occurrence": 64,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{{Ω}}^{{f}}}"
+    },
+    {
+      "occurrence": 65,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 66,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{j}}"
+    },
+    {
+      "occurrence": 67,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 68,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{H}}"
+    },
+    {
+      "occurrence": 69,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": true,
+      "tex": "\n{{d^{f,H}_{ij} = \\frac{\\sigma_{jj}^{-1} \\cdot (\\Omega^f_{ij})^2}{\\sum_{k=1}^N \\sigma_{kk}^{-1} \\cdot (\\Omega^f_{ik})^2} \\qquad\\text{(2.3)}\n}}\n"
+    },
+    {
+      "occurrence": 70,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{{σ}}_{{jj}}}"
+    },
+    {
+      "occurrence": 71,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{j}}"
+    },
+    {
+      "occurrence": 72,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{j}}"
+    },
+    {
+      "occurrence": 73,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 74,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{{d}}^{{f,H}}_{{ij}}{≠}{{d}}^{{f,H}}_{{ji}}}"
+    },
+    {
+      "occurrence": 75,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": false,
+      "tex": "{{{A}}^{{f,risk}}}"
+    },
+    {
+      "occurrence": 76,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": true,
+      "tex": "\n{{\\tilde{d}^{f,H}_{ij} = \\frac{d^{f,H}_{ij}}{\\sum_{j=1}^N d^{f,H}_{ij}}, \\quad i \\neq j \\qquad\\text{(2.4)}\n}}\n"
+    },
+    {
+      "occurrence": 77,
+      "section": "2.4.2 分频率独立DY有向风险溢出分解",
+      "anchor": "242-分频率独立dy有向风险溢出分解",
+      "display": true,
+      "tex": "\n{{A^{f,risk}_{ii} = 0 \\qquad\\text{(2.5)}\n}}\n"
+    },
+    {
+      "occurrence": 78,
+      "section": "2.4.3 分频率最终邻接矩阵构建",
+      "anchor": "243-分频率最终邻接矩阵构建",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 79,
+      "section": "2.4.3 分频率最终邻接矩阵构建",
+      "anchor": "243-分频率最终邻接矩阵构建",
+      "display": true,
+      "tex": "\n{{A^{f,final}_t = A^{f,risk}_t \\qquad\\text{(2.6)}\n}}\n"
+    },
+    {
+      "occurrence": 80,
+      "section": "2.4.3 分频率最终邻接矩阵构建",
+      "anchor": "243-分频率最终邻接矩阵构建",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 81,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": false,
+      "tex": "{{η=2/253}}"
+    },
+    {
+      "occurrence": 82,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": false,
+      "tex": "{{λ=0.94}}"
+    },
+    {
+      "occurrence": 83,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": false,
+      "tex": "{{{x}}_{{t}}}"
+    },
+    {
+      "occurrence": 84,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": false,
+      "tex": "{{{μ}}_{{t}}}"
+    },
+    {
+      "occurrence": 85,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": false,
+      "tex": "{{{V}}_{{t}}}"
+    },
+    {
+      "occurrence": 86,
+      "section": "2.5 统一的EWMA递归更新体系",
+      "anchor": "25-统一的ewma递归更新体系",
+      "display": true,
+      "tex": "\n{{\\begin{cases}\n\\mu_t = \\left(1-\\eta\\right)\\mu_{t-1} + \\eta x_t \\\\\nV_t = \\left(1-\\eta\\right)V_{t-1} + \\eta \\left(x_t - \\mu_t\\right)^2\n\\end{cases} \\qquad\\text{(2.7)}\n}}\n"
+    },
+    {
+      "occurrence": 87,
+      "section": "3.1 模块整体架构",
+      "anchor": "31-模块整体架构",
+      "display": false,
+      "tex": "{{{D}}_{{model}}{=256}}"
+    },
+    {
+      "occurrence": 88,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{f}}"
+    },
+    {
+      "occurrence": 89,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{{H^f = [h_{1}^f, h_{2}^f, \\dots, h_{T}^f] \\in \\mathbb{R}^{T \\times N \\times D_{model}}}}}"
+    },
+    {
+      "occurrence": 90,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{{M}}^{{time}}}"
+    },
+    {
+      "occurrence": 91,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 92,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": true,
+      "tex": "\n{{M_{ij}^{time} = \\begin{cases}\n0, & j \\leq i \\\\\n-\\infty, & j > i\n\\end{cases} \\qquad\\text{(3.1)}\n}}\n"
+    },
+    {
+      "occurrence": 93,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 94,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 95,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{j}}"
+    },
+    {
+      "occurrence": 96,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": true,
+      "tex": "\n{{\\left[Q^{f,time}, K^{f,time}, V^{f,time}\\right] = H^f W^f_{qkv,time} \\qquad\\text{(3.2)}\n}}\n"
+    },
+    {
+      "occurrence": 97,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": true,
+      "tex": "\n{{\\text{Scores}^{f,time} = \\text{softmax}\\left( \\frac{Q^{f,time} K^{f,time\\top}}{\\sqrt{d_k}} + M^{time} \\right) \\qquad\\text{(3.3)}\n}}\n"
+    },
+    {
+      "occurrence": 98,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": true,
+      "tex": "\n{{H^{f,time} = \\text{Scores}^{f,time} V^{f,time} \\qquad\\text{(3.4)}\n}}\n"
+    },
+    {
+      "occurrence": 99,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{{W}}^{{f}}_{{qkv,time}}}"
+    },
+    {
+      "occurrence": 100,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{{d}}_{{k}}{=}{{D}}_{{model}}{/H}}"
+    },
+    {
+      "occurrence": 101,
+      "section": "3.2.1 无硬编码因果掩码时序自注意力分支",
+      "anchor": "321-无硬编码因果掩码时序自注意力分支",
+      "display": false,
+      "tex": "{{{H}}^{{f,time}}{∈}{{ℝ}}^{{T×N×}{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 102,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{A}}^{{f,final}}_{{t}}}"
+    },
+    {
+      "occurrence": 103,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{A}}^{{f,expand}}{∈}{{ℝ}}^{{H×N×N}}}"
+    },
+    {
+      "occurrence": 104,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{v}}_{{i}}}"
+    },
+    {
+      "occurrence": 105,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 106,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{v}}_{{j}}}"
+    },
+    {
+      "occurrence": 107,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": true,
+      "tex": "\n{{e_{ij}^{f,k} = \\text{LeakyReLU}\\left( a^{f,k} \\left[ W^{f,k} H^{f}_{t,i} \\parallel W^{f,k} H^{f}_{t,j} \\right] \\right) \\qquad\\text{(3.5)}\n}}\n"
+    },
+    {
+      "occurrence": 108,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{∥}}"
+    },
+    {
+      "occurrence": 109,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{a}}^{{f,k}}}"
+    },
+    {
+      "occurrence": 110,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 111,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{W}}^{{f,k}}}"
+    },
+    {
+      "occurrence": 112,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{H}}^{{f}}_{{t,i}}}"
+    },
+    {
+      "occurrence": 113,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 114,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 115,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": true,
+      "tex": "\n{{\\alpha_{ij}^{f,k} = \\frac{\\exp\\left(e_{ij}^{f,k}\\right) A^{f,final}_{ij}}{\\sum_{l\\in \\mathcal{N}(i)} \\exp\\left(e_{il}^{f,k}\\right) A^{f,final}_{il}} \\qquad\\text{(3.6)}\n}}\n"
+    },
+    {
+      "occurrence": 116,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{N}\\left({{i}}\\right)}"
+    },
+    {
+      "occurrence": 117,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{v}}_{{i}}}"
+    },
+    {
+      "occurrence": 118,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": true,
+      "tex": "\n{{h_{i}^{f,k} = \\sigma\\left( \\sum_{j \\in \\mathcal{N}(i)} \\alpha_{ij}^{f,k} W^{f,k} H^{f}_{t,j} \\right) \\qquad\\text{(3.7)}\n}}\n"
+    },
+    {
+      "occurrence": 119,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": true,
+      "tex": "\n{{H^{f,space} = \\text{Concat}(h^{f,1}, h^{f,2}, \\dots, h^{f,H}) \\qquad\\text{(3.8)}\n}}\n"
+    },
+    {
+      "occurrence": 120,
+      "section": "3.2.2 轻量级自适应GAT空间注意力分支",
+      "anchor": "322-轻量级自适应gat空间注意力分支",
+      "display": false,
+      "tex": "{{{H}}^{{f,space}}{∈}{{ℝ}}^{{T×N×}{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 121,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": true,
+      "tex": "\n{{g_{time} = \\sigma\\left( \\text{Linear}(H^{f,time}) \\right), \\quad g_{space} = \\sigma\\left( \\text{Linear}(H^{f,space}) \\right) \\qquad\\text{(3.9)}\n}}\n"
+    },
+    {
+      "occurrence": 122,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": true,
+      "tex": "\n{{\\tilde{H}^{f,st} = g_{time} \\odot H^{f,time} + g_{space} \\odot H^{f,space} \\qquad\\text{(3.10)}\n}}\n"
+    },
+    {
+      "occurrence": 123,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": true,
+      "tex": "\n{{H^{f,fuse} = \\text{LayerNorm}\\left( H^f + \\text{Dropout}(\\tilde{H}^{f,st}) \\right) \\qquad\\text{(3.11)}\n}}\n"
+    },
+    {
+      "occurrence": 124,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{σ}\\left({{⋅}}\\right)}"
+    },
+    {
+      "occurrence": 125,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{⊙}}"
+    },
+    {
+      "occurrence": 126,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{{H}}^{{f}}}"
+    },
+    {
+      "occurrence": 127,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{{g}}_{{time}}}"
+    },
+    {
+      "occurrence": 128,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{{g}}_{{space}}}"
+    },
+    {
+      "occurrence": 129,
+      "section": "3.3 时空融合统一注意力层",
+      "anchor": "33-时空融合统一注意力层",
+      "display": false,
+      "tex": "{{{H}}^{{f,fuse}}{∈}{{ℝ}}^{{T×N×}{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 130,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "K^{all} = \\text{Concat}(H^{0}, H^{1}, H^{2}, H^{3}, H^{4}, H^{5}, H^{6})"
+    },
+    {
+      "occurrence": 131,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "V^{all} = \\text{Concat}(H^{0}, H^{1}, H^{2}, H^{3}, H^{4}, H^{5}, H^{6})"
+    },
+    {
+      "occurrence": 132,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "H^{0}"
+    },
+    {
+      "occurrence": 133,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "H^{6}"
+    },
+    {
+      "occurrence": 134,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "\\left[Q^{3}, K^{all}, V^{all}\\right] = \\left[H^{3} W_q^{3}, K^{all} W_k^{all}, V^{all} W_v^{all}\\right]"
+    },
+    {
+      "occurrence": 135,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "\\text{Scores}^{3\\leftarrow all} = \\text{softmax}\\left( \\frac{Q^{3} K^{all\\top}}{\\sqrt{d_k}} + M^{causal} \\right)"
+    },
+    {
+      "occurrence": 136,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "H^{3,fuse} = \\text{Scores}^{3\\leftarrow all} V^{all}"
+    },
+    {
+      "occurrence": 137,
+      "section": "3.4.2 全连接多向同步交叉注意力原生机制完整落地",
+      "anchor": "342-全连接多向同步交叉注意力原生机制完整落地",
+      "display": false,
+      "tex": "M^{causal}"
+    },
+    {
+      "occurrence": 138,
+      "section": "3.4.3 跨频率融合特征输出",
+      "anchor": "343-跨频率融合特征输出",
+      "display": false,
+      "tex": "H^{cross} = \\text{Concat}(H^{0,fuse}, H^{1,fuse}, H^{2,fuse}, H^{3,fuse}, H^{4,fuse}, H^{5,fuse}, H^{6,fuse})"
+    },
+    {
+      "occurrence": 139,
+      "section": "3.5 特征提纯输出层",
+      "anchor": "35-特征提纯输出层",
+      "display": true,
+      "tex": "\n{{H^{st} = \\text{LayerNorm}\\left( H^{3} + \\text{Dropout}(H^{cross}) \\right) \\qquad\\text{(3.12)}\n}}\n"
+    },
+    {
+      "occurrence": 140,
+      "section": "3.5 特征提纯输出层",
+      "anchor": "35-特征提纯输出层",
+      "display": false,
+      "tex": "{{{H}}^{{st}}}"
+    },
+    {
+      "occurrence": 141,
+      "section": "4.1 模块整体架构与设计原则",
+      "anchor": "41-模块整体架构与设计原则",
+      "display": false,
+      "tex": "{{{D}}_{{model}}{=256}}"
+    },
+    {
+      "occurrence": 142,
+      "section": "4.1 模块整体架构与设计原则",
+      "anchor": "41-模块整体架构与设计原则",
+      "display": false,
+      "tex": "{{4×}{{D}}_{{model}}}"
+    },
+    {
+      "occurrence": 143,
+      "section": "4.2 输入特征适配：全频率嵌入的全链路承接",
+      "anchor": "42-输入特征适配全频率嵌入的全链路承接",
+      "display": false,
+      "tex": "{{{E}}^{{pos}}_{{n}}{∈}{{ℝ}}^{{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 144,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": true,
+      "tex": "\n{{\\text{Expert}(x) = (\\text{Swish}(x W_1) \\odot x W_2) W_3 \\qquad\\text{(4.1)}\n}}\n"
+    },
+    {
+      "occurrence": 145,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": false,
+      "tex": "{{{W}}_{{1}}{,}{{W}}_{{2}}{∈}{{ℝ}}^{{{D}}_{{model}}{×4}{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 146,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": false,
+      "tex": "{{{W}}_{{3}}{∈}{{ℝ}}^{{4}{{D}}_{{model}}{×}{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 147,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": false,
+      "tex": "{{{\\text{Swish}(x) = x \\cdot \\sigma(x)}}}"
+    },
+    {
+      "occurrence": 148,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": false,
+      "tex": "{{σ}\\left({{⋅}}\\right)}"
+    },
+    {
+      "occurrence": 149,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": false,
+      "tex": "{{⊙}}"
+    },
+    {
+      "occurrence": 150,
+      "section": "4.3.1 专家基础单元结构",
+      "anchor": "431-专家基础单元结构",
+      "display": true,
+      "tex": "\n{{W \\sim U\\left( -\\sqrt{\\frac{6}{D_{model}+4D_{model}}}, \\sqrt{\\frac{6}{D_{model}+4D_{model}}} \\right) \\qquad\\text{(4.2)}\n}}\n"
+    },
+    {
+      "occurrence": 151,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": true,
+      "tex": "\n{{s_{n,k} = \\text{Sigmoid}(x_n \\cdot W_{gate,k}) + B_k \\qquad\\text{(4.3)}\n}}\n"
+    },
+    {
+      "occurrence": 152,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{{x}}_{{n}}}"
+    },
+    {
+      "occurrence": 153,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{{W}}_{{gate,k}}{∈}{{ℝ}}^{{{D}}_{{model}}}}"
+    },
+    {
+      "occurrence": 154,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 155,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{{B}}_{{k}}}"
+    },
+    {
+      "occurrence": 156,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 157,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{{s}}_{{n,k}}}"
+    },
+    {
+      "occurrence": 158,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 159,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 160,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": true,
+      "tex": "\n{{g_{n,k} = \\begin{cases}\ns_{n,k}, & \\text{if } k \\in \\text{Top2}({s_{n,1}, s_{n,2}, \\dots, s_{n,8}}) \\\\\n0, & \\text{otherwise}\n\\end{cases} \\qquad\\text{(4.4)}\n}}\n"
+    },
+    {
+      "occurrence": 161,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{{g}}_{{n,k}}}"
+    },
+    {
+      "occurrence": 162,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 163,
+      "section": "4.4.1 门控路由权重计算",
+      "anchor": "441-门控路由权重计算",
+      "display": false,
+      "tex": "{{k}}"
+    },
+    {
+      "occurrence": 164,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": false,
+      "tex": "{{{L}}_{{k}}}"
+    },
+    {
+      "occurrence": 165,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": false,
+      "tex": "{{{L_k = \\frac{\\text{该专家处理的Token数量}}{\\text{该batch总Token数量}}}}}"
+    },
+    {
+      "occurrence": 166,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": false,
+      "tex": "{{{{}}{{L}}}{=2/8=0.25}}"
+    },
+    {
+      "occurrence": 167,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": false,
+      "tex": "{{{e}}_{{k}}{=}{{L}}_{{k}}{-}{{{}}{{L}}}}"
+    },
+    {
+      "occurrence": 168,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": true,
+      "tex": "\n{{{B_k^{t+1} = B_k^t - \\gamma \\cdot \\text{sign}(e_k) \\qquad\\text{(4.5)}}}}\n"
+    },
+    {
+      "occurrence": 169,
+      "section": "4.4.2 动态偏置项负载均衡机制",
+      "anchor": "442-动态偏置项负载均衡机制",
+      "display": false,
+      "tex": "{{γ}}"
+    },
+    {
+      "occurrence": 170,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": true,
+      "tex": "\n{{\\mathcal{L}_{o}=\\sum_{n=1}^N \\left[ \\sum_{i\\in {A,B}}\\left(\\frac{E_{n,shared}^{\\top}E_{n,i}}{|E_{n,shared}|_{2}|E_{n,i}|_{2}}\\right)^{2} + \\left(\\frac{E_{n,A}^{\\top}E_{n,B}}{|E_{n,A}|_{2}|E_{n,B}|_{2}}\\right)^{2} \\right] \\qquad\\text{(4.6)}\n}}\n"
+    },
+    {
+      "occurrence": 171,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{N}}"
+    },
+    {
+      "occurrence": 172,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{A,B}}"
+    },
+    {
+      "occurrence": 173,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{{E}}_{{n,shared}}}"
+    },
+    {
+      "occurrence": 174,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 175,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{{E}}_{{n,A}}{,}{{E}}_{{n,B}}}"
+    },
+    {
+      "occurrence": 176,
+      "section": "4.5.1 正交性正则化形式化定义",
+      "anchor": "451-正交性正则化形式化定义",
+      "display": false,
+      "tex": "{{n}}"
+    },
+    {
+      "occurrence": 177,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": false,
+      "tex": "{{r=x}}"
+    },
+    {
+      "occurrence": 178,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": false,
+      "tex": "{{x}}"
+    },
+    {
+      "occurrence": 179,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": false,
+      "tex": "{{{x_{norm} = \\text{RMSNorm}(x)}}}"
+    },
+    {
+      "occurrence": 180,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": false,
+      "tex": "{{{h_{shared} = \\text{SharedExpert}(x_{norm})}}}"
+    },
+    {
+      "occurrence": 181,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": true,
+      "tex": "\n{{y = h_{shared} + h_{special} + r \\qquad\\text{(4.7)}\n}}\n"
+    },
+    {
+      "occurrence": 182,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": true,
+      "tex": "\n{{y = h_{shared} + h_{special} + r \\qquad\\text{(4.7)}\n}}\n"
+    },
+    {
+      "occurrence": 183,
+      "section": "4.6 MoE模块完整前向传播流程",
+      "anchor": "46-moe模块完整前向传播流程",
+      "display": false,
+      "tex": "{{y}}"
+    },
+    {
+      "occurrence": 184,
+      "section": "5.1 动态投资组合优化的MDP适配性定义",
+      "anchor": "51-动态投资组合优化的mdp适配性定义",
+      "display": true,
+      "tex": "\n{{\\max_{\\theta} \\mathbb{E}_{\\tau\\sim \\pi_{\\theta}}\\left[\\sum_{t=0}^{\\infty} \\gamma^{t} R\\left(s_t, a_t, s_{t+1}\\right)\\right] \\qquad\\text{(5.1)}\n}}\n"
+    },
+    {
+      "occurrence": 185,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{N}}"
+    },
+    {
+      "occurrence": 186,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 187,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{{a}}_{{t}}}"
+    },
+    {
+      "occurrence": 188,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{N+1}}"
+    },
+    {
+      "occurrence": 189,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{{w}_{t}=\\left[{w}_{1,t},{w}_{2,t},{\\dots},{w}_{N,t},{w}_{c,t}\\right]}}"
+    },
+    {
+      "occurrence": 190,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{{w}}_{{i,t}}}"
+    },
+    {
+      "occurrence": 191,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{i}}"
+    },
+    {
+      "occurrence": 192,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{{w}}_{{c,t}}}"
+    },
+    {
+      "occurrence": 193,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{\\sum_{{i=1}}^{{N}}{}{{w}}_{{i,t}}{+}{{w}}_{{c,t}}{=1}}"
+    },
+    {
+      "occurrence": 194,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{0≤}{{w}}_{{i,t}}{≤1}}"
+    },
+    {
+      "occurrence": 195,
+      "section": "5.1.1 动作空间",
+      "anchor": "511-动作空间",
+      "display": false,
+      "tex": "{{0≤}{{w}}_{{c,t}}{≤1}}"
+    },
+    {
+      "occurrence": 196,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{N}}"
+    },
+    {
+      "occurrence": 197,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{T=60}}"
+    },
+    {
+      "occurrence": 198,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 199,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{{s}}_{{t}}}"
+    },
+    {
+      "occurrence": 200,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{\\left[{\\left({{N+1}}\\right){×T}}\\right]}"
+    },
+    {
+      "occurrence": 201,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": true,
+      "tex": "\n{{s_t = \\begin{pmatrix}\nw_{1,t} & r_{1,t-1} & \\cdots & r_{1,t-T+1} \\\\\nw_{2,t} & r_{2,t-1} & \\cdots & r_{2,t-T+1} \\\\\n\\vdots & & \\ddots & \\vdots \\\\\nw_{N,t} & r_{N,t-1} & \\cdots & r_{N,t-T+1} \\\\\nw_{c,t} & vol_{20,t} & \\frac{vol_{20,t}}{vol_{60,t}} & VIX_t\n\\end{pmatrix} \\qquad\\text{(5.2)}\n}}\n"
+    },
+    {
+      "occurrence": 202,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 203,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{T}}"
+    },
+    {
+      "occurrence": 204,
+      "section": "5.1.2 状态空间",
+      "anchor": "512-状态空间",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 205,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{{s}}_{{t}}}"
+    },
+    {
+      "occurrence": 206,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{{a}}_{{t}}}"
+    },
+    {
+      "occurrence": 207,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{{s}}_{{t+1}}}"
+    },
+    {
+      "occurrence": 208,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{t+1}}"
+    },
+    {
+      "occurrence": 209,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{{a}}_{{t}}}"
+    },
+    {
+      "occurrence": 210,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 211,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{{a}}_{{t}}}"
+    },
+    {
+      "occurrence": 212,
+      "section": "5.1.3 状态转移机制",
+      "anchor": "513-状态转移机制",
+      "display": false,
+      "tex": "{{t+1}}"
+    },
+    {
+      "occurrence": 213,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{A}}_{{t}}}"
+    },
+    {
+      "occurrence": 214,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{B}}_{{t}}}"
+    },
+    {
+      "occurrence": 215,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{η=2/253}}"
+    },
+    {
+      "occurrence": 216,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": true,
+      "tex": "\n{{\\begin{cases}\nA_t = A_{t-1} + \\eta\\left(R_t - A_{t-1}\\right) \\\\\nB_t = B_{t-1} + \\eta\\left(R_t^2 - B_{t-1}\\right)\n\\end{cases} \\qquad\\text{(5.3)}\n}}\n"
+    },
+    {
+      "occurrence": 217,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{R}}_{{t}}}"
+    },
+    {
+      "occurrence": 218,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{t}}"
+    },
+    {
+      "occurrence": 219,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{A}}_{{0}}{=0,}{{B}}_{{0}}{=0}}"
+    },
+    {
+      "occurrence": 220,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": true,
+      "tex": "\n{{DSR_t = \\frac{B_{t-1}\\left(R_t - A_{t-1}\\right) - \\frac{1}{2}A_{t-1}\\left(R_t^2 - B_{t-1}\\right)}{\\left(B_{t-1} - A_{t-1}^2 + \\epsilon\\right)^{\\frac{3}{2}}} \\qquad\\text{(5.4)}\n}}\n"
+    },
+    {
+      "occurrence": 221,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{ϵ=1e-8}}"
+    },
+    {
+      "occurrence": 222,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": true,
+      "tex": "\n{{R_t^{final} = DSR_t - \\lambda_{cost} \\cdot |w_t - w_{t-1}|_1 \\qquad\\text{(5.5)}\n}}\n"
+    },
+    {
+      "occurrence": 223,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{λ}}_{{cost}}{=1.0}}"
+    },
+    {
+      "occurrence": 224,
+      "section": "5.1.4 奖励函数",
+      "anchor": "514-奖励函数",
+      "display": false,
+      "tex": "{{{R}}^{{final}}_{{t}}{∈}\\left[{{-10}},{{10}}\\right]{}}"
+    },
+    {
+      "occurrence": 225,
+      "section": "5.1.5 折扣因子",
+      "anchor": "515-折扣因子",
+      "display": false,
+      "tex": "{{γ=0.9}}"
+    },
+    {
+      "occurrence": 226,
+      "section": "5.1.5 折扣因子",
+      "anchor": "515-折扣因子",
+      "display": false,
+      "tex": "{{λ=0.95}}"
+    },
+    {
+      "occurrence": 227,
+      "section": "5.2.2 DSR即时奖励与GRPO step级优化的融合方案",
+      "anchor": "522-dsr即时奖励与grpo-step级优化的融合方案",
+      "display": false,
+      "tex": "{{{s}}_{{t}}}"
+    },
+    {
+      "occurrence": 228,
+      "section": "5.2.2 DSR即时奖励与GRPO step级优化的融合方案",
+      "anchor": "522-dsr即时奖励与grpo-step级优化的融合方案",
+      "display": false,
+      "tex": "{{G=64}}"
+    },
+    {
+      "occurrence": 229,
+      "section": "5.2.2 DSR即时奖励与GRPO step级优化的融合方案",
+      "anchor": "522-dsr即时奖励与grpo-step级优化的融合方案",
+      "display": false,
+      "tex": "{{{R}}_{{t,g}}}"
+    },
+    {
+      "occurrence": 230,
+      "section": "5.2.3 策略更新幅度约束方案",
+      "anchor": "523-策略更新幅度约束方案",
+      "display": false,
+      "tex": "{{{π}}_{{{θ}}_{{old}}}}"
+    },
+    {
+      "occurrence": 231,
+      "section": "5.2.3 策略更新幅度约束方案",
+      "anchor": "523-策略更新幅度约束方案",
+      "display": false,
+      "tex": "{{{θ}}_{{old}}{←θ}}"
+    },
+    {
+      "occurrence": 232,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": false,
+      "tex": "{{G}}"
+    },
+    {
+      "occurrence": 233,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": false,
+      "tex": "{{{R}}_{{t,1}}{,}{{R}}_{{t,2}}{,...,}{{R}}_{{t,G}}}"
+    },
+    {
+      "occurrence": 234,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": true,
+      "tex": "\n{{\\hat{A}_g = \\frac{R_{t,g} - \\mathbb{E}[R_{t,g}]}{\\text{std}(R_{t,g}) + \\epsilon} \\qquad\\text{(5.6)}\n}}\n"
+    },
+    {
+      "occurrence": 235,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": false,
+      "tex": "{{E}\\left[{{{R}}_{{t,g}}}\\right]}"
+    },
+    {
+      "occurrence": 236,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": false,
+      "tex": "{{{\\text{std}(R_{t,g})}}}"
+    },
+    {
+      "occurrence": 237,
+      "section": "5.2.4 优势函数适配优化",
+      "anchor": "524-优势函数适配优化",
+      "display": false,
+      "tex": "{{ϵ=1e-8}}"
+    },
+    {
+      "occurrence": 238,
+      "section": "5.2.5 GRPO最终优化目标",
+      "anchor": "525-grpo最终优化目标",
+      "display": true,
+      "tex": "\n{{\\mathcal{L}_{GRPO} = -\\frac{1}{G} \\sum_{g=1}^G \\min\\left( r_g \\cdot \\hat{A}_g, \\text{clip}\\left( r_g, 1-\\epsilon, 1+\\epsilon \\right) \\cdot \\hat{A}_g \\right) \\qquad\\text{(5.7)}\n}}\n"
+    },
+    {
+      "occurrence": 239,
+      "section": "5.2.5 GRPO最终优化目标",
+      "anchor": "525-grpo最终优化目标",
+      "display": false,
+      "tex": "{{{r}}_{{g}}{=}\\frac{{{π}}_{{θ}}\\left({{{a}}_{{g}}{|}{{s}}_{{g}}}\\right)}{{{π}}_{{{θ}}_{{old}}}\\left({{{a}}_{{g}}{|}{{s}}_{{g}}}\\right)}}"
+    },
+    {
+      "occurrence": 240,
+      "section": "5.2.5 GRPO最终优化目标",
+      "anchor": "525-grpo最终优化目标",
+      "display": false,
+      "tex": "{{{Â}}_{{g}}}"
+    },
+    {
+      "occurrence": 241,
+      "section": "5.2.5 GRPO最终优化目标",
+      "anchor": "525-grpo最终优化目标",
+      "display": false,
+      "tex": "{{ϵ=0.2}}"
+    },
+    {
+      "occurrence": 242,
+      "section": "5.2.5 GRPO最终优化目标",
+      "anchor": "525-grpo最终优化目标",
+      "display": false,
+      "tex": "{{θ}}"
+    },
+    {
+      "occurrence": 243,
+      "section": "5.3.1 策略网络整体架构",
+      "anchor": "531-策略网络整体架构",
+      "display": true,
+      "tex": "\n{{\\pi_{\\theta}\\left(a|s\\right) = \\mathcal{N}\\left( \\text{Tanh}\\left( \\mu_{\\theta}\\left(s\\right) \\right), \\sigma_{\\theta}^2 \\right) \\qquad\\text{(5.8)}\n}}\n"
+    },
+    {
+      "occurrence": 244,
+      "section": "5.3.1 策略网络整体架构",
+      "anchor": "531-策略网络整体架构",
+      "display": false,
+      "tex": "{{{μ}}_{{θ}}\\left({{s}}\\right){}}"
+    },
+    {
+      "occurrence": 245,
+      "section": "5.3.1 策略网络整体架构",
+      "anchor": "531-策略网络整体架构",
+      "display": false,
+      "tex": "{{log}{σ}}"
+    },
+    {
+      "occurrence": 246,
+      "section": "5.3.1 策略网络整体架构",
+      "anchor": "531-策略网络整体架构",
+      "display": false,
+      "tex": "{\\left[{{-20}},{{2}}\\right]}"
+    },
+    {
+      "occurrence": 247,
+      "section": "5.4.3 收敛性保障机制",
+      "anchor": "543-收敛性保障机制",
+      "display": false,
+      "tex": "{{{\\text{max_grad_norm}=0.5}}}"
+    }
+  ],
+  "tables": [
+    {
+      "occurrence": 1,
+      "section": "1.3 投资绩效评价指标体系",
+      "anchor": "13-投资绩效评价指标体系",
+      "preceding_caption": "表1-1 模型投资绩效评价指标体系",
+      "rows": 8
+    },
+    {
+      "occurrence": 2,
+      "section": "2.2.1 全局固定频率索引映射",
+      "anchor": "221-全局固定频率索引映射",
+      "preceding_caption": "表2-1 全局频率索引与对应金融属性",
+      "rows": 8
+    }
+  ],
+  "figures": []
+}

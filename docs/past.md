@@ -39,3 +39,9 @@ The results are mixed, which gives the next questions substance. Encoding consis
 I encountered Datawhale between the second and third projects and began contributing during the third. Specific community contributions belong in a record with their public links and actual scope. The next step is to make my own work similarly legible to others.
 
 Continue with [reflection](reflections.md), [next steps](roadmap.md), or [the portfolio](https://github.com/Soros2040).
+
+## Complete works and evidence
+
+The complete Chinese manuscripts, PDFs, original figures and version maps are collected in [works](../works/README.md). Alex-Fin’s architecture and research manuscripts remain separate works. BenjaminAgent’s historical text retains its original name, while the project cases explain current implementation.
+
+My current priority is quantum computing and quantum machine learning. Q-Fintelligence already includes fixed-catalogue quantum kernels and local-observable experiments. Their results motivate further questions about comparison conditions, generalization and measurement cost; the concrete next study will be selected through further discussion.
