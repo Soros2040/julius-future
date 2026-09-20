@@ -1,3 +1,5 @@
+[English](quantum-research.en.md) · [简体中文](quantum-research.md)
+
 # 量子核自设计与风险增强组合优化
 
 状态：研究设计与预立项。本文定义研究问题、实验约束和拟交付的证据。

@@ -1,57 +1,53 @@
-# 贡献指南
+[English](CONTRIBUTING.md) · [简体中文](CONTRIBUTING.zh-CN.md)
 
-欢迎通过来源复核、研究设计讨论、概念说明、实验复现、代码和文档改进参与 Julius' future。当前处于研究设计与预立项阶段；第一次贡献可以从[首批任务](docs/roadmap.md#starter-tasks)中选择一个能独立验收的小问题。
 
-## 完成一次贡献
+# Contributing
 
-1. **确定范围**：阅读相关文档并搜索现有 [Issues](https://github.com/Soros2040/julius-future/issues)。认领任务时在 Issue 写明任务编号、交付位置、验收条件与预计时间，由维护者确认负责人和审阅者。较大的方向或结构调整先用[任务模板](https://github.com/Soros2040/julius-future/issues/new?template=task.md)讨论。
-2. **记录依据**：来源或比较条件复核使用[复核记录模板](docs/roadmap.md#review-record)，给出原句、原始来源的位置、支持程度和建议。范围清楚的小修正可直接提交 PR，并附上依据。
-3. **提交修改**：Fork 仓库，从最新 `main` 创建分支，例如 `docs/kernel-introduction` 或 `research/baseline-review`。完成一个连贯改动，同步导航、引用和相关状态。PR 关联 Issue，说明交付内容、实际检查和局限。
-4. **完成审阅**：审阅者按任务的验收条件检查内容与证据，提出具体问题；贡献者修改并回复。研究结果至少由另一位参与者尝试复现，才可标为“已复核”。
-5. **登记成果**：维护者确认验收后合并，补全[成果登记](docs/roadmap.md#result-register)中的贡献者、Issue / PR、合并版本、证据与状态，更新任务表。影响模块进展时同步 README；未完成独立复核的结果保持“待复核”。
+Start by reading the project question and the relevant chapter. Contributions should leave a claim, explanation or workflow easier to understand and check.
 
-目前维护者为 [@Soros2040](https://github.com/Soros2040)。具体任务的审阅人以 Issue / PR 记录为准，模块职责按[维护与交接](docs/maintenance.md)逐步分配。
+## Choose a first task
 
-## 来源复核与文档贡献
+| Task | Deliverable | Acceptance criterion | Claim status |
+| --- | --- | --- | --- |
+| Reference review | A note under `contributions/` and a focused text correction | Original source, exact location, supported scope and reasoning | Open; claim through an Issue |
+| Source walkthrough | A chapter improvement linked to a real module | Inputs, outputs and one example agree with the inspected version | Open; claim through an Issue |
+| Bilingual review | Paired English/Chinese changes | Equations, numbers, tables, sources and status agree | Open; claim through an Issue |
 
-- 对照原始来源，记录实际阅读的版本、章节、页码或公式。题录、全文核对和实验复现各自说明已完成的范围。
-- 支持程度采用“充分支持 / 部分支持 / 不能支持 / 待核实”，附上理由和适用条件。访问受限时记录情况与下一步。
-- 使用清楚的中文说明问题、证据和结论，保留必要的技术名称。区分原作者结论、项目假设、实测结果和自己的推断。
-- 链接采用仓库相对路径或可公开访问的来源；图表提供标题、单位和出处，公式定义符号。
-- 概念说明按[学习与写作指南](docs/learning-and-writing.md#prerequisite-notes)提供最小例子和自检题。提交者应能解释例子、答案和引用。
-- AI 辅助内容由提交者逐句核对，事实、来源和表达由提交者负责。
+## From an Issue to an accepted contribution
 
-## 实验与研究贡献
+1. Open an Issue with the problem, proposed artifact and acceptance check. Link a first-task row if relevant.
+2. Ask to claim the task in that Issue. The maintainer records the assignee and scope; a listing alone does not reserve it.
+3. Create a branch in your fork. Keep one topic per change and update both languages together.
+4. Submit a PR linking the Issue. Describe the source or environment, exact changes and checks actually performed.
+5. Respond to review. The maintainer checks facts, ownership, scope, links and language parity before merging.
+6. Add the PR/commit, reviewer and remaining work to the contribution record. A proposal becomes accepted only after review and merge.
 
-每份实验记录需包含以下信息，并在设计阶段明确比较条件：
+Research changes include data provenance, version, configuration, seed/split, reproduction steps and results. Mark a check as unexecuted when it was only inspected. Use synthetic data for examples when real data cannot be redistributed. Never include credentials, private identities or unlicensed full texts.
 
-| 项目 | 必需信息 |
-| --- | --- |
-| 问题 | 假设、预先确定的指标、基线和成功判据 |
-| 环境 | 操作系统、Python、依赖版本、硬件或量子后端 |
-| 输入 | 数据来源及许可、时间划分、预处理、随机种子 |
-| 公平比较 | 共用的数据与特征条件、各方法调参范围、训练和搜索预算、差异及理由 |
-| 预算 | 搜索次数、模拟或硬件调用、shots、耗时与成本口径 |
-| 运行 | 完整命令、配置及必要的输入校验信息 |
-| 结果 | 对照表、波动或置信区间、失败案例与局限 |
-| 复核 | 实际运行状态、复核者、对应版本和可访问的证据 |
+<a id="contribution-record"></a>
+## Contribution record
 
-涉及金融数据时检查时间泄漏和可交易性；涉及量子结果时同时记录经典基线与编译、采样资源。日志和命令使用文本代码块，便于搜索与复现。设计中的目标与实测结果分别标明。
+Copy this into a new Markdown note under `contributions/`:
 
-## 数据、隐私与许可
+```text
+Title:
+Issue and agreed scope:
+Author and actual contribution:
+Source and exact section / table / code location:
+Version / commit / artifact hash:
+Environment and reproduction steps (if applicable):
+Finding and supporting evidence:
+Checks performed and their results:
+English / Chinese pages updated:
+Reviewer and decision:
+Merged PR / commit:
+Remaining question:
+```
 
-公开提交应只包含已获授权的内容。检查正文、附件、文件名和元数据，移除凭据、个人联系方式及未经授权的信息。使用受限数据的实验应提供获取说明或允许分发的最小示例。
+Do not fill in a reviewer, acceptance decision or run result before it exists. See [maintenance](docs/maintenance.md) for handoff responsibilities.
 
-原创文档贡献按 [CC BY-NC-SA 4.0](LICENSE) 授权，原创代码贡献按 [MIT](LICENSE-CODE) 授权。引用或移植第三方内容时保留原许可与必要署名，并在[来源与许可说明](THIRD_PARTY_NOTICES.md)中登记；贡献者须有权提交相关内容。
+## License
 
-## 提交前检查
+Contribute only material you can license. Original code uses MIT and original documentation uses CC BY-NC-SA 4.0 unless a file states its preserved upstream license. Keep third-party attribution and identify reused content.
 
-- 改动范围与任务一致，交付位置和验收条件明确。
-- 文档能被未参与讨论的读者理解，导航和相对链接可用。
-- 来源及原文位置可追溯，支持程度与判断理由清楚。
-- 已运行的检查与尚待完成的验证分别说明。
-- 目标、实测结果和推断清楚区分。
-- 署名、公开范围与许可已经核对。
-- 已提供成果登记所需信息，并注明应更新的任务或模块状态。
-
-持续性的大改动可以先开 Draft PR。审阅意见围绕可操作的问题和证据展开，后续修正关联已有成果与版本。
+Worked example: [a source review record](contributions/example-review.md).

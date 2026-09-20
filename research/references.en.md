@@ -1,49 +1,49 @@
 [English](references.en.md) · [简体中文](references.md)
 
-# 研究参考资料
+# Research bibliography
 
-本索引按研究问题提供原始资料入口。建议先阅读量子核与搜索方法，再结合风险预测、组合优化和实验设计补齐背景。年份按所列论文或版本记录；预印本链接可能早于正式发表年份。
+This index groups original sources by research question. Begin with quantum kernels and search, then read risk prediction, portfolio optimization and experimental design. Years identify the listed work or version; preprints may precede formal publication.
 
-## 核心方法与阅读顺序
+## Core methods and reading order
 
 1. **[Neural Auto-designer for Enhanced Quantum Kernels](https://arxiv.org/abs/2401.11098)**（2024）。Cong Lei, Yuxuan Du, Peng Mi, Jun Yu, Tongliang Liu。
-   阅读重点：量子核特征映射搜索、候选预测与排序；本项目核自设计方法的主要起点。
+   Reading focus: Quantum feature-map search, candidate prediction and ranking; the starting point for this project’s kernel-design method.
 
 2. **[A Quantum Approximate Optimization Algorithm](https://arxiv.org/abs/1411.4028)**（2014）。Edward Farhi, Jeffrey Goldstone, Sam Gutmann。
-   阅读重点：QAOA原始算法；用于组合目标采样启发式。
+   Reading focus: The original QAOA algorithm, used as a sampling heuristic for portfolio objectives.
 
 3. **[From the Quantum Approximate Optimization Algorithm to a Quantum Alternating Operator Ansatz](https://arxiv.org/abs/1709.03489)**（2019）。Stuart Hadfield, Zhihui Wang, Bryan O’Gorman, Eleanor G. Rieffel, Davide Venturelli, Rupak Biswas。
-   阅读重点：受约束mixer与可行解空间。
+   Reading focus: Constraint-preserving mixers and feasible solution spaces.
 
 4. **[Variational quantum algorithms](https://arxiv.org/abs/2012.09265)**（2021）。M. Cerezo, Andrew Arrasmith, Ryan Babbush, Simon C. Benjamin, Suguru Endo, Keisuke Fujii, Jarrod R. McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio, Patrick J. Coles。
-   阅读重点：变分线路、梯度、训练与噪声背景。
+   Reading focus: Variational circuits, gradients, training and noise.
 
 5. **[Melding the Data-Decisions Pipeline: Decision-Focused Learning for Combinatorial Optimization](https://arxiv.org/abs/1809.05504)**（2019）。Bryan Wilder, Bistra Dilkina, Milind Tambe。
-   阅读重点：决策聚焦学习与预测—优化接口。
+   Reading focus: Decision-focused learning and the prediction-to-optimization interface.
 
 6. **[Supervised quantum machine learning models are kernel methods](https://arxiv.org/abs/2101.11020)**（2021）。Maria Schuld。
-   阅读重点：量子监督学习的核方法解释。
+   Reading focus: A kernel interpretation of supervised quantum learning.
 
 7. **[Differentiable Quantum Architecture Search](https://arxiv.org/abs/2010.08561)**（2022）。Shi-Xin Zhang, Chang-Yu Hsieh, Shengyu Zhang, Hong Yao。
-   阅读重点：可微量子架构搜索。
+   Reading focus: Differentiable quantum architecture search.
 
 8. **[Neural Predictor based Quantum Architecture Search](https://arxiv.org/abs/2103.06524)**（2021）。Shi-Xin Zhang, Chang-Yu Hsieh, Shengyu Zhang, Hong Yao。
-   阅读重点：神经代理预测器与线路候选筛选。
+   Reading focus: Neural surrogate prediction and candidate-circuit selection.
 
 9. **[On the Network Topology of Variance Decompositions: Measuring the Connectedness of Financial Firms](https://www.nber.org/papers/w17490)**（2011）。Francis X. Diebold, Kamil Yilmaz。
-   阅读重点：FEVD 金融风险关联；此处引用 2011 年工作论文版本。
+   Reading focus: FEVD-based financial connectedness; this entry cites the 2011 working-paper version.
 
 10. **[Portfolio Selection](https://doi.org/10.1111/j.1540-6261.1952.tb01525.x)**（1952）。Harry Markowitz。
-   阅读重点：均值—方差组合选择基础。
+   Reading focus: The foundations of mean–variance portfolio selection.
 
 11. **[Smart “Predict, then Optimize”](https://arxiv.org/abs/1710.08005)**（2022）。Adam N. Elmachtoub, Paul Grigas。
-   阅读重点：SPO决策损失与预测优化结合。
+   Reading focus: SPO decision loss and the integration of prediction and optimization.
 
-## 雷聪署名研究：特征选择与图学习
+## Research coauthored by Cong Lei: feature selection and graph learning
 
-以下相关作品用于了解特征选择、低秩表示与图学习的研究脉络。题名和作者归属已按所持论文核对；QuKerNet 见前面的核心方法。
+These works provide context on feature selection, low-rank representation and graph learning. Titles and author attribution were checked against the locally held papers. QuKerNet appears in the core-method list.
 
-| 年份 | 论文 | 作者 |
+| Year | Paper | Authors |
 | --- | --- | --- |
 | 2017 | [Supervised Feature Selection Algorithm Based on Low-Rank and Manifold Learning](https://doi.org/10.1007/978-3-319-69179-4_19) | Yue Fang, Jilian Zhang, Shichao Zhang, Cong Lei, Xiaoyi Hu |
 | 2017 | [Unsupervised Feature Selection via Local Structure Learning and Self-Representation](https://doi.org/10.1109/ICBK.2017.22) | Shichao Zhang, Cong Lei, Yue Fang, Yangding Li, Rongyao Hu, Xiaoyi Hu |
@@ -66,12 +66,12 @@
 | 2020 | [基于核稀疏表示的属性选择算法](https://doi.org/10.3969/j.issn.1007-130X.2020.01.022) | 吕治政, 李扬定, 雷聪 |
 | 2021 | [Adaptive reverse graph learning for robust subspace learning](https://doi.org/10.1016/j.ipm.2021.102733) | Chang-An Yuan, Zhi Zhong, Cong Lei, Xiaofeng Zhu, Rongyao Hu |
 
-## 补充题录
+## Additional bibliographic record
 
-- **[Anonymizing approach to resist label-neighborhood attacks in dynamic releases of social networks](https://doi.org/10.1109/HealthCom.2017.8210763)**（2017）。Xiaoyi Hu, Li-e Wang, Jiaqi Tang, Cong Lei, Peng Liu, Xianxian Li。动态社交网络匿名化方向；目前仅核对作者题录，全文分析待补充。
+- **[Anonymizing approach to resist label-neighborhood attacks in dynamic releases of social networks](https://doi.org/10.1109/HealthCom.2017.8210763)**（2017）。Xiaoyi Hu, Li-e Wang, Jiaqi Tang, Cong Lei, Peng Liu, Xianxian Li。Dynamic social-network anonymization; the author record has been checked, while full-text analysis remains to be added.
 
-## 使用方法
+## How to use the sources
 
-- 研究记录说明实际阅读的章节、使用的方法及对应实验，引用具体版本。
-- 文献中的结果归属于原作者；本项目的实验记录另行给出实现、数据、预算和复核结果。
-- 论文与数据的使用遵循来源许可；复用内容保留必要署名。
+- Record the sections actually read, the method used and the linked experiment; cite a specific version.
+- Results in the literature belong to the original authors. This project records its own implementation, data, budget and review results separately.
+- Follow the original licenses for papers and data and retain required attribution.

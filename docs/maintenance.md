@@ -1,34 +1,20 @@
-# 维护与交接
+[English](maintenance.md) · [简体中文](maintenance.zh-CN.md)
 
-项目的维护目标是让知识、验证方法和日常流程可以交接，使其他参与者能够独立推进工作。
 
-## 职责
+# Maintenance and handoff
 
-| 角色 | 职责 | 当前安排 |
-| --- | --- | --- |
-| 项目维护者 | 任务分配、合并、版本与方向协调 | @Soros2040 |
-| 模块负责人 | 维护模块说明、实验入口和待办 | 按任务认领 |
-| 研究审阅者 | 核对方法、基线、证据与复现 | 按 PR 邀请 |
-| 文档审阅者 | 检查可理解性、来源、导航和授权 | 按 PR 邀请 |
+Julius maintains the project direction, reviews proposed tasks and coordinates releases. Contribution records credit the people who actually designed, implemented, executed or reviewed each artifact. Named co-maintainers can be added after accepting a defined responsibility.
 
-## 日常节奏
+| Responsibility | Required record |
+| --- | --- |
+| Task triage | Issue, scope, owner, acceptance criterion and dependencies |
+| Technical review | Source/version, assumptions, checks and unresolved limitations |
+| Documentation | English/Chinese parity, working links and readable figures |
+| Release | Reviewed file list, license/attribution, validation record and commit |
+| Handoff | Last working entry point, environment, next action and decision needing attention |
 
-- 每周更新活跃任务的进展、阻碍和下一步；无人接手的任务明确标记。
-- 每月检查复现入口、依赖变化和文档链接，汇总新增成果。
-- 每季度回顾项目使用情况、贡献者参与、维护耗时及算力等资源投入。
+Before handing off a task, provide a minimal reading order and explain what has actually been checked. Keep credentials in the execution environment. Record where an authorized collaborator obtains access without placing access details in a public document.
 
-## 模块交接清单
+When a result changes, update its source table, both languages and the relevant case study together. Keep historical results associated with their own versions. When maintenance pauses, record the last supported snapshot and open tasks so another contributor can make a bounded improvement.
 
-1. 阅读入口、设计理由、接口及已知局限。
-2. 可访问且许可清楚的数据说明、环境、配置和运行步骤。
-3. 基线结果、验证记录、失败案例和结果解读方法。
-4. 活跃任务、优先级、依赖与下一次交付。
-5. 第二位参与者从干净环境完成一次复现，并独立审阅一个改动。
-
-维护者变更通过 Issue 记录职责与交接验收。访问权限由仓库所有者按实际需要配置，凭据通过适当的私密渠道管理。
-
-## 持续支持
-
-优先建立可重复使用的实验和教学模块，降低每次辅导、复现和维护的投入。社区与实验室合作可提供指导、算力和共同维护；其他支持或商业授权以具体约定及贡献者权利为依据。
-
-资源不足时优先维护已有复现入口和重要问题，并在路线图中更新后续任务安排。
+The [contribution guide](../CONTRIBUTING.md) contains the record template.

@@ -1,51 +1,35 @@
-# 学习与写作指南
+[English](learning-and-writing.md) · [简体中文](learning-and-writing.zh-CN.md)
 
-学习从一个具体疑问开始，写作把阅读、证据和理解整理成他人可以检查的材料。当前围绕量子研究列出学习路径，前置概念说明与实验教程随任务逐步提交。
 
-<a id="learning-path"></a>
+# Turning reading into work
 
-## 推荐学习顺序
+Start with a question small enough to answer from one source. The aim is to leave a note that helps the next reader make a decision. Reading requires the concepts used in the selected text; source review requires careful comparison; executing an experiment additionally requires its software and data environment.
 
-| 顺序 | 主题 | 要能回答的问题 | 研究入口 |
-| --- | --- | --- | --- |
-| 1 | 研究设计 | 如何区分假设、证据与结论？怎样约定基线、预算和不确定性？ | [研究方案](../research/quantum-research.md)中的首个可复现实验 |
-| 2 | 核方法 | 特征映射与核矩阵是什么？模型选择会消耗哪些资源？ | [参考资料](../research/references.md)中的量子核与搜索方法 |
-| 3 | 量子基础 | 线路、测量、有限 shots 与噪声怎样影响比较？ | 研究方案中的核搜索与硬件评价 |
-| 4 | 时间序列评价 | 决策时点能看到什么？怎样划分时间外数据并检查泄漏？ | 研究方案中的数据与下游评价约束 |
-| 5 | 图与风险 | 风险图、低秩表示与风险参数怎样连接？ | 研究方案中的方法链路与接口 |
-| 6 | 组合优化 | 目标、约束与 QUBO / Ising 表达是否一致？如何设置经典对照？ | 参考资料中的组合优化与决策学习 |
+## A four-step route
 
-按自己的任务补齐知识。来源复核需要清楚记录实际阅读范围；实验参与需具备 Python、线性代数、概率统计和机器学习实验基础，环境要求由具体模块给出。
+1. Read the project question and identify the decision a claim supports.
+2. Read the original section, equation or result table. Record its assumptions and version.
+3. Work through one concrete example, then explain where the example stops applying.
+4. Submit a short change with the source, reasoning and verification performed.
 
-## 从阅读开始
+For a technical chapter, include prerequisites, symbols, derivation, a worked example, source locations, limitations and an exercise with an answer. For a reflection, begin with an event, develop an interpretation, identify the reading that informed it and leave the uncertainty visible.
 
-在[研究方案](../research/quantum-research.md)中选一句想弄懂的话，找到[参考资料](../research/references.md)中的原始来源，核对原文具体位置。先用自己的话解释“原文说了什么”和“它对当前问题有什么帮助”，再记录适用条件和仍不理解的部分。
+## Completed review example
 
-完成后可以提交一条[复核记录](roadmap.md#review-record)，或认领[前置概念说明任务 T03](roadmap.md#starter-tasks)。材料审阅与成果登记采用同一套[贡献流程](../CONTRIBUTING.md)。
+**Claim reviewed:** The quantum-kernel proposal targets a reduction of at least 10% in compiled two-qubit gates, depth or SWAPs, with no more than 1% deterioration in objective quality.
 
-<a id="prerequisite-notes"></a>
+**Source:** [Quantum research proposal, planned evaluation targets](../research/quantum-research.en.md#5-planned-evaluation-targets), version available in this repository.
 
-## 前置概念说明
+**Finding:** The source states a planned criterion. A reader can verify the threshold and its scope, but cannot infer an achieved hardware result. The wording in the roadmap therefore describes a target to freeze in the experimental contract.
 
-本节作为 T03 的交付入口。首个任务选择“量子核”或“时间外验证”中的一个概念，以三级标题加入可独立阅读的小节。认领范围和进度记录在[路线图](roadmap.md#starter-tasks)及对应 Issue。
+**Verification performed:** Compared the target table with the roadmap. No simulation or hardware task was executed for this editorial review.
 
-每个小节至少包含以下内容：
+**Result:** The public note preserves the threshold and its planning status. This example is a worked editorial exercise, not a record of a merged community PR.
 
-1. **读者问题与前置知识**：说明读者卡在哪一步，以及阅读前需要知道什么。
-2. **概念与研究用途**：定义术语和符号，链接研究方案中用到它的具体位置。
-3. **最小例子**：给出可手算或可复核的输入、步骤与答案，注明适用条件；代码例子同时提供运行条件。
-4. **原始来源**：列出实际阅读的版本与原文位置，说明例子来自引用还是作者自编。
-5. **自检题与答案说明**：让读者应用概念，并给出可核对的理由。
-6. **边界与疑问**：记录简化条件，以及仍需补充证据或进一步学习的部分。
+## Exercise
 
-## 研究笔记与实验教程
+Imagine a study evaluates 20 candidate circuits with 100 measurements per candidate, while a baseline evaluates 5 candidates with 400 measurements each. Are the budgets equal?
 
-研究笔记可采用“问题 → 背景 → 证据 → 推理 → 结论 → 局限”的结构，区分原作者结论、自己的假设、实际观测和解释。引用实际阅读过的资料，保留失败条件与未解决问题，帮助后来者判断适用范围。
+**Answer:** Both use 2,000 measurements under those assumptions, but that alone does not establish equal cost. Circuit depth, preparation, compilation, classical fitting and selection overhead can differ. Record the common budget definition and other costs before comparing performance.
 
-实验教程基于可运行并经过验证的模块编写，补充输入、环境、完整命令、预期行为和复核办法。结果链接到相应配置与版本，读者应能判断自己的运行是否与记录一致。图表给出标题、单位与来源，公式定义符号。
-
-## 写作、反馈与登记
-
-先完成一个小而完整的小节，在 PR 中关联任务，附上来源复核记录和实际完成的检查。审阅者检查概念是否准确、步骤是否齐全、自检题是否能作答；实验教程还需记录另一位读者的复现反馈。
-
-修改经审阅后，由维护者合并并更新[成果登记](roadmap.md#result-register)，保留贡献者、版本、证据与待完善事项。后续读者发现的问题继续关联原记录。AI 可以辅助整理，提交者负责逐句核对事实、来源和表达，并能解释提交内容。
+[Contribute](../CONTRIBUTING.md) · [Roadmap](roadmap.md)

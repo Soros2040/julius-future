@@ -1,27 +1,17 @@
 ---
-name: 复现与研究问题
-about: 报告实验、方法或资料中的可复核问题
-title: ""
-labels: ""
-assignees: ""
+name: Evidence and reproduction / 证据与复现
+about: Review a result or report a reproducibility issue / 复核结果或报告复现问题
 ---
 
-## 研究问题或复现目标
+## Claim and artifact version / 表述与产物版本
 
-## 来源与对应版本
+## Environment, data and license / 环境、数据与许可
 
-## 环境、数据和预算
+## Exact steps / 具体步骤
 
-注明依赖、硬件或后端、数据来源与许可、时间划分、种子和评估预算。
+## Expected and observed output / 预期与实际结果
 
-## 复现步骤
+## Evidence and remaining uncertainty / 证据与剩余疑问
 
-提供命令、配置和可公开的最小示例。
-
-## 预期与实际结果
-
-列出基线、指标、误差范围、运行状态和失败情况。
-
-## 推断、局限与下一步
-
-区分观察到的事实与需要进一步验证的解释。
+Remove access credentials and personal information from logs before attaching them.
+附加日志前移除访问凭据与个人信息。

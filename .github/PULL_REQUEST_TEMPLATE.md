@@ -1,34 +1,17 @@
-## 问题与改动
+## Problem and change / 问题与修改
 
-说明解决什么问题、改变了什么及其原因。
+Closes / 关联 Issue:
 
-关联 Issue：
+## Sources and versions / 来源与版本
 
-任务编号与交付位置：
+## Checks actually performed / 实际完成的检查
 
-## 验证与证据
+## Contribution and attribution / 贡献与署名
 
-写明实际运行的检查、复现环境、结果和未完成的验证。
+## Review / 审阅
 
-来源复核附原始来源的版本、具体位置、支持程度与判断理由；可使用 `docs/roadmap.md` 的复核记录模板。
-
-## 局限与后续
-
-说明适用范围、已知问题和必要后续。
-
-## 成果登记信息
-
-- 成果标题与入口：
-- 实际贡献者：
-- 证据与审阅 / 复现记录：
-- 当前状态及待完成事项：
-
-维护者合并后补全合并版本与登记编号，并更新路线图中的任务状态。
-
-## 提交检查
-
-- [ ] 改动范围清楚，导航和相对链接已检查。
-- [ ] 来源、署名和许可已核对。
-- [ ] 已检查文件内容、文件名与元数据的公开范围。
-- [ ] 目标、实测结果和推断分别说明。
-- [ ] 如影响进度，已同步更新路线图或成果登记。
+- [ ] English and Chinese convey the same facts / 双语事实一致
+- [ ] Links, formulas and figures checked / 已检查链接、公式和图表
+- [ ] Results retain their context and source / 结果保留条件与来源
+- [ ] Material is permitted for publication / 材料具备发布权限
+- [ ] Contribution record prepared / 已准备贡献记录

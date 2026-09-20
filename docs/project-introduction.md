@@ -1,50 +1,10 @@
-# 项目介绍
+[English](project-introduction.md) · [简体中文](project-introduction.zh-CN.md)
 
-Julius' future 是一个围绕学习、研究、写作和成果管理开展的开放协作项目。它以具体问题为起点，把资料阅读、证据核对、实验设计、解释写作和持续维护连接起来，让每一步都留下他人可以理解和继续推进的成果。
 
-**当前重点：量子核自设计与风险增强组合优化。当前阶段：研究设计与预立项。** 仓库已提供研究方案、参考入口和协作规范；实验实现、测量结果与配套教程按[路线图](roadmap.md)推进。
+# About Julius' future
 
-## 从问题到成果
+Julius' future is a personal record of projects, reflection and future work. Its past section connects three projects explored within one year. Its reflection section develops ideas from experience and reading. Its future section turns open questions into bounded tasks, including a quantum feature-map research proposal.
 
-学习者常遇到三个衔接问题：读完资料后不知道怎样提出问题，形成想法后不知道怎样设计公平比较，写成笔记后缺少他人复核和继续工作的入口。本项目用一条可追溯的流程承接这些工作：
+Readers can follow the [project retrospective](past.md), [original essay](reflections.md) or [roadmap](roadmap.md). Research readers can go directly to the [proposal](../research/quantum-research.en.md) and [bibliography](../research/references.en.md). Contributors can start with a source review using the [learning guide](learning-and-writing.md).
 
-**提出问题 → 阅读原始来源 → 记录证据与缺口 → 设计并验证 → 写成可读材料 → 审阅、登记与维护。**
-
-读者现在可以查看一个研究问题怎样对应基线和评价条件，用模板完成一条原始来源复核，或认领一个有明确交付与验收条件的小任务。第一次参与见[首页](../README.md#first-contribution)。
-
-## 面向谁
-
-| 参与者 | 可以从哪里开始 | 首次交付 |
-| --- | --- | --- |
-| 希望把阅读转化为问题的学习者 | [研究参考资料](../research/references.md)与[学习顺序](learning-and-writing.md#learning-path) | 一条来源复核或一个概念说明 |
-| 愿意检验方法的研究参与者 | [研究方案](../research/quantum-research.md) | 一组基线公平性检查或一项实验设计建议 |
-| 愿意组织知识的写作者与维护者 | [贡献指南](../CONTRIBUTING.md)与[维护安排](maintenance.md) | 一个可独立阅读的小节、一次审阅或一条成果登记 |
-
-资料复核从阅读与记录开始。实验工作则需按模块补齐 Python、数学、机器学习及相应领域知识。
-
-## 四个相互连接的模块
-
-| 模块 | 工作方式 | 可交付成果 |
-| --- | --- | --- |
-| 学习 | 根据研究中的疑问补齐前置知识 | 概念说明、学习记录、自检题 |
-| 研究 | 明确假设、基线、预算和评价方法，再收集证据 | 研究方案、实验配置、结果与局限 |
-| 写作 | 用自己的话解释来源、证据和推理 | 研究笔记、技术文章、论文材料 |
-| 成果管理 | 通过任务、审阅、版本和交接持续推进 | 任务记录、成果索引、复核与维护记录 |
-
-每个模块都通过同一套[贡献流程](../CONTRIBUTING.md)提交材料，并在[成果登记](roadmap.md#result-register)保留版本、证据和状态。
-
-## 当前量子研究主线
-
-量子核方法依赖特征映射与线路选择。候选评估需要资源，有限 shots、设备噪声与编译开销又可能影响选择。项目首先研究如何在可核算的预算下比较候选方案，再检验得到的表示能否服务于风险预测与组合决策。
-
-拟研究链路包括量子核自设计、局部量子消息线路、风险图聚合、风险参数到 QUBO / Ising 的转换，以及 QAOA 组合候选生成。各阶段分别设计基线、接口检查和证据要求。三个核心问题与具体评价条件见[研究方案](../research/quantum-research.md)。
-
-近期工作先复核来源与比较条件，再明确最小实验的数据、种子和预算。研究结论依据公开配置、实测结果及复核记录形成；学习材料则围绕已经说明清楚或验证过的模块编写，记录读者能否理解与复现。
-
-## 协作与持续维护
-
-项目目前由 Julius（[@Soros2040](https://github.com/Soros2040)）维护。参与者可以认领[首批任务](roadmap.md#starter-tasks)，在 Issue 中约定范围和审阅人，通过 PR 提交修改。合并时同步登记成果，后续复核继续追加记录。
-
-长期维护依靠模块负责人、第二位审阅者、可复现环境和交接记录。计划向 Datawhale 社区交流预立项方案，并寻求相关实验室在问题评估、算力与复核方面的合作。具体职责与支持条件以实际确认的安排为准。
-
-贡献署名依据实际工作，后续研究论文的作者资格在研究启动时讨论，并随贡献变化更新。日常节奏和交接条件见[维护与交接](maintenance.md)。
+The project is maintained by Julius. Individual research achievements belong to their source projects and versions. Personal reflections express the author's interpretation. Community relationships are described through the contributions and artifacts they produce.

@@ -1,41 +1,16 @@
 ---
-name: 任务与改进
-about: 定义一个可以认领和验收的任务
-title: ""
-labels: ""
-assignees: ""
+name: Contribution task / 贡献任务
+about: Propose or claim a bounded improvement / 提议或认领一项改进
 ---
 
-## 问题与依据
+## Question and scope / 问题与范围
 
-说明当前问题，并链接相关文档、来源或结果。
+## Deliverable and location / 交付物与位置
 
-## 预期成果
+## Source and version / 来源与版本
 
-说明交付内容、改动范围和对应里程碑。
+## Acceptance check / 验收检查
 
-- 任务编号（如 T01）：
-- 交付文件与章节：
+## Claim and dependencies / 认领与依赖
 
-来源复核可粘贴 `docs/roadmap.md` 中的“复核记录”模板，记录原句、原始来源位置、支持程度和修改建议。
-
-## 验收方法
-
-- [ ] 列出可以实际检查的完成条件。
-
-## 协作安排
-
-- 负责人：
-- 审阅者：
-- 依赖与资源：
-- 预计交付：
-
-## 当前状态与下一步
-
-说明进展、阻碍和下一步行动。
-
-## 验收与成果登记
-
-- 审阅意见 / 证据：
-- 关联 PR：
-- 合并版本与成果登记编号（完成后填写）：
+## English and Chinese updates / 双语更新
